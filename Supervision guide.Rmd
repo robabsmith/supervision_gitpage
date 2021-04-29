@@ -4,38 +4,8 @@ output:
     config:
       toc:
         collapse: section
-  pdf_document:
-    fig_caption: yes
-    number_sections: yes
-    keep_tex: yes
-    dev: tikz
-  html_document:
-    df_print: paged
-classoption: twoside
-geometry: top = 25mm, left=25mm, right=25mm, bottom=25mm, paperwidth=170mm, paperheight=240mm
 urlcolor: black
 linkcolor: red
-fontsize: 10pt
-font-family: times
-header-includes:
-- \usepackage{placeins}
-- \usepackage{fancyhdr}
-- \usepackage{setspace}
-- \onehalfspacing
-- \usepackage{chngcntr}
-- \counterwithin{figure}{section}
-- \counterwithin{table}{section}
-- \counterwithin{equation}{section}
-- \counterwithin{footnote}{section}
-- \usepackage{subfig}
-- \usepackage{float}
-- \usepackage{lscape}
-- \newcommand{\blandscape}{\begin{landscape}}
-- \newcommand{\elandscape}{\end{landscape}}
-- \newcommand{\onlythepage}{\arabic{page}}
-- \newcommand*{\secref}[1]{Section~\ref{#1}}
-- \raggedbottom
-- \renewcommand{\thepage}{(\thesection):\arabic{page}}
 ---
 
 ```{r global_options, include=FALSE}
@@ -65,134 +35,6 @@ opts_chunk$set(fig.path = 'figures/',
                cache = TRUE)
 
 ```
-
-
-<!-- Remove the page number from the bottom of your title page -->
-
-\pagenumbering{gobble}
-
-<!-- ----------------------------Title Page---------------------------- -->
-<!-- ----------------------------Title Page---------------------------- -->
-<!-- ----------------------------Title Page---------------------------- -->
-
-\begin{centering}
-
-\vspace{2 cm}
-
-\Large
-
-{\bf Supervision Guide}
-
-\vspace{2 cm}
-
-\Large
-Rob Smith
-
-\vspace{2 cm}
-
-\normalsize
-
-
-\vspace{2 cm}
-
-\normalsize
-Guidelines for students under supervision
-
-Spring 2020
-
-\vspace{2 cm}
-
-\normalsize
-Aalborg University Business School
-
-\normalsize
-Aalborg University
-
-\end{centering}
-
-\newpage
-<!-- ----------------------------End of title Page---------------------------- -->
-<!-- ----------------------------End of title Page---------------------------- -->
-<!-- ----------------------------End of title Page---------------------------- -->
-
-
-
-
-<!-- Set the type of page - to allow for interesting headers and footers -->
-<!-- Set the type of page - to allow for interesting headers and footers -->
-
-\pagestyle{fancy}
-
-<!-- Clear all of the positions of the headers and footers, LeftEven, RightOdd -->
-<!-- Clear all of the positions of the headers and footers, LeftOdd, RightEven -->
-
-\fancyhead[LE,RO]{}
-\fancyhead[LO,RE]{}
-
-<!-- Set a line below the header, and an invisible line above the footer -->
-<!-- Set a line below the header, and an invisible line above the footer -->
-
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0pt}
-
-<!-- Set the page numbering type for the initial pages of your project -->
-<!-- Abstract, table of contents, acknowledgements etc -->
-
-\pagenumbering{roman}
-
-<!-- Create a barrier to stop LaTeX items from floating up above this point -->
-<!-- Then start a new page -->
-
-\FloatBarrier
-\newpage
-
-<!-- 1. Set the header for the top of the page -->
-<!-- 2. Create a section header, but remove the numbering, so that it just shows up as a section -->
-<!-- 3. When you remove the section numbering in this way you have to add the section to the table of contents -->
-<!-- There is another example in the chapters that is simpler, using the "# Header {-}" structure -->
-
-
-<!-- 1. Again, stop items from floating above this point -->
-
-<!-- 2. This time, the new page option is changed to "cleardoublepage" -->
-<!-- This will ensure that the section starts on an odd page number (not necessary) -->
-<!-- This is mostly useful if you are writing a book and you want (can just use \newpage)-->
-<!-- the chapters all to show up on the right hand page -->
-
-\FloatBarrier
-\newpage
-
-<!-- Set the page header up above your table of contents -->
-
-\fancyhead[CO,CE]{Table of Contents}
-
-<!-- Set how deep you want the table of contents to go -->
-
-\setcounter{tocdepth}{2}
-
-<!-- Insert a table of contents at the beginning of the document -->
-<!-- Insert a table of contents at the beginning of the document -->
-\tableofcontents
-
-\newpage
-\FloatBarrier
-
-<!-- Set the page header up above your first part -->
-
-\fancyhead[CO,CE]{Part 2 header for page - change this}
-
-<!-- Change the numbering to the standard arabic number set -->
-
-\pagenumbering{arabic}
-
-\FloatBarrier
-\newpage
-
-\fancyhead[CO,CE]{Part 2 header for page - change this, \onlythepage}
-
-<!-- ---------------------Body text--------------------- -->
-<!-- ---------------------Body text--------------------- -->
-<!-- ---------------------Body text--------------------- -->
 
 
 # Introduction to supervision 
@@ -249,7 +91,7 @@ some working points for your discussion / conclusions. We will go
 through your arguments verbally, and I will probe any major gaps I see
 in your thinking.
 
-# Guidelines for supervision: 
+# Guidelines for supervision
 
 1.  Any team member can communicate with me via Teams on behalf of your
  group. I expect that all communication has been discussed an
@@ -281,7 +123,7 @@ in your thinking.
 
 6.  The date by which you will be ready for the next meeting.
 
-## Examinations: 
+## Examinations
 
 You can write and be examined in Danish or English. If you choose
 Danish, it might be the case that one of our Danish speaking staff will
@@ -290,7 +132,7 @@ AAU examiner. This will depend on departmental resources, but you will
 not be disadvantaged in any way because of any limitations that I might
 have with the Danish language.
 
-## Leave periods (absenteeism): 
+## Leave periods (absenteeism)
 
 I will be away from Aalborg for the following periods:
 
@@ -527,7 +369,7 @@ identify a good problem.
 
 You need to actively apply yourselves to *finding* a question:
 
-## Step 1: Brainstorm / ideation: 
+## Step 1: Brainstorm / ideation
 
 -   Find a meeting room and mind-map an area of economics that you are
     interested in.
@@ -575,18 +417,111 @@ to create research ideas too:
 
     -   <https://www.designorate.com/ideation-design-thinking-tools/>
 
+### Digital tools for getting your project started
+
+There are a heap of tools available:
+
+#### Tools that can help with brainstorming and project management
+
+1. Trello board
+2. Padlet
+3. Notion
+4. Prezi
+5. Wonder
+6. Mural
+
+#### Tools that can help with content creation for questionnaires / interactive quizzes
+
+1. Mentimeter
+2. Peergrade
+3. MS Forms
+4. Fyrebox
+5. Coogle
+6. Kahoot
+
+#### Communication tools for collaboration
+
+1. OSX apple screen sharing (with control option)
+2. OSX Facetime
+3. MS Teams
+4. Facebook messenger
+6. Disqord
+7. Skype
+8. Whatsapp
+
+#### Additional learning tools for self-learning or training
+
+1. DataCamp
+2. Khan Academy
+3. Udemy
+4. Corsera
+5. Edx
+6. Google Academy
+7. Microsoft 
+
+
+
 ## Step 2: Getting that problem statement clear
 
 Where to start?
 
 Read. This starts with a good literature search.
 
-### Using the introduction as the route to the problem statement 
+Some reflective questions that I recommend you consider before the meeting:
+
+1.	What are you investigating (you have a problem statement for this already - but it still lacks some clarity)?
+\
+    i.e.
+    What do you mean by: "årsagen"?
+    What do you mean by: "handel med omverden"?
+    How do you define globalisation? 
+    When you say "påvirke", what do you mean?\
+    \
+    Is it all people in the USA? All industries? Aggregate economic measures?
+    \
+    When you talk about effects, it usually implies that there is some kind of causal relationship... When looking at national economic aggregates - there are many possible "causes" for changes. Political, social, economic, technological, etc. 
+
+2.	Why is it important to investigate this?
+
+  1.	Who would care about this result? i.e. why are you doing this research? what is the motivation behind finding an answer to this question?
+
+  2.	What is the problem that you are actually trying to throw some light on?
+
+3.	How have others explored this? 
+
+    1.	What did they find?
+
+    2.	What are some of the conclusions that have been drawn?
+
+    3.	Are there some concerns/issues with how other people have investigated it?
+
+4.	How could you possibly explore this question? 
+
+    1.	Are there some alternative explanations that have not been considered?
+
+    2.	Are there some other perspectives that have been ignored? For example... if the USA is able to strengthen it's trade position, what are the consequences for smaller countries that compete in the same markets?
+    
+    3.	Is there some new data available that illuminates a new part of the problem?
+    
+    4.	Are there better measures available for inequality / trade performance / competitiveness / etc. ?
+    
+5.	How are you going to make the choice about what road to take? 
+
+    1.	If you had all the money and time in the world, how would you investigate this problem?
+    
+    2.	What are the first steps / minimum requirements needed to be able to answer the question?
+    
+    3.	What options are real possibilities in the time that is left?
+    
+    4.	Who is going to do what?
+
+
+## Using the introduction as the route to the problem statement 
 
 A good introduction leads to a good problem statement, but this is only
 possible if you have some good material to work with.
 
-### Example flow of a good introduction: 
+### Example flow of a good introduction
 
 1.  You could list some shocking figures or numbers that highlight that
     there is some area / issue that we should be concerned about. It
@@ -621,7 +556,7 @@ possible if you have some good material to work with.
     in addressing, and all of the arguments for why it is interesting
     should already have been made.)
 
-# Some general notes about writing a problem statement 
+## Some general notes about writing a problem statement 
 
 The general structure of questions in most economic analyses is: What
 is, has been, or will be the impact of **A** on **B**?
@@ -889,15 +824,138 @@ Source: [Saunders, Lewis and Thornhill (2019), Research methods for
 business
 students](https://www.researchgate.net/profile/Mark-Saunders-10/publication/330760964_Research_Methods_for_Business_Students_Chapter_4_Understanding_research_philosophy_and_approaches_to_theory_development/links/5c53056f299bf12be3f0e2cf/Research-Methods-for-Business-Students-Chapter-4-Understanding-research-philosophy-and-approaches-to-theory-development.pdf)
 
+
+
+
+
+
+
+
+
+
+
+# Alternative platforms for writing projects
+
+This is a brief list of options when writing a project. Some options are best suited to complex data work, such as Rmarkdown, whereas others are better suited to collaborative writing, such as Overleaf, MS Word via MS Teams.
+
+Each of these platforms are presented in short videos below. There are some clear advantages to using some rather than others. For each you will need to have some knowledge about how the program works in order to use it, and this might require a time investment.
+
+My preference is to recommend open-source options that allow for efficient collaboration and / or reproducible research.
+
+**Free / open source options**
+
+1. Overleaf / LaTeX
+
+2. RMarkdown
+
+3. Google Docs (but you pay in terms of data security)
+
+**Paid / Subscription options**
+
+1. MS Word
+
+
+## Overleaf (LaTeX)
+
+Overleaf offers a number of excellent guides for getting started, but for those that would like an explanation from me of some of the basics, please feel free to watch the following videos.
+
+1. [How open an account in Overleaf]()
+
+2. [Template documents and resources]()
+
+3. [Integration of Mendely with Overleaf]()
+
+4. [Integration of Git with Overleaf]()
+
+## RMarkdown
+
+RMarkdown is a derivative of Markdown syntax, and is a very simple way to write 
+
+1. 
+
+## MS Word via MS Teams
+
+
+
+
+
+# Reference and bibliography management
+
+With the aid of technology, it is not possible to very easily and efficiently manage and utilise the literature sources that you need when writing an academic project.
+
+The first step is finding the appropriate literature, which is explained in more detail in the chapter below. This section is included in advance as it is useful to select the bibliography management software in advance of completing a literature search.
+
+Each of the more popular reference management software tools have a variety of advantages and disadvantages, depending on what program you choose to work in.
+
+My own preferences are shaped by my experience with each program - and a desire to make sure that the content I create will be accessible to me always, regardless of whether I am at the university or not. If better options exist I would be most interested in hearing about them.
+
+The first two software options enable in-text referencing and automatic generation of reference lists in MS word. The last option, of manually collecting your reference data, is the most inefficient, but has some benefits. The videos below will link to the **Loom** hosting service, and provide a guide to Mendely. Refworks can do pretty much everything that Mendeley can, but it is expensive to use once you leave the university.
+
+__**Order of preference**__
+
+1. Mendely
+
+2. Refworks
+
+3. Manual storage
+
+## Videos of reference software
+
+  1. [Installation of Mendely]()
+  
+  2. [Use of in-text referencing in Ms Word]()
+  
+  3. [Creating a reference list in Ms Word]()
+  
+  4. [Integration of Mendely and Overleaf]()
+  
+  5. [Citation options and edits in Overleaf]()
+  
+  6. [Reference lists in RMarkdown]()
+  
+  7. [Citation options in RMarkdown]()
+
 # Literature searching
+
+Literature searches can be completed in a number of ways. There are several very useful free literature search options, as well as more expensive options that you will have access to as a university student.
+
+## Free search options
+
+  1. [Google Scholar](https://scholar.google.com)
+  2. [Semantic Scholar](https://www.semanticscholar.org)
+  
+## Paid search options
+
+These options are very effectively combined and the University library website. Where the *Primo* service can be used to search a wide variety of databases for a specific search string (or phrase).
+
+  1. [Aalborg University Universitetsbiblioteket](https://www.en.aub.aau.dk)
+
+The university site also allows students to access each of the available underlying databases individually and use the special search features that are available for each. Several of these databases allow for bulk exportation of bibliographic information, and can be easily synchronised with referencing software described in the section above.
+
+ 2. [Databases and suppliers](https://www.en.aub.aau.dk/find-material/databases)
+
+A short video introdution to literature search is included as a video reference below. This link will take you to a video recorded and stored on the **Loom** hosting platform.
+
+## Literature search videos
+
+  1. [How to conduct an efficient literature search]()
+
+  2. [How to construct the key search criteria for your literature search]()
+  
+  3. [How to save and export search results]()
+
+
+
+
+# Appendix: Literature search construction
 
 ## Project title
 Stock-flow consistent models – property and mortgage
 
-## Description of subject:
+## Description of subject
 Stock flow consistent model to cover mortgage debt of the household sector
 
-## Problem statement for project:
+## Problem statement for project
 Debt to disposable income levels in several Danish sectors have risen to the highest ever recorded levels, while the Danish central bank (Danmarks nationalbank), the IMF and Finanstilsynet all report that there are no serious threats to financial stability. Financial deregulation, relaxation of borrowing criteria and product innovation have been cited as the leading causes of this trend. This thesis aims to explore credit creation and macro-financial risks related to the expansion of household debt in Denmark by examining institutional sector and individual household balance sheets.
 
 
@@ -1174,4 +1232,7 @@ AND
 ## Summary
 
 Total of 146 documents found
+
+
+
 
