@@ -65,6 +65,8 @@ opts_chunk$set(fig.path = 'figures/',
 
 # Book description
 
+This is a simple GitBook to assist students to write projects in partial fulfilment of the requirements of a degree in economics at Aalborg University.
+
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
