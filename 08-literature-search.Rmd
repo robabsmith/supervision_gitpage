@@ -1,0 +1,28 @@
+# Literature searching
+
+Literature searches can be completed in a number of ways. There are several very useful free literature search options, as well as more expensive options that you will have access to as a university student.
+
+## Free search options
+
+  1. [Google Scholar](https://scholar.google.com)
+  2. [Semantic Scholar](https://www.semanticscholar.org)
+  
+## Paid search options
+
+These options are very effectively combined and the University library website. Where the *Primo* service can be used to search a wide variety of databases for a specific search string (or phrase).
+
+  1. [Aalborg University Universitetsbiblioteket](https://www.en.aub.aau.dk)
+
+The university site also allows students to access each of the available underlying databases individually and use the special search features that are available for each. Several of these databases allow for bulk exportation of bibliographic information, and can be easily synchronised with referencing software described in the section above.
+
+ 2. [Databases and suppliers](https://www.en.aub.aau.dk/find-material/databases)
+
+A short video introdution to literature search is included as a video reference below. This link will take you to a video recorded and stored on the **Loom** hosting platform.
+
+## Literature search videos
+
+  1. [How to conduct an efficient literature search]()
+
+  2. [How to construct the key search criteria for your literature search]()
+  
+  3. [How to save and export search results]()
