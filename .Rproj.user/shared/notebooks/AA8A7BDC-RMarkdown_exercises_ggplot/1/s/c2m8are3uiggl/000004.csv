@@ -1,0 +1,1 @@
+"0","curve(dnorm(x,0,1), bty=""n"", xlim=c(-3,3))"

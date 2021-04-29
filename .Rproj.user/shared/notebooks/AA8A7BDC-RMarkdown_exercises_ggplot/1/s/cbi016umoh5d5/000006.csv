@@ -1,0 +1,7 @@
+"0","x <- seq(-6,6,length=500)"
+"0","plot(x,"
+"0","     dnorm(x,mean=0,sd=1),"
+"0","     type = ""l"", "
+"0","     lty=1,"
+"0","     lwd=3,"
+"0","     col=""blue"") "

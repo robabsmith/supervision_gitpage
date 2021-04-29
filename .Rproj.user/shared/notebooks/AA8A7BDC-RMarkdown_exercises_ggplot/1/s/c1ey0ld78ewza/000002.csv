@@ -1,0 +1,6 @@
+"0","dat_1 %>% "
+"0","        ggplot() + "
+"0","            geom_density(aes(X)) + "
+"0","        geom_vline(xintercept =  x_low_2, color = ""red"") + "
+"0","        geom_vline(xintercept = x_high_2, color = ""red"")"
+"0",""

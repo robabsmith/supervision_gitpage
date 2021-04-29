@@ -1,0 +1,27 @@
+Luis Reyes
+Kedge Business School
+luis.reyes@kedgebs.com
+
+Jacques Mazier
+Emeritus Professor at Université Paris 13
+mazier@univ-paris13.fr
+
+Empirical stock-flow consistent model for France
+
+Abstract
+We study the implications of two exogenous shocks on the French economy via an empirical macroeconomic SFC for France: housing prices and quantitative easing.
+Our estimates for housing investment by households (the main holders of wealth, as shown in Figure 1) indicate that this variable depends positively on the growth rate of non-produced non-financial assets, an indicator of land profitability (both shown in Figure 2) and a determinant of house prices, while the relationship in the opposite sense also holds, both in the short- and long-term. Thus, an exogenous increase in land prices raise housing investment, which in turn raises housing prices, while at the same time reinforcing land profitability. However, this turns out to be unsustainable given the falling disposable income caused in part by the increase in the interest rate, both of which are determinants of housing investment by households.
+The financial sector distinguishes Banque de France and other financial institutions. In order to isolate the central bank, and without sacrificing adherence to official data while at the same time keeping the model simple and realistic, we split Currency and deposits (F2 in the SNA 2008) into four sub-items: (1) bills and coins, (2) banks reserves, (3) deposits (which include TARGET2) and (4) refinancing. This allows us to study the impact of an increase in Target 2 (an asset for BdF) in the French economy. An exogenous increase in money creation via this variable makes funds available for Banque de France, with which in turn it can refinance other financial institutions. This can have positive effects on the economy if used differently than has been the case in the run-up of the global financial crisis. This can happen in a way similar to what chapter 16 of Turner’s acclaimed book Between debt and the devil posits. That is, by financing government expenditure while avoiding excessive devaluations and inflation above an upper limit (say, 5%).
+The model has over 200 equations (where about 50 are behavioral) using official annual data from 1979 to 2019 from INSEE and Banque de France. Data before 1995 (base 2000 methodology, consistent with SNA 1993) were homogenized with the most up-to-date data that starts in in that year (base 2010 methodology, consistent with SNA 2008). The conversion is such that time series belonging to the accumulation accounts (stocks, flows, revaluation and other changes in volume) do not exhibit breaks.
+This model shares characteristics, aim and its theoretical approach with the works of Zezza (2018) for Italy, Randrup and Raza (2019) for Denmark, Pierros (2019) for Greece, Meijers and Muysken (2019) for the Netherlands, as well as Burgess et al. (2016) for the UK. It also improves on a previous version presented in Reyes (2015) and, like the previous works, takes its inspiration from the stock-flow consistent literature that emerged with the seminal works by Godley and Lavoie, for instance that of 2007.
+The symbolic balance sheet is presented in Table 1 for illustration purposes of the accounting structure of the model.
+
+References
+Burgess, Burrows, Godin, Kinsella, Millard (2016). A Dynamic Model of Financial Balances for the United Kingdom. Bank of England Working Paper No. 614.
+Godley and Lavoie (2007). Monetary Economics. An Integrated Approach to Credit, Money, Income, Production and Wealth. Palgrave Macmillan.
+Meijers and Muysken (2019). Financialisation and assets price bubbles in an Euro Area economy. Presented at the FMM conference, October 2019.
+Pierros (2019). A labour market-augmented empirical stock-flow consistent model applied on the Greek economy. Presented at the FMM conference, October 2019.
+Randrup and Raza (2019). An empirical stock-flow consistent macroeconomic model for Denmark. Presented at the FMM conference, October 2019.
+Reyes (2015). Economic Policy and Income Distribution. The case of France since the early 1970s. PhD thesis.
+Turner (2016). Between Debt and the Devil: Money, Credit, and Fixing Global Finance. Princeton University Press.
+Zezza (2018). Stock-Flow Consistent Macroeconomic Models: Theory, Practice and Applications. PhD thesis.
