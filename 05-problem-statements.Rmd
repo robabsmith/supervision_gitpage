@@ -108,6 +108,49 @@ There are a heap of tools available:
 7. Microsoft 
 
 
+### Courses in Econometrics at AAU
+
+The following main methods are covered in each of the semesters, and economic analyses should be conducted that reflect a knowledge up to at least the level of technical analysis of each semester.
+
+#### Methods notes - Econometrics 4. semester
+
+1. OLS - simple linear regression
+2. OLS - multiple linear regression
+3. Linear regressions in matrices
+4. Inference and hypothesis testing
+5. And 6. OLS - Assymptotics, functional form and prediction
+    1. Goodness of fit
+6. Multiple regression analysis with qualitative data
+    1. Using dummy variables
+7. Heteroskedasticity.
+8. Normal distribution model specification.
+    1. Proxy variables measure error.
+9. Non-nested models, missing data, outliers, least absolute deviations, estimations and multicollinearity.
+10. Instrumental variables - 2 stage least squares.
+11. Instrumental variables continued - 2 stage least squares with heteroskedasticity.
+12. PROBIT and LOGIT
+
+#### Methods notes - Econometrics 5. semester
+
+1. Time series and seasonality trends
+2. Cyclical correlation in univariate time-series
+3. AR and MA processes
+    1. ACF and PACF
+4. Stationarity
+5. ARIMA - Autoregressive Integrated Moving Average Model
+6. Mandatory exercise in forecasting
+    1. Properties and evaluation
+7. Multivariate time series analysis
+    1. Engel-Granger 
+    2. ARDL - Auto-regressive distributed lag models
+8. Dynamic models with non stationary variables
+    1. Cointegration and error correction models
+    2. Spurious regression
+9. Further extension
+    1. Cointegration and bounce test
+10. VAR
+    1. Vector
+
 
 ## Step 2: Getting that problem statement clear
 
