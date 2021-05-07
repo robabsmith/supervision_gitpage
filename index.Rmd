@@ -3,7 +3,7 @@ title: "A supervision guide for AAU Economics students"
 author: "Robert Smith"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
 bookdown::gitbook:
   config:
     toc:
