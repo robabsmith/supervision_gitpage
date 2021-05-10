@@ -80,12 +80,12 @@ There are a heap of tools available:
 
 #### Tools that can help with content creation for questionnaires / interactive quizzes
 
-1. Mentimeter
-2. Peergrade
-3. MS Forms
-4. Fyrebox
-5. Coogle
-6. Kahoot
+1. [Mentimeter](https://www.mentimeter.com)
+2. [Peergrade](Peergrade)
+3. MS Forms ([Integration of Forms with Teams and OneDrive](https://www.loom.com/share/ed2fd65abfd64189b2c81f8daff7ec79))
+4. [Fyrebox](https://www.fyrebox.com)
+5. [Coogle](https://coggle.it)
+6. [Kahoot](Kahoot)
 
 #### Communication tools for collaboration
 
@@ -94,18 +94,18 @@ There are a heap of tools available:
 3. MS Teams
 4. Facebook messenger
 6. Disqord
-7. Skype
+7. Skype / Skype for business
 8. Whatsapp
 
 #### Additional learning tools for self-learning or training
 
-1. DataCamp
-2. Khan Academy
-3. Udemy
-4. Corsera
-5. Edx
-6. Google Academy
-7. Microsoft 
+1. [DataCamp](https://www.datacamp.com)
+2. [Khan Academy](https://www.khanacademy.org)
+3. [Udemy](https://www.udemy.com)
+4. [Coursera](https://www.coursera.org)
+5. [Edx](https://www.edx.org)
+6. [Google Analytics Academy](https://analytics.google.com/analytics/academy/)
+7. [Microsoft Learn - For Power BI](https://docs.microsoft.com/en-gb/learn/powerplatform/power-bi?WT.mc_id=sitertzn_learntab_guidedlearning-card-powerbi)
 
 
 ### Courses in Econometrics at AAU
@@ -154,13 +154,13 @@ The following main methods are covered in each of the semesters, and economic an
 
 ## Step 2: Getting that problem statement clear
 
-Where to start?
+**Where to start?**
 
 Read. This starts with a good literature search.
 
 Some reflective questions that I recommend you consider before the meeting:
 
-1.	What are you investigating (you have a problem statement for this already - but it still lacks some clarity)?
+1.	**What are you investigating (you have a problem statement for this already - but it still lacks some clarity)?**
 \
     i.e.
     What do you mean by: "årsagen"?
@@ -172,13 +172,13 @@ Some reflective questions that I recommend you consider before the meeting:
     \
     When you talk about effects, it usually implies that there is some kind of causal relationship... When looking at national economic aggregates - there are many possible "causes" for changes. Political, social, economic, technological, etc. 
 
-2.	Why is it important to investigate this?
+2.	**Why is it important to investigate this?**
 
   1.	Who would care about this result? i.e. why are you doing this research? what is the motivation behind finding an answer to this question?
 
   2.	What is the problem that you are actually trying to throw some light on?
 
-3.	How have others explored this? 
+3.	**How have others explored this?**
 
     1.	What did they find?
 
@@ -186,7 +186,7 @@ Some reflective questions that I recommend you consider before the meeting:
 
     3.	Are there some concerns/issues with how other people have investigated it?
 
-4.	How could you possibly explore this question? 
+4.	**How could you possibly explore this question?**
 
     1.	Are there some alternative explanations that have not been considered?
 
@@ -196,7 +196,7 @@ Some reflective questions that I recommend you consider before the meeting:
     
     4.	Are there better measures available for inequality / trade performance / competitiveness / etc. ?
     
-5.	How are you going to make the choice about what road to take? 
+5.	**How are you going to make the choice about what road to take?**
 
     1.	If you had all the money and time in the world, how would you investigate this problem?
     

@@ -8,28 +8,30 @@ Each of the more popular reference management software tools have a variety of a
 
 My own preferences are shaped by my experience with each program - and a desire to make sure that the content I create will be accessible to me always, regardless of whether I am at the university or not. If better options exist I would be most interested in hearing about them.
 
-The first two software options enable in-text referencing and automatic generation of reference lists in MS word. The last option, of manually collecting your reference data, is the most inefficient, but has some benefits. The videos below will link to the **Loom** hosting service, and provide a guide to Mendely. Refworks can do pretty much everything that Mendeley can, but it is expensive to use once you leave the university.
+The first two software options enable in-text referencing and automatic generation of reference lists in MS word. The last option, of manually collecting your reference data, is the most inefficient, but has some benefits. The videos below will link to the [Loom](https://www.loom.com) hosting service, and provide a guide to Mendely. Refworks can do pretty much everything that Mendeley can, but it is expensive to use once you leave the university.
 
 __**Order of preference**__
 
-1. Mendely
+1. [Mendeley](https://www.mendeley.com/download-desktop-new/)
 
-2. Refworks
+2. [Refworks](https://www.aub.aau.dk/software-web/refworks/)
 
-3. Manual storage
+3. [Manual storage](https://youtu.be/JwXQb25cpqA)
 
 ## Videos of reference software
 
-  1. [Installation of Mendely]()
+  1. [Video: Mendeley in 5 minutes: Part 1](https://youtu.be/MiKbS01Aulo)
+     [Video: Mendeley in 5 minutes: Part 2](https://youtu.be/kSu4tO8Dwak)
+     [Video: Mendeley in 5 minutes: Part 3](https://youtu.be/XU3cjfY4G5s)
   
-  2. [Use of in-text referencing in Ms Word]()
+  2. [Use of in-text referencing in Ms Word](https://youtu.be/XTfVCiksapk)
   
-  3. [Creating a reference list in Ms Word]()
+  3. [In-text referencing, and creating a reference list in Ms Word](https://youtu.be/zkrVbBSrK_w)
   
-  4. [Integration of Mendely and Overleaf]()
+  4. [Integration of Mendely and Overleaf](https://www.loom.com/share/6d0d4f7108f041d082253c636a52dee8)
   
-  5. [Citation options and edits in Overleaf]()
+  5. [GitHub Example: Citation options and text edit options in Overleaf](https://github.com/robabsmith/Example-project)
   
-  6. [Reference lists in RMarkdown]()
+  6. [Video: Reference lists in RMarkdown](https://www.loom.com/share/407ae8d0f00e4a05941a9a09e5e13f96)
   
-  7. [Citation options in RMarkdown]()
+  7. [Video: Citation options in RMarkdown (Same video as in 6. above)](https://www.loom.com/share/407ae8d0f00e4a05941a9a09e5e13f96)

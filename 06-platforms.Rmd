@@ -23,19 +23,24 @@ My preference is to recommend open-source options that allow for efficient colla
 
 Overleaf offers a number of excellent guides for getting started, but for those that would like an explanation from me of some of the basics, please feel free to watch the following videos.
 
-1. [How open an account in Overleaf]()
+One of the most powerful features of Overleaf is the ability to who any change is attributed to, and to roll back changes incrementally. This is possible due to the built in version control features that the platform offers.
 
-2. [Template documents and resources]()
+1. [Video: How open an account in Overleaf](https://www.youtube.com/watch?v=g8Ejj0T0yG4)
 
-3. [Integration of Mendely with Overleaf]()
+2. [GitHub: Template documents and resources](https://github.com/robabsmith/Example-project)
 
-4. [Integration of Git with Overleaf]()
+3. [Video: Integration of Mendely with Overleaf](https://www.loom.com/share/6d0d4f7108f041d082253c636a52dee8)
+
+4. [Integration of Git with Overleaf (Quite a heavy Spanish accent, but a good guide)](https://youtu.be/BAt5xYP70u0)
 
 ## RMarkdown
 
-RMarkdown is a derivative of Markdown syntax, and is a very simple way to write 
+RMarkdown is a derivative of Markdown syntax, and is a very simple way to write. The video guide below covers a lot of ground, and uses the GitHub template that follows as an example.
 
-1. 
+1. [Video: Getting started with Rmarkdown](https://www.loom.com/share/407ae8d0f00e4a05941a9a09e5e13f96)
+
+2. [GitHub: Project template for single or multi-file projects](https://github.com/robabsmith/Rmarkdown-project-template)
 
 ## MS Word via MS Teams
 
+MS Word files can be dropped into the "General" chat area of any Team created using the MS Teams app. These files can then be edited simultaneously by all team members.
