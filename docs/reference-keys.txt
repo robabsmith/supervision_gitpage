@@ -9,9 +9,11 @@ for-a-journal-article-size-paper-these-are-some-rough-guidelines
 time-planning-and-limitations
 reverse-time-planning
 data-sources-for-project-inspiration
-diverse-datasets
 economic-time-series-databases
+income-and-income-inequality-databases
 datasets-available-via-caldiss
+aau-based-databases
+diverse-datasets
 rough-guide-to-writing-a-problem-statement
 step-1-brainstorm-ideation
 digital-tools-for-getting-your-project-started
