@@ -1,4 +1,4 @@
-book-description
+supervision-guide
 introduction-to-supervision
 guidelines-for-supervision
 examinations
@@ -11,6 +11,7 @@ reverse-time-planning
 data-sources-for-project-inspiration
 diverse-datasets
 economic-time-series-databases
+datasets-available-via-caldiss
 rough-guide-to-writing-a-problem-statement
 step-1-brainstorm-ideation
 digital-tools-for-getting-your-project-started
