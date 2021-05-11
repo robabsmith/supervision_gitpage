@@ -1,39 +1,5 @@
 # Data sources for project inspiration
 
-## Diverse datasets
-
-1. The Harvard Dataverse
-    - https://dataverse.harvard.edu/dataverse/harvard
-
-2. Kaggle - datasets used for machine learning and AI applications
-    - https://www.kaggle.com/datasets
-
-3. The New York Times Github repository
-    - https://github.com/nytimes
-
-4. FiveThirtyWight Github page
-    - https://github.com/fivethirtyeight
-
-5. The MIT Observatory of Economic Complexity - Economic trade data
-    - https://oec.world
-
-6. The Google public data explorer (run in Chrome)
-    - https://www.google.com/publicdata/directory
-
-7. European Union Open Data portal
-    - https://data.europa.eu/euodp/en/data/
-
-8. Luxumborg income database
-    - https://www.lisdatacenter.org/our-data/ 
-
-9. GESIS data, including
-    - Eurobarometer data
-        - https://www.gesis.org/en/eurobarometer-data-service/search-data-access/data-access
-    - ISSP
-        - https://www.gesis.org/en/issp/home
-10. European Social Survey data
-    - https://www.europeansocialsurvey.org/
-
 ## Economic time-series databases
 
 1. The Bank for International Settlements
@@ -60,13 +26,64 @@
     
 10. Kim Abildgren's Danish historical statistics datasets
     - https://sites.google.com/view/kim-abildgren/historical-statistics
-    
+
+
+## Income and income inequality databases
+
+1. World Inequality Database
+    - https://wid.world/
+
+2. United Nations University WIID – World Income Inequality Database
+    - https://www.wider.unu.edu/data?fbclid=IwAR0X8Sj1rcjM5ovy2triA5Y0wo3iApFzV7CEas_ktj139oofcQHjI_ts9F4
+
+3. Luxumborg income database
+    - https://www.lisdatacenter.org/our-data/ 
+
 
 ## Datasets available via CALDISS
 
 It is certainly a good idea to visit the [CALDISS website](https://www.caldiss.aau.dk) or speak with a representative, as they offer some great introductory courses and access to some great data.
 
-1. Refinitiv Eikon
+1. Refinitiv Eikon (Financial Time Series Data - Much like the Thomson Reuters Datastream)
     - https://www.caldiss.aau.dk/faciliteter/data/eikon/
+    - Home page for additional information
+        - https://eikon.thomsonreuters.com/index.html
 
 
+## AAU based databases
+
+1. Surveybanken
+    - https://www.surveybanken.aau.dk
+
+
+## Diverse datasets
+
+1. The Harvard Dataverse
+    - https://dataverse.harvard.edu/dataverse/harvard
+
+2. Kaggle - datasets used for machine learning and AI applications
+    - https://www.kaggle.com/datasets
+
+3. The New York Times Github repository
+    - https://github.com/nytimes
+
+4. FiveThirtyWight Github page
+    - https://github.com/fivethirtyeight
+
+5. The MIT Observatory of Economic Complexity - Economic trade data
+    - https://oec.world
+
+6. The Google public data explorer (run in Chrome)
+    - https://www.google.com/publicdata/directory
+
+7. European Union Open Data portal
+    - https://data.europa.eu/euodp/en/data/
+
+8. GESIS data, including
+    - Eurobarometer data
+        - https://www.gesis.org/en/eurobarometer-data-service/search-data-access/data-access
+    - International Social Survey Programme (ISSP)
+        - https://www.gesis.org/en/issp/home
+
+9. European Social Survey data
+    - https://www.europeansocialsurvey.org/
