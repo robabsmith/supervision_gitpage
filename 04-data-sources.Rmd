@@ -26,6 +26,14 @@
 8. Luxumborg income database
     - https://www.lisdatacenter.org/our-data/ 
 
+9. GESIS data, including
+    - Eurobarometer data
+        - https://www.gesis.org/en/eurobarometer-data-service/search-data-access/data-access
+    - ISSP
+        - https://www.gesis.org/en/issp/home
+10. European Social Survey data
+    - https://www.europeansocialsurvey.org/
+
 ## Economic time-series databases
 
 1. The Bank for International Settlements
@@ -49,3 +57,16 @@
 
 9. Jorda-Schularick-Taylor Macrohistory Database
     - http://www.macrohistory.net/data/ 
+    
+10. Kim Abildgren's Danish historical statistics datasets
+    - https://sites.google.com/view/kim-abildgren/historical-statistics
+    
+
+## Datasets available via CALDISS
+
+It is certainly a good idea to visit the [CALDISS website](https://www.caldiss.aau.dk) or speak with a representative, as they offer some great introductory courses and access to some great data.
+
+1. Refinitiv Eikon
+    - https://www.caldiss.aau.dk/faciliteter/data/eikon/
+
+

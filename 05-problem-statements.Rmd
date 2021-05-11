@@ -174,9 +174,9 @@ Some reflective questions that I recommend you consider before the meeting:
 
 2.	**Why is it important to investigate this?**
 
-  1.	Who would care about this result? i.e. why are you doing this research? what is the motivation behind finding an answer to this question?
+    1.	Who would care about this result? i.e. why are you doing this research? what is the motivation behind finding an answer to this question?
 
-  2.	What is the problem that you are actually trying to throw some light on?
+    2.	What is the problem that you are actually trying to throw some light on?
 
 3.	**How have others explored this?**
 

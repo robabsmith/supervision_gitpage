@@ -63,9 +63,13 @@ opts_chunk$set(fig.path = 'figures/',
 ```
 
 
-# Book description
+# Supervision guide
 
 This is a simple GitBook to assist students to write projects in partial fulfilment of the requirements of a degree in economics at Aalborg University.
+
+The content is updated periodically, and can NOT be referred to as an official source. All regulations and study program guides take presidence over any content on this site.
+
+The content is also personalised to the extent that I provide some information about when I will personally be unavailable. Apart from that, it is my hope that at least some of the content will be useful to students of all level.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
