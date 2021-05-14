@@ -1,0 +1,23 @@
+"0","library(plotly)"
+"0",""
+"0","a <- as.numeric(min(DK_yield_curves_rates$Date)) * 24 * 60 * 60 * 1000"
+"0","b <- as.numeric(max(DK_yield_curves_rates$Date)) * 24 * 60 * 60 * 1000"
+"0",""
+"0","fig <- plot_ly(DK_yield_curves_rates %>%"
+"0","    filter, x = ~Date, y = ~Value,"
+"0","  # Hover text:"
+"0","  text = ~paste(""Interest rate: "", Value, '%<br>Fixation:', Interest_Fixation),"
+"0","  mode = ""markers"","
+"0","  color = ~Value, size = ~Value/Value"
+"0",") %>%"
+"0","  layout(xaxis = list(range = c(a, b)))"
+"0",""
+"0","fig"
+"2","No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plot.ly/r/reference/#scatter
+"
+"2","No trace type specified:
+  Based on info supplied, a 'scatter' trace seems appropriate.
+  Read more about this trace type -> https://plot.ly/r/reference/#scatter
+"

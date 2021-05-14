@@ -1,0 +1,454 @@
+# Data retrieval and plotting
+
+The examples used in this section (excluding the plotly interactive plots at the bottom) can all be found in a complete RMarkdown file called "SingleDocument.Rmd" in [one of my other GitHub repositories, here.](https://github.com/robabsmith/Rmarkdown-project-template)
+
+## Example data sourcing and manipulation
+
+One of the benefits of online database API access is that you can readily source up to date data directly from web locations without having to save files locally in advance.
+
+Most of the major data providers have easy to handle R packages for directly importing data while building your document. The following code chunk requires several packages to be installed:
+
+### Loading the required packages
+
+The first `sapply` function is just a nice abbreviation that can be used to run the `require`command for all of the packages listed in the preceding vector. It can of course be modified to run any function.
+
+The second part is particularly useful when writing PDF documents, as you can set the standard chunk options up front in your document and adjust all image settings at once if you choose to change your document setup.
+
+```{r global-options-demo, echo=TRUE, include=FALSE, eval=FALSE}
+
+sapply(c("reshape2", "knitr", "countrycode", "dplyr", "tidyverse",
+         "rstudioapi", "ggplot2", "data.table", "statsDK", "date",
+         "kableExtra","readxl", "OECD", "scales", "randomcoloR",
+         "grid"), require, character.only = TRUE)
+
+options(knitr.kable.NA = '', knitr.table.format = "latex")
+
+#########################################################################
+# Set knitr chunk options
+#########################################################################
+
+# These will be the defaults for all code chunks that you have in the 
+# document. You can change these for each code chunk individually, 
+# by simply adding the command with the alternative setting to the code
+# chunk rules. i.e. the ```{r chunk-name, echo = FALSE, ... etc.} part.
+
+opts_chunk$set(fig.path = 'figures/',
+               echo = FALSE, 
+               message = FALSE, 
+               warning = FALSE, 
+               fig.align = "center", 
+               fig.width = 5,
+               fig.pos = 'H',
+               as.is = TRUE,
+               include = TRUE,
+               cache = TRUE)
+
+
+
+
+```
+
+These packages are mostly used in setting up additional plot options for ggplot 2 for aesthetic purposes, like controlling the colour palette, the location and size of the legend etc. All of that plotting code is included just before the plots below.
+
+### Collecting the data from the Danmarks Statistik API
+
+```{r dst-interestrates, as.is = TRUE, echo = TRUE, fig.cap = "Danish interest rates data sourcing", fig.width = 5, fig.asp = 0.8}
+#########################################################################
+# Danmarks statistik example
+#########################################################################
+
+# This uses a package called statsDK, which needs to be built from Mikkel Krogsholm's the GitHub repo.
+# 
+#    install.packages("devtools")
+#    library(devtools)
+#    devtools::install_github("mikkelkrogsholm/statsDK")
+
+# Fetching interest rate data, and filter for mortgage products
+#########################################################################
+dk_mortgage_interest_raw_data <- data.table(sdk_retrieve_data(table_id = "DNRNURI", 
+                                                              DATA = paste0(c("AL51EFFR", "AL51BIDS"),collapse = ","),
+                                                              INDSEK = paste0(c("1400"),collapse = ","),
+                                                              VALUTA = "z01", 
+                                                              LØBETID1 = "ALLE",
+                                                              RENTFIX = paste0(c("1A", "2A", "3A", "5A", "10A", "S10A"),collapse = ","),
+                                                              LAANSTR = "ALLE",
+                                                              Tid = "*")) %>%
+    select(-c(VALUTA, LØBETID1, LAANSTR, INDSEK)) %>%
+    #mutate(Value = str_replace_all(INDHOLD, pattern = "..", "")) %>%
+    mutate(Value = as.double(INDHOLD, na.rm = TRUE)/100,
+           RENTFIX = str_replace_all(RENTFIX, pattern = " - - ", "")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = " - ", "")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = "- ", "")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = "Over 6 months and up to and including 1 year", "01 year")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = "Over 1 year and up to and including 2 years", "02 year")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = "Over 2 years and up to and including 3 years", "03 year")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = "Over 3 years and up to and including 5 years", "05 year")) %>%
+    mutate(RENTFIX = str_replace_all(RENTFIX, pattern = "Over 5 years and up to and including 10 years", "10 year")) %>%
+    mutate(Interest_Fixation = str_replace_all(RENTFIX, pattern = "Over 10 years", "Fixed")) %>%
+    mutate(Date = str_replace_all(TID, pattern = "M", "")) %>%
+    mutate(Date = paste0(Date, "01")) %>%
+    mutate(Date = as.Date(Date,format='%Y%m%d'))  %>%
+    mutate(Interest_Fixation = factor(Interest_Fixation, order = TRUE, 
+                                      levels = c("01 year",
+                                                 "02 year",
+                                                 "03 year", 
+                                                 "05 year",
+                                                 "10 year",
+                                                 "Fixed"))) %>%
+    select(-INDHOLD, -RENTFIX, -TID) %>%
+    filter(!is.na(Value))
+
+
+DK_yield_curves_rates <- dk_mortgage_interest_raw_data %>%
+    filter(DATA != "Administration rate (per cent) (not indexed)",
+           !is.na(Value)) %>%
+    select(-DATA)
+```
+
+### Adding some extra plotting options
+
+This section includes some additional code that makes writing a document a little more user friendly.
+
+The first part includes some directory specifications, based on the
+location that the user saves this file.
+
+The second part includes a number of ggplot2 theme and colour palette
+modifications that can be modified for personal preference.
+
+ - The line-width for all line plots in the document.
+ - Palettes with shades of red, black, blue for 4 5 and 6 variables.
+ - A mixed colour palette of 10 colours for categorical variables.
+ - Alternative legend placements inside the plotting area.
+   (This saves a lot of space in the final document).
+ - Percentage formats that work with latex and ggplot2.
+ - Simplified command to introduce dashed lines for 5 and 6 variables.
+ - A theme adjustment to reduce font size in all plots.
+
+```{r some_extra_chart_options, echo = TRUE}
+
+#########################################################################
+# Set up some extra features for plots that will be used later
+
+plot_line_width = 0.85
+
+#########################################################################
+# Set colour palettes
+#########################################################################
+
+blackpalette <- c("0, 0, 0",
+                  "125, 125, 125",
+                  "75, 75, 75",
+                  "225, 30, 0")
+bluepalette <- c("0, 50, 130",
+                 "0, 170, 255",
+                 "0, 200, 255",
+                 "0, 55, 255")
+redpalette <- c("255, 45, 0",
+                "255, 200, 0",
+                "255, 155, 0",
+                "255, 100, 0")
+
+blackpalette_five <- c("0, 0, 0",
+                       "185, 190, 200",
+                       "115, 115, 115",
+                       "75, 75, 75",
+                       "225, 30, 0")
+bluepalette_five <- c("0, 50, 130",
+                      "0, 150, 255",
+                      "0, 175, 255",
+                      "0, 200, 255",
+                      "0, 55, 255")
+redpalette_five <- c("255, 45, 0",
+                     "255, 200, 0",
+                     "255, 175, 0",
+                     "255, 145, 0",
+                     "255, 100, 0")
+
+blackpalette_six <- c("0, 50, 130",
+                      "0, 0, 0",
+                      "185, 190, 200",
+                      "115, 115, 115",
+                      "75, 75, 75",
+                      "225, 30, 0")
+bluepalette_six <- c("0, 50, 130",
+                     "0, 100, 255",
+                     "0, 130, 255",
+                     "0, 165, 255",
+                     "0, 200, 255",
+                     "0, 55, 255")
+redpalette_six <- c("255, 45, 0",
+                    "255, 240, 0",
+                    "255, 210, 0",
+                    "255, 180, 0",
+                    "255, 155, 0",
+                    "255, 100, 0")
+
+randompalette <- c("91, 163, 111",
+                   "84, 135, 158",
+                   "76, 99, 143",
+                   "204, 157, 2",
+                   "156, 0, 0",
+                   "110, 99, 194",
+                   "11, 132, 176",
+                   "237, 133, 28",
+                   "23, 87, 11",
+                   "49, 163, 79")
+
+blackpalette <- sapply(strsplit(blackpalette, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+bluepalette <- sapply(strsplit(bluepalette, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+redpalette <- sapply(strsplit(redpalette, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+
+blackpalette_five <- sapply(strsplit(blackpalette_five, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+bluepalette_five <- sapply(strsplit(bluepalette_five, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+redpalette_five <- sapply(strsplit(redpalette_five, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+
+blackpalette_six <- sapply(strsplit(blackpalette_six, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+bluepalette_six <- sapply(strsplit(bluepalette_six, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+redpalette_six <- sapply(strsplit(redpalette_six, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+
+randompalette <- sapply(strsplit(randompalette, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue=255))
+
+
+#########################################################################
+# Define random colours for plots and theme settings
+#########################################################################
+
+random_srv_palette <- c("91, 163, 111",
+                        "84, 135, 158",
+                        "156, 0, 0",
+                        "204, 157, 2",
+                        "110, 99, 194",
+                        "11, 132, 176",
+                        "76, 99, 143",
+                        "237, 133, 28",
+                        "23, 87, 11",
+                        "11, 132, 176",
+                        "49, 163, 79")
+random_srv_palette <- sapply(strsplit(random_srv_palette, ", "), function(x)
+    rgb(x[1], x[2], x[3], maxColorValue = 255))
+
+#########################################################################
+# Set plot options
+#########################################################################
+# Create alternative legend placements inside the plots
+
+legend_bottom_right_inside <- theme(legend.spacing = unit(0.02, "cm"),
+                                    legend.background = element_rect(colour = "white", size = 0.1),
+                                    legend.key.size = unit(0.5, 'lines'),
+                                    legend.justification=c(1,0), 
+                                    legend.position=c(1,0))
+
+legend_top_right_inside <- theme(legend.spacing = unit(0.02, "cm"),
+                                 legend.background = element_rect(colour = "white", size = 0.1),
+                                 legend.key.size = unit(0.5, 'lines'),
+                                 legend.justification=c(1,1), 
+                                 legend.position=c(1,1))
+
+legend_top_left_inside <- theme(legend.spacing = unit(0.02, "cm"),
+                                legend.background = element_rect(colour = "white", size = 0.1),
+                                legend.key.size = unit(0.5, 'lines'),
+                                legend.justification=c(0,1), 
+                                legend.position=c(0,1))
+
+legend_bottom_left_inside <- theme(legend.spacing = unit(0.02, "cm"),
+                                   legend.background = element_rect(colour = "white", size = 0.1),
+                                   legend.key.size = unit(0.5, 'lines'),
+                                   legend.justification=c(0,0), 
+                                   legend.position=c(0,0))
+
+#########################################################################
+# Create percentage number format settings object for plots
+#########################################################################
+
+# This setting is specifically important for LaTeX generated PDF documents, as the escape backslashes in the plot text are sometimes not included and the percentage symbol generated \% sometimes can cause errors. This piece of code can be really helpful in eliminating those errors and getting nice percentage symbols on your Y-Axis.
+
+pct_scale_settings <- scales::percent_format(accuracy = NULL,
+                                             scale = 100, 
+                                             prefix = "", 
+                                             suffix = "\\%",
+                                             big.mark = " ", 
+                                             decimal.mark = ".", 
+                                             trim = TRUE)
+
+
+#########################################################################
+# Define dash types for plots
+#########################################################################
+#  0 = blank, 1 = solid, 2 = dashed, 3 = dotted, 4 = dotdash, 5 = longdash, 6 = twodash
+
+plt_line_types_5 <- c("solid", "dashed", "dashed", "2222", "2222")
+plt_line_types_6 <- c("solid", "dotdash", "dashed", "dashed", "2222", "2222")
+
+#########################################################################
+# Define additional plotting theme settings for server data
+#########################################################################
+
+theme_extra <- theme_minimal() +
+    theme(text = element_text(size=8))+
+    theme(axis.text.x = element_text(angle=90, vjust=0.5))
+```
+
+### Plotting the data
+
+Creating a plot for the data depends quite critically on the structure of the data that you provide to the function. ggplot2 is most effective when you keep your data in "long-format", which basically means that all descriptive and categorising variables have their own columns and the "values" that each observation take are located in a single long column. This is structure is terrible for human comprehension but much easier to process programatically.
+
+The plot that follows is a line plot of Danish interest rates. Note the places where you need to record the "fig.caption" and "caption" labels. `fig.cap = "Danish interest rates"` is included in the code chunk, whereas, 
+`caption = "Source: Statistics Denmark (Danmarks Statistik), own calculations"` is included in the `labs`options for the plot.
+
+```{r dst-interestrates-plot, as.is = TRUE, echo = TRUE, fig.cap = "Danish interest rates", fig.width = 5, fig.asp = 0.8}
+# Plot the data with GGPlot
+#########################################################################
+DK_rate_curves <- ggplot() +
+    geom_line(data = DK_yield_curves_rates,
+              mapping = aes(x = Date,
+                            y = Value,
+                            group = Interest_Fixation,
+                            colour = Interest_Fixation),
+              lwd = 0.5) +
+    labs(x = "Interest fixation term", y = "Rate of interest",
+         caption = "Source: Statistics Denmark (Danmarks Statistik), own calculations") +
+    scale_colour_manual(values = randompalette) +
+    #scale_colour_gradient(low = "#ffffff", high = "#050f80") +
+    #facet_wrap(~Growth) +
+    scale_y_continuous(labels = pct_scale_settings) +
+    theme_extra +
+    theme(legend.direction = "vertical",
+          legend.box = "horizontal") +
+    legend_top_right_inside +
+    guides(col = guide_legend(nrow = 3, 
+                              byrow = FALSE,
+                              title = "Interest fixation"))
+DK_rate_curves
+```
+
+### Density plots using ggplot2
+
+ggplot2 offers a wide range of automatic image processing options. Including density plots.
+
+```{r, as.is = TRUE, echo = TRUE}
+density_plot_interest_rates <- ggplot() + 
+        geom_density(data = DK_yield_curves_rates,
+                     mapping = aes(x = Value,
+                            group = Interest_Fixation,
+                            colour = Interest_Fixation)) +
+    theme_extra +
+    legend_top_right_inside +
+    guides(col = guide_legend(nrow = 3, 
+                              byrow = FALSE,
+                              title = "Interest fixation"))
+density_plot_interest_rates
+```
+
+And the ability to automatically create a tiled "faceted" plot of underlying groupings.
+
+```{r, as.is = TRUE, echo = TRUE}
+density_plot_interest_rates <- ggplot() + 
+        geom_density(data = DK_yield_curves_rates,
+                     mapping = aes(x = Value,
+                            group = Interest_Fixation,
+                            colour = Interest_Fixation)) +
+    facet_wrap(~Interest_Fixation) +
+    theme_extra +
+    legend_top_right_inside +
+    guides(col = guide_legend(nrow = 3, 
+                              byrow = FALSE,
+                              title = "Interest fixation"))
+density_plot_interest_rates
+```
+
+With minor modifications to the `aes` (aesthetics) properties, you can automatically change all plots to be filled in for these density plots. The Fill aesthetic is not available for all `geom`'s, so you will need to investigate the options for the ones that you are interested in.
+
+You can see that I have also modified the number of rows in the legend to 6, to keep the legend narrower - since it overlaps the data in the top right corner. Additional legend options [can be seen here](https://ggplot2.tidyverse.org/reference/guide_legend.html). The identical legend settings and titles for `col` and `fill` prevent duplicate legends from being created. you can test this out by modifying one of the title texts.
+
+The two options `theme_extra`, and `legend_top_right_inside`, are created above in the additional charting options section, and illustrate one way to keep your plotting code a little cleaner.
+
+```{r, as.is = TRUE, echo = TRUE}
+density_plot_interest_rates <- ggplot() + 
+        geom_density(data = DK_yield_curves_rates,
+                     mapping = aes(x = Value,
+                            group = Interest_Fixation,
+                            colour = Interest_Fixation,
+                            fill = Interest_Fixation)) +
+    facet_wrap(~Interest_Fixation) +
+    theme_extra +
+    legend_top_right_inside +
+    guides(col = guide_legend(nrow = 6, 
+                              byrow = FALSE,
+                              title = "Interest fixation"),
+           fill = guide_legend(nrow = 6, 
+                              byrow = FALSE,
+                              title = "Interest fixation"))
+density_plot_interest_rates
+```
+\newpage
+
+## Example table
+
+The `kableExtra` package provides some exceptionally simple quickformatting options for both html and PDF table generation. ([Link to explainer page here](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#Overview))
+
+The above sourced interest rate data can be quickly laid out in a table as follows:
+
+```{r, echo = TRUE}
+pre_created_table <- DK_yield_curves_rates %>%
+          arrange(Interest_Fixation) %>%
+          spread(key = Interest_Fixation, value = Value)
+
+pre_created_table %>%
+  kbl(caption = "Table of interest rates over time") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+## Interactive html plots with Plotly
+
+A scatter plot with labels on all points can be easily created (some axis limits for the data were necessary below). I also wanted uniform dot sizes and so simply used `Value / Value` which returns `1` for all dot sizes.
+
+```{r, echo = TRUE, fig.width = 8, fig.asp = 0.8}
+library(plotly)
+
+a <- as.numeric(min(DK_yield_curves_rates$Date)) * 24 * 60 * 60 * 1000
+b <- as.numeric(max(DK_yield_curves_rates$Date)) * 24 * 60 * 60 * 1000
+
+fig <- plot_ly(DK_yield_curves_rates %>%
+    filter, x = ~Date, y = ~Value,
+  # Hover text:
+  text = ~paste("Interest rate: ", Value, '%<br>Fixation:', Interest_Fixation),
+  mode = "markers",
+  color = ~Value, size = ~Value/Value
+) %>%
+  layout(xaxis = list(range = c(a, b)))
+
+fig
+```
+
+Modifying this plot to return lines, we just need to arrange the data in the correct order to ensure that the lines traced follow the correct pattern.
+
+
+```{r, echo = TRUE, fig.width = 8, fig.asp = 0.8}
+library(plotly)
+
+a <- as.numeric(min(DK_yield_curves_rates$Date)) * 24 * 60 * 60 * 1000
+b <- as.numeric(max(DK_yield_curves_rates$Date)) * 24 * 60 * 60 * 1000
+
+fig <- plot_ly(DK_yield_curves_rates %>%
+    arrange(Date), 
+    x = ~Date, 
+    y = ~Value, 
+    color = ~Interest_Fixation,
+  # Hover text:
+  text = ~paste("Interest rate: ", Value, '%<br>Fixation:', Interest_Fixation), 
+  mode = 'lines'
+) %>%
+  layout(xaxis = list(range = c(a, b)))
+
+fig
+```   

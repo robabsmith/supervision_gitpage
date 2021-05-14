@@ -1,3 +1,5 @@
+fig:dst-interestrates-plot
+tab:unnamed-chunk-5
 supervision-guide
 introduction-to-supervision
 guidelines-for-supervision
@@ -67,3 +69,12 @@ proquest
 jstor
 web-of-science
 summary
+data-retrieval-and-plotting
+example-data-sourcing-and-manipulation
+loading-the-required-packages
+collecting-the-data-from-the-danmarks-statistik-api
+adding-some-extra-plotting-options
+plotting-the-data
+density-plots-using-ggplot2
+example-table
+interactive-html-plots-with-plotly

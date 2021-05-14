@@ -1,0 +1,7 @@
+"0","pre_created_table <- DK_yield_curves_rates %>%"
+"0","          arrange(Interest_Fixation) %>%"
+"0","          spread(key = Interest_Fixation, value = Value)"
+"0",""
+"0","pre_created_table %>%"
+"0","  kbl(caption = ""Table of interest rates over time"") %>%"
+"0","  kable_styling(bootstrap_options = c(""striped"", ""hover""))"
