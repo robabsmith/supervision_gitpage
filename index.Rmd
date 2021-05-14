@@ -41,13 +41,21 @@ description: "This resource provides some simple startup-guides to aid students 
 
 ```{r global_options, include=FALSE}
 
-sapply(c("knitr"), require, character.only = TRUE)
+sapply(c("reshape2", "knitr", "countrycode", "dplyr", "tidyverse",
+         "rstudioapi", "ggplot2", "data.table", "statsDK", "date",
+         "kableExtra","readxl", "OECD", "scales", "randomcoloR",
+         "grid"), require, character.only = TRUE)
 
 options(knitr.kable.NA = '', knitr.table.format = "latex")
 
 #########################################################################
 # Set knitr chunk options
 #########################################################################
+
+# These will be the defaults for all code chunks that you have in the 
+# document. You can change these for each code chunk individually, 
+# by simply adding the command with the alternative setting to the code
+# chunk rules. i.e. the ```{r chunk-name, echo = FALSE, ... etc.} part.
 
 opts_chunk$set(fig.path = 'figures/',
                echo = FALSE, 
@@ -59,6 +67,9 @@ opts_chunk$set(fig.path = 'figures/',
                as.is = TRUE,
                include = TRUE,
                cache = TRUE)
+
+
+
 
 ```
 
