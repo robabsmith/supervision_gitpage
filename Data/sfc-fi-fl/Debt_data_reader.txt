@@ -1,0 +1,432 @@
+rm(list = ls())
+
+sapply(c("knitr", "reshape", "plm", "countrycode", "tidyr", "plyr", "dplyr",
+         "tidyverse", "stringr", "rstudioapi", "ggplot2", "corpcor", "perturb",
+         "randomcoloR", "data.table", "openxlsx", "readxl"), require, character.only = TRUE)
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# Set language to English
+# Sys.setlocale("LC_ALL","English")
+Sys.setlocale("LC_MESSAGES", 'en_GB.UTF-8')
+Sys.setenv(LANG = "en_GB.UTF-8")
+
+outdata_path <- "D:/Data/Workdata/707522/707522 Shared folder/Rob/Innovation data prep/outdata"
+
+#1
+Debt_interest_fix_data <- read_excel("Debt_interest_fix_data(safe).xlsx")
+#2
+Interest_interest_fix_data <- read_excel("Interest_interest_fix_data(safe).xlsx")
+#3
+Debt_interest_fix_term_data <- read_excel("Debt_interest_fix_term_data(safe).xlsx")
+#4
+Interest_paid_term_fix_data <- read_excel("Interest_paid_term_fix_data(safe).xlsx")
+#5
+Debt_term_data <- read_excel("Debt_term_data(safe).xlsx")
+#6
+Interest_paid_term_data <- read_excel("Interest_paid_term_data(safe).xlsx")
+
+
+#########################################################################
+# Create datasets to check for exclusions
+#########################################################################
+
+#########################################################################
+# Check that dataset is safe #1
+Debt_interest_fix_data_excluded <- Debt_interest_fix_data %>%
+  filter(Count <= 5)
+
+#########################################################################
+# Check that dataset is safe #2
+Interest_interest_fix_data_excluded <- Interest_interest_fix_data %>%
+  filter(Count <= 5,
+         !is.na(Year))
+
+#########################################################################
+# Check that dataset is safe #3
+Debt_interest_fix_term_data_excluded <- Debt_interest_fix_term_data %>%
+  filter(Count <= 5,
+         !is.na(Year))
+
+#########################################################################
+# Check that dataset is safe #4
+Interest_paid_term_fix_data_excluded <- Interest_paid_term_fix_data %>%
+  filter(Count <= 5,
+         !is.na(Year))
+
+#########################################################################
+# Check that dataset is safe #5
+Debt_term_data_excluded <- Debt_term_data %>%
+  filter(Count <= 5,
+         !is.na(Year))
+
+#########################################################################
+# Check that dataset is safe #6
+Interest_paid_term_data_excluded <- Interest_paid_term_data %>%
+  filter(Count <= 5,
+         !is.na(Year))
+
+#########################################################################
+# Number of unsafe observations in the export datasets
+
+length(Debt_interest_fix_data_excluded[[1]])
+length(Interest_interest_fix_data_excluded[[1]])
+length(Debt_interest_fix_term_data_excluded[[1]])
+length(Interest_paid_term_fix_data_excluded[[1]])
+length(Debt_term_data_excluded[[1]])
+length(Interest_paid_term_data_excluded[[1]])
+
+#########################################################################
+# Number of observations in the safe datasets
+
+length(Debt_interest_fix_data[[1]])
+length(Interest_interest_fix_data[[1]])
+length(Debt_interest_fix_term_data[[1]])
+length(Interest_paid_term_fix_data[[1]])
+length(Debt_term_data[[1]])
+length(Interest_paid_term_data[[1]])
+
+
+#########################################################################
+# combine outstanding debt and interest calculations
+#########################################################################
+
+# For more granular data
+debt_interest_term_fix_data <- Debt_interest_fix_term_data %>%
+  filter(!is.na(Year)) %>%
+  select(-Type, -Page, -Table) %>%
+  inner_join(., Interest_paid_term_fix_data %>%
+              filter(!is.na(Year)) %>%
+              select(-Type, -Page, -Table), 
+            by = c("Year", "Interest_fixation", "Term", "Count")) %>%
+  mutate(pct_interest =  Interest_paid / Cash_balance)
+
+# For aggregate data
+debt_interest_term_totals_data <- Debt_term_data  %>%
+  select(-Type, -Page, -Table,  -Cash_balance_pct) %>%
+  inner_join(., Interest_paid_term_data %>%
+               select(-Type, -Page, -Table, -Interest_paid_pct), 
+             by = c("Year", "Term", "Count")) %>%
+  mutate(pct_interest = Interest_paid / Cash_balance)
+
+
+#########################################################################
+# Define colours for plots and theme settings
+#########################################################################
+
+randompalette <- c("91, 163, 111",
+                   "84, 135, 158",
+                   "11, 132, 176",
+                   "156, 0, 0",
+                   "204, 157, 2",
+                   "110, 99, 194",
+                   "11, 132, 176",
+                   "76, 99, 143",
+                   "237, 133, 28",
+                   "23, 87, 11",
+                   "49, 163, 79")
+randompalette <- sapply(strsplit(randompalette, ", "), function(x)
+  rgb(x[1], x[2], x[3], maxColorValue = 255))
+
+
+pct_scale_settings <- scales::percent_format(accuracy = NULL,
+                                             scale = 100,
+                                             prefix = "",
+                                             suffix = "%",
+                                             big.mark = " ",
+                                             decimal.mark = ".",
+                                             trim = TRUE)
+
+theme_extra <- theme_minimal() +
+  theme(legend.position = "bottom")+
+  theme(text = element_text(size=10))+
+  theme(axis.text.x = element_text(angle=90, vjust=0.5),
+        legend.direction = "horizontal")
+
+
+#########################################################################
+# combine outstanding debt and interest calculations
+#########################################################################
+
+# For more granular data
+debt_interest_term_fix_data <- Debt_interest_fix_term_data %>%
+  filter(!is.na(Year)) %>%
+  select(-Type, -Page, -Table) %>%
+  inner_join(., Interest_paid_term_fix_data %>%
+               filter(!is.na(Year)) %>%
+               select(-Type, -Page, -Table), 
+             by = c("Year", "Interest_fixation", "Term", "Count")) %>%
+  mutate(pct_interest =  Interest_paid / Cash_balance)
+
+# For aggregate data
+debt_interest_term_totals_data <- Debt_term_data  %>%
+  select(-Type, -Page, -Table,  -Cash_balance_pct) %>%
+  inner_join(., Interest_paid_term_data %>%
+               select(-Type, -Page, -Table, -Interest_paid_pct), 
+             by = c("Year", "Term", "Count")) %>%
+  mutate(pct_interest = Interest_paid / Cash_balance)
+
+
+#########################################################################
+# Define colours for plots and theme settings
+#########################################################################
+
+randompalette <- c("91, 163, 111",
+                   "84, 135, 158",
+                   "11, 132, 176",
+                   "156, 0, 0",
+                   "204, 157, 2",
+                   "110, 99, 194",
+                   "11, 132, 176",
+                   "76, 99, 143",
+                   "237, 133, 28",
+                   "23, 87, 11",
+                   "49, 163, 79")
+randompalette <- sapply(strsplit(randompalette, ", "), function(x)
+  rgb(x[1], x[2], x[3], maxColorValue = 255))
+
+
+pct_scale_settings <- scales::percent_format(accuracy = NULL,
+                                             scale = 100,
+                                             prefix = "",
+                                             suffix = "%",
+                                             big.mark = " ",
+                                             decimal.mark = ".",
+                                             trim = TRUE)
+
+theme_extra <- theme_minimal() +
+  theme(legend.position = "bottom")+
+  theme(text = element_text(size=10))+
+  theme(axis.text.x = element_text(angle=90, vjust=0.5),
+        legend.direction = "horizontal")
+
+
+# Combo Chart: Nominal debt: Interst fixation period
+##################################################################
+Nominal_debt_fixation <- ggplot() +
+  geom_bar(data=Debt_interest_fix_data%>%
+             filter(Type == "11",
+                    !is.na(Year)), 
+           mapping=aes(x = as.factor(Year),
+                       y = Cash_balance/1000000,
+                       fill = Interest_fixation,
+                       group = Interest_fixation),
+           position = "stack",
+           stat="identity",
+           alpha = 0.4) +
+  scale_fill_manual(values = randompalette,
+                    name = "Interest Fixation (Years)") +
+  geom_line(data=Debt_interest_fix_data%>%
+              filter(Type == "11",
+                     !is.na(Year))%>%
+              select(Year, Interest_fixation, Count, Cash_balance, Cash_balance_pct), 
+            aes(x =as.factor(Year), 
+                y =Cash_balance/1000000, 
+                colour=Interest_fixation, 
+                group=Interest_fixation),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Interest Fixation (Years)") +
+  # facet_grid(~Interest_fixation, scales = "free")+
+  scale_y_continuous(labels =  scales::comma_format())+
+  labs(x= "Year",
+       y="Outstanding (DKK m)") +
+  ggtitle("Mortgage debt") +
+  theme_extra +
+  guides(fill = guide_legend(nrow = 2))
+Nominal_debt_fixation
+
+
+# Combo Chart: Percentage debt: Interst fixation period
+##################################################################
+Percentage_debt_interest_fixation_plot <- ggplot() +
+  geom_bar(data=Debt_interest_fix_data%>%
+             filter(Type == "11",
+                    !is.na(Year)), 
+           mapping=aes(x = as.factor(Year),
+                       y = Cash_balance_pct/100,
+                       fill = Interest_fixation,
+                       group = Interest_fixation),
+           position = "stack",
+           stat="identity",
+           alpha = 0.4) +
+  scale_fill_manual(values = randompalette,
+                    name = "Interest Fixation (Years)") +
+  geom_line(data=Debt_interest_fix_data%>%
+              filter(Type == "11",
+                     !is.na(Year)), 
+            aes(x =as.factor(Year), 
+                y =Cash_balance_pct/100, 
+                colour=Interest_fixation, 
+                group=Interest_fixation),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Interest Fixation (Years)") +
+  # facet_grid(~Interest_fixation, scales = "free")+
+  scale_y_continuous(labels =  pct_scale_settings)+
+  labs(x= "Year",
+       y="Outstanding") +
+  ggtitle("Mortgage debt") +
+  theme_extra +
+  guides(fill = guide_legend(nrow = 2))
+Percentage_debt_interest_fixation_plot
+
+
+#  Chart: Term remaining * interst fixation * percentage debt
+##################################################################
+Term_sum_Intfix_totals_plot <- ggplot() +
+  geom_bar(data = Debt_interest_fix_term_data %>%
+             filter(Type == "111") %>%
+             group_by(Year), 
+           mapping=aes(x = as.factor(Year),
+                       y = Cash_balance_pct/100,
+                       fill = Interest_fixation,
+                       group = Interest_fixation),
+           position = "stack",
+           stat="identity",
+           alpha = 0.4) +
+  scale_fill_manual(values = randompalette,
+                    name = "Interest Fixation (Years)") +
+  geom_line(data=Debt_interest_fix_term_data%>%
+              filter(Type == "111",
+                     !is.na(Year)), 
+            aes(x =as.factor(Year), 
+                y =Cash_balance_pct/100, 
+                colour=Interest_fixation, 
+                group=Interest_fixation),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Interest Fixation (Years)") +
+  facet_wrap(~Term, scales = "free")+
+  scale_y_continuous(labels =  scales::percent_format())+
+  labs(x= "Year",
+       y= "Outstanding") +
+  ggtitle("Mortgage debt") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  theme(text = element_text(size=10)) +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5)) +
+  guides(fill = guide_legend(nrow = 2, byrow=TRUE))
+Term_sum_Intfix_totals_plot
+
+
+#  Chart: Term remaining * interst fixation * nominal debt
+##################################################################
+Term_sum_Intfix_totals_plot <- ggplot() +
+  geom_bar(data = Debt_interest_fix_term_data %>%
+             filter(Type == "111") %>%
+             group_by(Year), 
+           mapping=aes(x = as.factor(Year),
+                       y = Cash_balance/1000000,
+                       fill = Interest_fixation,
+                       group = Interest_fixation),
+           position = "stack",
+           stat="identity",
+           alpha = 0.4) +
+  scale_fill_manual(values = randompalette,
+                    name = "Interest Fixation (Years)") +
+  geom_line(data=Debt_interest_fix_term_data%>%
+              filter(Type == "111",
+                     !is.na(Year)), 
+            aes(x =as.factor(Year), 
+                y =Cash_balance/1000000, 
+                colour=Interest_fixation, 
+                group=Interest_fixation),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Interest Fixation (Years)") +
+  facet_wrap(~Term)+
+  scale_y_continuous(labels =  scales::comma_format())+
+  labs(x= "Year",
+       y= "Outstanding DKK m") +
+  ggtitle("Mortgage debt: ") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  theme(text = element_text(size=10)) +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5)) +
+  guides(fill = guide_legend(nrow = 2, byrow=TRUE))
+Term_sum_Intfix_totals_plot
+
+#  Chart: Term remaining * interst fixation * nominal debt
+##################################################################
+Interest_paid_term_fix_nom_plot <- ggplot() +
+  geom_bar(data = Interest_paid_term_fix_data %>%
+             filter(Type == "111") %>%
+             group_by(Year), 
+           mapping=aes(x = as.factor(Year),
+                       y = Interest_paid/1000000,
+                       fill = Interest_fixation,
+                       group = Interest_fixation),
+           position = "stack",
+           stat="identity",
+           alpha = 0.4) +
+  scale_fill_manual(values = randompalette,
+                    name = "Interest Fixation (Years)") +
+  geom_line(data=Interest_paid_term_fix_data%>%
+              filter(Type == "111",
+                     !is.na(Year)), 
+            aes(x =as.factor(Year), 
+                y =Interest_paid/1000000, 
+                colour=Interest_fixation, 
+                group=Interest_fixation),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Interest Fixation (Years)") +
+  facet_wrap(~Term)+
+  scale_y_continuous(labels =  scales::comma_format())+
+  labs(x= "Year",
+       y= "Outstanding DKK m") +
+  ggtitle("Mortgage debt: ") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  theme(text = element_text(size=10)) +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5)) +
+  guides(fill = guide_legend(nrow = 2, byrow=TRUE))
+Interest_paid_term_fix_nom_plot
+
+
+#  Chart: Term remaining * interst fixation * percentage debt
+##################################################################
+Interest_rates <- ggplot() +
+  geom_line(data=debt_interest_term_fix_data,
+            aes(x =as.factor(Year), 
+                y =pct_interest/100, 
+                colour=Interest_fixation, 
+                group=Interest_fixation),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Interest Fixation (Years)") +
+  facet_wrap(~Term, scales = "free")+
+  scale_y_continuous(labels =  scales::percent_format())+
+  labs(x= "Year",
+       y= "Outstanding") +
+  ggtitle("Mortgage debt") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  theme(text = element_text(size=10)) +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5)) +
+  guides(fill = guide_legend(nrow = 2, byrow=TRUE))
+Interest_rates
+
+#  Chart: Term remaining * interst fixation * percentage debt
+##################################################################
+Interest_rates <- ggplot() +
+  geom_line(data=debt_interest_term_totals_data,
+            aes(x =as.factor(Year), 
+                y =pct_interest/100, 
+                colour=Term, 
+                group=Term),
+            lwd = 1.0) +
+  scale_colour_manual(values = randompalette,
+                      name = "Term (Years)") +
+  #facet_wrap(~Term, scales = "free")+
+  scale_y_continuous(labels =  scales::percent_format())+
+  labs(x= "Year",
+       y= "Outstanding") +
+  ggtitle("Mortgage debt") +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  theme(text = element_text(size=10)) +
+  theme(axis.text.x = element_text(angle=90, vjust=0.5)) +
+  guides(fill = guide_legend(nrow = 2, byrow=TRUE))
+Interest_rates

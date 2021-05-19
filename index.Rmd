@@ -34,6 +34,7 @@ bookdown::gitbook:
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
+always_allow_html: true
 link-citations: yes
 github-repo: robabsmith/supervision_gitpage
 description: "This resource provides some simple startup-guides to aid students in the development of research projects."
@@ -44,7 +45,7 @@ description: "This resource provides some simple startup-guides to aid students 
 sapply(c("reshape2", "knitr", "countrycode", "dplyr", "tidyverse",
          "rstudioapi", "ggplot2", "data.table", "statsDK", "date",
          "kableExtra","readxl", "OECD", "scales", "randomcoloR",
-         "grid"), require, character.only = TRUE)
+         "grid", "foreign", "rsdmx"), require, character.only = TRUE)
 
 options(knitr.kable.NA = '', knitr.table.format = "latex")
 
@@ -60,15 +61,14 @@ options(knitr.kable.NA = '', knitr.table.format = "latex")
 opts_chunk$set(fig.path = 'figures/',
                echo = FALSE, 
                message = FALSE, 
-               warning = FALSE, 
-               fig.align = "center", 
-               fig.width = 5,
+               warning = FALSE,
+               fig.width = 7,
+               fig.show = 'hold',
                fig.pos = 'H',
                as.is = TRUE,
                include = TRUE,
-               cache = TRUE)
-
-
+               cache = TRUE,
+               eval.after = 'fig.cap')
 
 
 ```

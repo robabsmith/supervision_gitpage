@@ -1,0 +1,17 @@
+﻿Private consumption;$+C$;NA;NA;NA;NA;NA;$-C$;NA;NA;NA;0
+Government consumption;$+G$;NA;NA;NA;$-G$;NA;NA;NA;NA;NA;0
+Investment;$+I$;$-I^{N}$;NA;$-I^{F}$;NA;$-I^{G}$;NA;$-I^{H}$;NA;NA;0
+Exports;$+X$;NA;NA;NA;NA;NA;NA;NA;$-X$;NA;0
+Imports;$-M$;NA;NA;NA;NA;NA;NA;NA;$+M$;NA;0
+\midrule GDP;Y ;NA;NA;NA;NA;NA;NA;NA;NA;NA;0
+\midrule Taxes;$-T^{N}$;NA;$-T^{F}$;NA;$+T^{G}$;NA;$-T^{H}$;NA;$-T^{W}$;NA;0
+Gross operating surplus;$-B2^{N}$;NA;$+B2^{F}$;NA;$+B2^{G}$;NA;$+B2^{H}$;NA;NA;NA;0
+Wages;$-WB^{N}$;NA;NA;NA;NA;NA;$+WB^{H}$;NA;$WB^{W}$;NA;0
+Capital income;$rK^{N}$;NA;$rK^{F}$;NA;$rK^{G}$;NA;$rK^{H}$;NA;$rK^{W}$;NA;0
+Transfers;$STR^{N}$;NA;$STR^{F}$;NA;$STR^{G}$;NA;$STR^{H}$;NA;$STR^{W}$;NA;0
+Pension adjustments;NA;NA;$-CPEN^{F}$;NA;NA;NA;$+CPEN^{F}$;NA;NA;NA;0
+\midrule Savings (per sector);$-S{N}$;$+S{N}$;$-S{F}$;$+S{F}$;$-S{G}$;$+S{G}$;$-S{H}$;$+S{H}$;$-S{W}$;$+S{W}$;0
+\midrule Capital transfers;NA;$KTR^{N}$;NA;$KTR^{F}$;NA;$KTR^{G}$;NA;$KTR^{H}$;NA;$KTR^{W}$;0
+Acquisitions less disposal FA;NA;$NP^{N}$;NA;$NP^{F}$;NA;$NP^{G}$;NA;$NP^{H}$;NA;$NP^{W}$;0
+Net lending;NA;$NL^{N}$;NA;$NL^{F}$;NA;$NL^{G}$;NA;$NL^{H}$;NA;$NL^{W}$;0
+\midrule $\Sigma$ ;0;0;0;0;0;0;0;0;0;0;0

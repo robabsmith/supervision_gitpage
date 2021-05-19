@@ -1,0 +1,12 @@
+﻿Effect on Assets (+) and Liabilities (-);Households;Firms;Banks and Finance;Government;Central Bank;$\Sigma$ 
+Net worth, end of previous period;$NW_{h-1}$;$NW_{f-1}$;$NW_{b-1}$;$NW_{g-1}$;0;$p_{H} * hu_{h}$
+Change in house loans;$-\Delta L_{h}$;NA;$+\Delta L_{h}$;NA;NA;0
+Change in business loans;NA;$-\Delta L_{f}$;$+\Delta L_{h}$;NA;NA;0
+Change in mortgage loans;$-\Delta MO_{h}$;NA;$+\Delta MO$;NA;NA;0
+Change in cash;$+\Delta HPM$;NA;NA;NA;$-\Delta HPM$;0
+Change in deposits;$+\Delta M$;NA;$-\Delta M$;NA;NA;0
+Change in bills;$+\Delta B_{h}$;NA;$+\Delta B_{b}$;$-\Delta B$;$+\Delta B_{cb}$;0
+Change in bank capital;$+\Delta OF$;NA;$-\Delta OF$;NA;NA;0
+Change in houses;$+p_{H}\cdot \Delta hu_{h}$;$+UC_{H}\cdot \Delta hu_{INV}$;NA;NA;NA;$+\Delta H$
+Capital gains in houses;$+\Delta p_{h}\cdot hu_{h-1}$;$+\Delta UC_{h}\cdot hu_{INV-1}$;NA;NA;NA;$+\Delta p_{h}\cdot hu_{h-1}  + \Delta UC_{h}\cdot hu_{INV-1}$
+\midrule Sum (net worth);$NW_{h}$;$NW_{f}$;$NW_{b}$;$NW_{g}$;0;$p_{H} * hu_{h}$

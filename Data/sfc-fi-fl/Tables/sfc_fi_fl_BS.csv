@@ -1,0 +1,8 @@
+﻿Interest bearing (IBA / IBL),NA,NA,$-IBL^{F}$,NA,$+IBA^{H}$,NA,NA,0
+Interest bearing Fixed,NA,$+IBA(FI)^{F}$,NA,NA,NA,$-IBL(FI)^{H}$,NA,0
+Interest bearing Flexible,NA,$+IBA(FL)^{F}$,NA,NA,NA,$-IBL(FL)^{H}$,NA,0
+Net interest bearing (NIB),$NIB^{N}$,$NIB^{F}$,NA,$NIB^{G}$,NA,NA,$NIB^{W}$,0
+Net equities (NEQ),$NEQ^{N}$,$NEQ^{F}$,NA,NA,$NEQ^{H}$,NA,$NEQ^{W}$,0
+Pensions (PEN),NA,NA,$-PEN^{F}$,NA,$+PEN^{H}$,NA,$NPEN^{W}$,0
+\midrule Financial net wealth (FNW),$FNW^{N}$,$FNW^{F}$,NA,$FNW^{G}$,$FNW^{H}$,NA,$FNW^{W}$,0
+Fixed assets (K),$K^{N}$,$K^{F}$,NA,$K^{G}$,$K^{H}$,NA,NA,$K^{T}$

@@ -1,0 +1,17 @@
+﻿Effect on Assets (+) and Liabilities (-);Households;Firms;Banks and Finance;Pension Funds;Government;Central Bank;$\Sigma$ 
+Net worth, end of previous period;$NW_{h-1}$;$NW_{f-1}$;$NW_{b-1}$;$NW_{pf-1}$;$NW_{g-1}$;$NW_{cb-1}$;$p_{H} \cdot hu_{h}$
+Change in advances;NA;NA;$-\Delta A$;NA;NA;$+\Delta A$;0
+Change in house loans;$-\Delta L_{h}$;NA;$+\Delta L_{h}$;NA;NA;NA;0
+Change in business loans;NA;$-\Delta L_{f}$;$+\Delta L_{f}$;NA;NA;NA;0
+Change in mortgages (Flexible rate);$-\Delta MO_{fl}$;NA;$+\Delta MO_{fl}$;NA;NA;NA;0
+Change in mortgages (Fixed rate);$-\Delta MO_{fx}$;NA;$+\Delta MO_{fx}$;NA;NA;NA;0
+Change in MBS (Flexible rate);NA;NA;$-\Delta MBS_{fl}$;$+\Delta MBS_{fl}$;NA;NA;0
+Change in MBS (Fixed rate);NA;NA;$-\Delta MBS_{fx}$;$+\Delta MBS_{fx}$;NA;NA;0
+Change in cash;NA;NA;NA;$+\Delta HPM_{pf}$;NA;$-\Delta HPM$;0
+Change in deposits;$+\Delta M$;NA;$-\Delta M$;NA;NA;NA;0
+Change in bills;$+\Delta B_{h}$;NA;$+\Delta B_{b}$;NA;$-\Delta B$;$+\Delta B_{cb}$;0
+Change in bank capital;NA;NA;$-\Delta OF$;$+\Delta OF$;NA;NA;0
+Change in pensions;$+\Delta PEN$;NA;NA;$-\Delta PEN$;NA;NA;0
+Change in houses;$+p_{H}\cdot \Delta hu_{h}$;$+UC_{H}\cdot \Delta hu_{INV}$;NA;NA;NA;NA;$+\Delta H$
+Capital gains in houses;$+\Delta p_{h}\cdot hu_{h-1}$;$+\Delta UC_{h}\cdot hu_{INV-1}$;NA;NA;NA;NA;$+\Delta p_{h}\cdot hu_{h-1}  + \Delta UC_{h}\cdot hu_{INV-1}$
+\midrule Sum (net worth);$NW_{h}$;$NW_{f}$;$NW_{b}$;$NW_{pf}$;$NW_{g}$;$NW_{cb}$;$p_{H} \cdot hu_{h}$

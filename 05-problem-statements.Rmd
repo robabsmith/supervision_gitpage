@@ -71,12 +71,12 @@ There are a heap of tools available:
 
 #### Tools that can help with brainstorming and project management
 
-1. Trello board
-2. Padlet
-3. Notion
-4. Prezi
-5. Wonder
-6. Mural
+1. [Trello](https://trello.com/en)
+2. [Padlet](https://padlet.com)
+3. [Notion](https://www.notion.so)
+4. [Prezi](https://prezi.com)
+5. [Wonder](https://www.wonder.me)
+6. [Mural](https://www.mural.co)
 
 #### Tools that can help with content creation for questionnaires / interactive quizzes
 
@@ -91,11 +91,12 @@ There are a heap of tools available:
 
 1. OSX apple screen sharing (with control option)
 2. OSX Facetime
-3. MS Teams
-4. Facebook messenger
-6. Disqord
+3. [Slack](https://slack.com/intl/en-dk/)
+4. MS Teams
+5. Facebook messenger (A Facebook company)
+6. [Disqord](https://discord.com/brand-new)
 7. Skype / Skype for business
-8. Whatsapp
+8. WhatsApp (A Facebook company)
 
 #### Additional learning tools for self-learning or training
 

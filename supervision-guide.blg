@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: supervision-guide.aux
+The style file: apalike.bst
+Database file #1: book.bib
+Database file #2: packages.bib
+Warning--empty note in Andersen2019
+Warning--can't use both volume and number fields in Bernanke1999a
+Warning--empty publisher in Bernanke1999a
+Warning--there's a number but no volume in Buttiglione2014
+Warning--empty journal in kohlscheen2018residential
+Warning--there's a number but no volume in laustsen2009
+Warning--there's a number but no volume in lunde2014introduction
+Warning--empty note in sheehy2014
+Warning--empty publisher in ESA2010
+Warning--there's a number but no volume in zezza2019design
+You've used 51 entries,
+            1935 wiz_defined-function locations,
+            772 strings with 12099 characters,
+and the built_in function-call counts, 17808 in all, are:
+= -- 1758
+> -- 663
+< -- 44
++ -- 209
+- -- 209
+* -- 1467
+:= -- 3222
+add.period$ -- 151
+call.type$ -- 51
+change.case$ -- 364
+chr.to.int$ -- 51
+cite$ -- 61
+duplicate$ -- 699
+empty$ -- 1255
+format.name$ -- 292
+if$ -- 3427
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 43
+newline$ -- 253
+num.names$ -- 159
+pop$ -- 277
+preamble$ -- 1
+purify$ -- 356
+quote$ -- 0
+skip$ -- 532
+stack$ -- 0
+substring$ -- 1083
+swap$ -- 57
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 298
+warning$ -- 10
+while$ -- 148
+width$ -- 0
+write$ -- 661
+(There were 10 warnings)

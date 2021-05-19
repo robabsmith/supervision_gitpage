@@ -1,0 +1,13 @@
+﻿Flows;Households;Current;Capital;Banks;Government;$\Sigma$ 
+Consumption;$-C$;$+C$;NA;NA;NA;0
+Investment;NA;$+I$;$-I$;NA;NA;0
+Govt Expenditures;NA;$+G$;NA;NA;$-G$;0
+Wages;$+WB$;$-WB$;NA;NA;NA;0
+Profits;$+FD_{f}$;$-F_{f}$;$+FU_{f}$;NA;NA;0
+Taxes and transfers;$-T$;NA;NA;NA;$+T$;0
+Change in loans;NA;NA;$+\Delta L_{f}$;$-\Delta L$;NA;0
+Change in cash;$-\Delta H_{h}$;NA;NA;$-\Delta H_{b}$;$+\Delta H$;0
+Change in deposits;$-\Delta M$;NA;NA;$+\Delta M$;NA;0
+Change in bills;$-\Delta B_{h}$;NA;NA;$-\Delta B_{b}$;$+\Delta B$;0
+Change in equities;$-\Delta e\cdot p_{e}$;NA;$+\Delta e\cdot p_{e}$;NA;NA;0
+\midrule $\Sigma$ ;0;0;0;0;0;NA

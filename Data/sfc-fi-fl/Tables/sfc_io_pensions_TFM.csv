@@ -1,0 +1,39 @@
+﻿Flows,Current (h),Capital (h),Current (f),Capital (f),Current (b),Capital (b),Current (pen),Capital (pen),Government,Central Bank,$\Sigma$ 
+Wages,$+WB$,NA,$-WB^{f}$,NA,NA,NA,NA,NA,$-WB^{g}$,NA,0
+Interest deductions (r),"$+r^{ded, L, h}\cdot L^{h} +r^{ded, MO, h}\cdot MO^{h}$",NA,NA,NA,NA,NA,NA,NA,"$-r^{ded, L, h}\cdot L^{h} - r^{ded, MO, h}\cdot MO^{h}$",NA,0
+Pensions Distributions,$+PEN^{dis}$,NA,NA,NA,NA,NA,$-PEN^{dis}$,NA,NA,NA,0
+Pensions Contributions*,"$-PEN^{con,h}$",NA,NA,NA,NA,NA,$+PEN^{con}$,NA,NA,NA,0
+Taxes and transfers,"$-T^{h,y}$",NA,NA,NA,NA,NA,NA,NA,$+T$,NA,0
+Consumption,$-C^{h}$,NA,$+C$,NA,NA,NA,NA,NA,NA,NA,0
+Private profits,$+F^{f}$,NA,$-F^{f}$*,NA,$-F^{b}$*,"$+F^{ret, b}$*","$+F^{dist, b}$",NA,NA,NA,0
+Public profits,NA,NA,NA,NA,NA,NA,NA,NA,$+F^{cb}$,$-F^{cb}$*,0
+Goverment Expenditure,NA,NA,$+G$,NA,NA,NA,NA,NA,$-G$,NA,0
+Houses sold,NA,$-P^{h}\cdot \Delta hu^{h}$,$+P^{h}\cdot \Delta hu^{s}$,NA,NA,NA,NA,NA,NA,NA,0
+Housing inventory,NA,NA,$+UC^{h}\cdot \Delta hu^{INV}$,$-UC^{h}\cdot \Delta hu^{INV}$*,NA,NA,NA,NA,NA,NA,0
+Repayments: Mortgages (Flexible rate),"$-rrep^{fl,MO-1}\cdot MO^{fl-1}$",NA,NA,NA,"$+rrep^{fl,MO-1}\cdot MO^{fl-1}$",NA,NA,NA,NA,NA,0
+Repayments: Mortgages (Fixed rate),"$-rrep^{fx,MO-1}\cdot MO^{fx-1}$",NA,NA,NA,"$+rrep^{fx,MO-1}\cdot MO^{fx-1}$",NA,NA,NA,NA,NA,0
+Repayments: Bank loans,"$-rrep^{L,h-1}\cdot L^{h-1}$",NA,NA,NA,"$+rrep^{L,h-1}\cdot L^{h-1}$",NA,NA,NA,NA,NA,0
+Deposits (r),$+r^{M-1}\cdot M^{h-1}$,NA,NA,NA,$-r^{M-1}\cdot M^{h-1}$,NA,NA,NA,NA,NA,0
+Pensions (r),$+r^{PEN-1}\cdot PEN^{h-1}$,NA,NA,NA,NA,NA,$-r^{PEN-1}\cdot PEN^{h-1}$,NA,NA,NA,z
+Bank loans - Housing* (r),"$-r^{L, h-1}\cdot L^{h-1}$",NA,NA,NA,"$+r^{L-1, h}\cdot L^{h-1}$",NA,NA,NA,NA,NA,0
+Bank loans - Firms* (r),NA,NA,"$-r^{L, f-1}\cdot L^{f-1}$",NA,"$+r^{L-1, h}\cdot L^{h-1}$",NA,NA,NA,NA,NA,0
+Mortgages (Flexible rate)* (r),"$-r^{fl,MO-1}\cdot MO^{fl-1}$",NA,NA,NA,"$+r^{fl,MO-1}\cdot MO^{fl-1}$",NA,NA,NA,NA,NA,0
+Mortgages (Fixed rate)* (r),"$-r^{fx,MO-1}\cdot MO^{fx-1}$",NA,NA,NA,"$+r^{fx,MO-1}\cdot MO^{fx-1}$",NA,NA,NA,NA,NA,0
+MBS (Flexible rate)* (r),NA,NA,NA,NA,"$-r^{fl,MBS-1}\cdot MBS^{fl-1}$",NA,"$+r^{fl,MBS-1}\cdot MBS^{fl-1}$",NA,NA,NA,0
+MBS (Fixed rate)* (r),NA,NA,NA,NA,"$-r^{fx,MBS-1}\cdot MBS^{fx-1}$",NA,"$+r^{fx,MBS-1}\cdot MBS^{fx-1}$",NA,NA,NA,0
+Bills (r),NA,NA,NA,NA,$+r^{B-1}\cdot B^{b-1}$,NA,$+r^{B-1}\cdot B^{h-1}$,NA,$-r^{B-1}\cdot B^{-1}$,$+r^{B-1}\cdot B^{cb-1}$,0
+\midrule Savings (per sector),$-SAV^{h}$*,$+SAV^{h}$*,0,0,0,0,$-RE^{pf}$*,$+RE^{pf}$*,$-Deficit$*,NA,0
+Change in advances,NA,NA,NA,NA,NA,$+\Delta A^{cb}$*,NA,NA,NA,$-\Delta A^{cb}$,0
+Change in cash,NA,NA,NA,NA,NA,$-\Delta HPM^{pf}$,NA,$-\Delta HPM^{pf}$*,NA,$+\Delta HPM$*,0
+Change in deposits,NA,$-\Delta M^{h}$*,NA,NA,NA,$+\Delta M^{h}$,NA,NA,NA,NA,0
+Change in housing loans,NA,$+\Delta L^{h}$,NA,NA,NA,$-\Delta L^{h}$,NA,NA,NA,NA,0
+Change in mortgages (Flexible rate),NA,$+\Delta MO^{fl}$,NA,NA,NA,$-\Delta MO^{fl}$,NA,NA,NA,NA,0
+Change in mortgages (Fixed rate),NA,$+\Delta MO^{fx}$,NA,NA,NA,$-\Delta MO^{fx}$,NA,NA,NA,NA,0
+Change in business loans,NA,NA,NA,$+\Delta L^{f}$*,NA,$-\Delta L^{f}$,NA,NA,NA,NA,0
+Change in bills,NA,NA,NA,NA,NA,$-\Delta B^{b}$,NA,$-\Delta B^{h}$,$+\Delta B$*,$-\Delta B^{cb}$,0
+Change in MBS (Flexible Rate),NA,NA,NA,NA,NA,$+\Delta MBS^{fl}$,NA,$-\Delta MBS^{fl}$,NA,NA,0
+Change in MBS (Fixed Rate),NA,NA,NA,NA,NA,$+\Delta MBS^{fx}$,NA,$-\Delta MBS^{fx}$,NA,NA,0
+Change in pensions*,NA,$-\Delta PEN^{h}$,NA,NA,NA,NA,NA,$+\Delta PEN^{h}$,NA,NA,0
+Change in bank equity,NA,NA,NA,NA,NA,$+\Delta OF$,NA,$-\Delta OF$,NA,NA,0
+Change in NPMO,NA,NA,NA,NA,NA,$+\Delta OF$,NA,$-\Delta OF$,NA,NA,0
+\midrule $\Sigma$ ,,0,0,0,0,0,0,0,0,0,0

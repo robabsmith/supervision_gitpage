@@ -1,0 +1,10 @@
+﻿Stocks;Households;Firms;Bank and Finance;Central bank;Government;$\Sigma$ 
+Cash;$+HPM_{h}$;NA;NA;$-HPM$;NA;0
+Deposits;$+M_{h}$;NA;$-M$;NA;NA;0
+Housing Loans;$-L_{h}$;NA;$+L_{h}$;NA;NA;0
+Mortgages;$-MO_{h}$;NA;$+MO_{h}$;NA;NA;0
+Business Loans;NA;$-L_{f}$;$+L_{f}$;NA;NA;0
+Bills;$+B_{h}$;NA;$+B_{b}$;$+B_{cb}$;$-B$;0
+Bank capital;$+OF$;NA;$-OF$;NA;NA;0
+Houses;$+p_{h}\cdot hu_{h}$;$+UC_{h}\cdot hu_{INV}$;NA;NA;NA;$+H$
+\midrule Sum (net worth);$-V_{h}$;0;0;0;$-V_{g}$;$-H$

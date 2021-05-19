@@ -1,0 +1,25 @@
+﻿Flows;Households;current;capital;Govt;Banks;ROW - Foreign branch ;ROW - Households ;ROW - Firms ;ROW - banks;$\Sigma$ 
+Consumption ;$-C$;$+C$;NA;NA;NA;NA;NA;NA;NA;0
+Investment ;NA;$+I$;$-I$;NA;NA;NA;NA;NA;NA;0
+Gov. exp ;NA;$+G$;NA;$-G$;NA;NA;NA;NA;NA;0
+Exports ;NA;$+X$;NA;NA;NA;NA;NA;$-M_{row}$;NA;0
+Imports ;NA;$-M$;NA;NA;NA;NA;NA;$+X_{row}$;NA;0
+(GDP) ;NA;$[Y]$;NA;NA;NA;NA;NA;NA;NA;0
+Wages ;$+WB$;$-WB$;NA;NA;NA;NA;NA;NA;NA;0
+Tax  ;$-T^{h}$;$-T^{f}$;NA;$+T$;NA;NA;NA;NA;NA;0
+\midrule Interest on deposits in Iceland's domestic banks ;$+r^D_{{ice}}(D^{h,ice,d}_{{ice}})$;NA;NA;NA;$-r^D_{{ice}}(D^{h,ice,d}_{{ice}})$;NA;NA;NA;NA;0
+Interest on deposits in Iceland's foreign banks ;NA;NA;NA;NA;NA;$-r^{D,row}_{ice}(D^{h,ice,d}_{row})$;$+r^{D,row}_{ice}(D^{h,ice,d}_{row})$;NA;NA;0
+Interest on deposits in ROW banks ;NA;NA;NA;NA;NA;NA;$+r^D_{row}(D^{h,row,d}_{row})$;$-r^D_{row}(D^{h,row,d}_{row})$;NA;0
+Interest on FX denominated loans in Iceland ;NA;$-r^{L,row}(L^{f,row,d})$;NA;NA;$+r^{L,row}(L^{row,d})$;NA;NA;NA;NA;0
+Interest on lSK denominated loans in Iceland ;NA;$-r^{L,ice}_{ice}(L^{f,ice,d})$;NA;NA;$+r^{L,ice}_{ice}(L^{ice,d})$;NA;NA;NA;NA;0
+Interest on Icelandic banks bills ;$+r^B_{ice}(B^{ice,d}_{ice})$;NA;NA;NA;$-r^{B}_{ice}(B^{b,s}_{ice})$;NA;$+r^B_{ice}(B^{h,ice,d}_{row})$;NA;$+r^{B}_{ice}(B^{eb,b,d}_{row})$;0
+Interest on ROW bills ;$+r^{B}_{row}(B^{h,row,d}_{ice})$;NA;NA;NA;NA;NA;$+r^{B}_{row}(B^{h,row,d}_{row})$;$-r^{B}_{row}(B^{f,s}_{row})$;NA;0
+\midrule Profits (Firms) ;NA;$-F^f$;$+F^f$;NA;NA;NA;NA;NA;NA;0
+Change in Icelandic banks' bills ;$-\Delta B^{ice,d}_{ice}$;NA;NA;NA;$+\Delta B^{b,s}_{ice}$;NA;$-\Delta B^{h,ice,d}_{row}$;NA;$-\Delta B^{b,s}_{ice}$;0
+Change in ROW bills ;$-\Delta B^{h,row,d}_{ice}$;NA;NA;NA;NA;NA;$-\Delta B^{h,row,d}_{row}$;$+\Delta B^{f,s}_{row}$;NA;0
+Change in Iceland's FX denominated loans ;NA;NA;$+\Delta L^{f,row,d}$;NA;$-\Delta L^{row,s}$;NA;NA;NA;NA;0
+Change in Iceland's ISK denominated loans ;NA;NA;$+\Delta L^{f,ice,d}$;NA;$-\Delta L^{ice,s}$;NA;NA;NA;NA;0
+Change in deposits in Icelandic domestic banks  ;$-\Delta D^{h,ice,d}_{ice}$;NA;NA;NA;$+\Delta D^{h,ice,d}_{ice}$;NA;NA;NA;NA;0
+Change in deposits in Icelandic foreign banks ;NA;NA;NA;NA;NA;$+\Delta D^{h,ice,d}_{row}$;$-\Delta D^{h,ice,d}_{row}$;NA;NA;0
+Change in deposits in Foreign banks ;NA;NA;NA;NA;NA;NA;$-\Delta D^{h,row,d}_{row}$;NA;$+\Delta D^{h,row,d}_{row}$;0
+\midrule $\Sigma$ ;0;0;0;0;0;0;0;0;0;0

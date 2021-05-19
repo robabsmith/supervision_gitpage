@@ -1,0 +1,15 @@
+﻿Stocks,Households,Firms,Bank and Finance,Pension Funds,Government,Central bank,$\Sigma$ 
+Bank capital (Advances),NA,NA,$-A$,NA,NA,$+A$,0
+Cash,$+HPM^{h}$,NA,$+HPM^{b}$,$+HPM^{pf}$,NA,$-HPM$,0
+Deposits,$+M^{h}$,NA,$-M$,NA,NA,NA,0
+Mortgages (Flexible rate),$-MO^{fl}$,NA,$+MO^{fl}$,NA,NA,NA,0
+Mortgages (Fixed rate),$-MO^{fx}$,NA,$+MO^{fx}$,NA,NA,NA,0
+MBS (Flexible rate),NA,NA,$-MBS^{fl}$,$+MBS^{fl}$,NA,NA,0
+MBS (Fixed rate),NA,NA,$-MBS^{fx}$,$+MBS^{fx}$,NA,NA,0
+Bank Loans: Housing,$-L^{h}$,NA,$+L^{h}$,NA,NA,NA,0
+Bank Loans: Firms,NA,$-L^{f}$,$+L^{f}$,NA,NA,NA,0
+Bills,NA,NA,$+B^{b}$,$+B^{pf}$,$-B$,$+B^{cb}$,0
+Bank capital,NA,NA,$-OF$,$+OF$,NA,NA,0
+Pensions,$+PEN$,NA,NA,$-PEN$,NA,NA,0
+Houses,$+p^{h}\cdot hu^{h} -NPMO$ ,$+UC^{h}\cdot hu^{INV}$,$+NPMO$,NA,NA,NA,$+HO$
+\midrule Sum (net worth),$-V^{h}$,0,0,0,$-V^{g}$,0,$-HO$

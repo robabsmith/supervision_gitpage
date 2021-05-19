@@ -23,9 +23,7 @@
 
 9. Jorda-Schularick-Taylor Macrohistory Database
     - http://www.macrohistory.net/data/ 
-    
-10. Kim Abildgren's Danish historical statistics datasets
-    - https://sites.google.com/view/kim-abildgren/historical-statistics
+
 
 
 ## Income and income inequality databases

@@ -1,0 +1,11 @@
+﻿Effect on Assets (+) and Liabilities (-);Households;Firms;Banks;Government;Central Bank;$\Sigma$ 
+Net worth, end of previous period;$NW_{h-1}$;$NW_{f-1}$;$NW_{b-1}$;$NW_{g-1}$;0;$K$
+Change in loans;$-\Delta L_{h}$;$-\Delta L_{f}$;$+\Delta L$;NA;NA;0
+Change in cash;$+\Delta H_{h}$;NA;$+\Delta H_{b}$;NA;$-\Delta H$;0
+Change in deposits;$+\Delta M$;NA;$-\Delta M$;NA;NA;0
+Change in bills;$+\Delta B_{h}$;NA;$+\Delta B_{b}$;$-\Delta B$;$+\Delta B_{cb}$;0
+Change in equities;$+\Delta e_{f}\cdot p_{ef} +\Delta e_{b}\cdot p_{eb}$;$-\Delta e_{f}\cdot p_{ef}$;$-\Delta e_{b}\cdot p_{eb}$;NA;NA;0
+Change in tangible capital;$+\Delta k_{h}\cdot p_{k}$;$+\Delta k_{f}\cdot p_{k}$;NA;NA;NA;$+\Delta k\cdot p_{k}$
+Capital gains in equities;$+\Delta p_{ef}\cdot e_{f-1}  +\Delta p_{eb}\cdot e_{b-1} $;$-\Delta p_{ef}\cdot e_{f-1}$;$-\Delta p_{eb}\cdot e_{b-1} $;NA;NA;0
+Capital gains in tangible capital;$+\Delta p_{k}\cdot k_{h-1}$;$+\Delta p_{k}\cdot k_{f-1}$;NA;NA;NA;$+\Delta p_{k}\cdot (k_{h-1} + k_{f-1})$
+\midrule Sum (net worth);$NW_{h}$;$NW_{f}$;$NW_{b}$;$NW_{g}$;;$K$

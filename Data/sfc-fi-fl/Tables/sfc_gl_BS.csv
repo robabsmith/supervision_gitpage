@@ -1,0 +1,8 @@
+﻿Stocks;Households;Firms;Banks;Government;$\Sigma$ 
+Loans;NA;$-L$;$+L$;NA;0
+Cash;$+H_{h}$;NA;$+H_{b}$;$-H$;0
+Deposits;$-\Delta M$;NA;$-M$;NA;0
+Bills;$+B_{h}$;NA;NA;$-B_{h}$;0
+Equities;$+e\cdot p_{e}$;$-e_{f}\cdot p_{e}$;$-e_{b}\cdot p_{e}$;NA;0
+Tangible capital;$+K_{h}$;$+K_{f}$;NA;NA;$+K$
+\midrule Sum (net worth);$NW_{h}$;$NW_{f}$;$NW_{b}$;$NW_{g}$;$K$

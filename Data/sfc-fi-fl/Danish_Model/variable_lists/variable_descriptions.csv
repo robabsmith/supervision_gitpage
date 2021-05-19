@@ -1,0 +1,179 @@
+﻿Variable,Description,Type
+ALPHA,Ratio of fixed interest mortgage debt,Ratio
+B2,Gross operating surplus,Flow
+BETA,Equity to assets ratio,Ratio
+BETA_DATA,Parameter,Parameter
+BOP,Balance of payments,Flow
+C,Consumption,Flow
+CAB,Current account balance,Flow
+CGK,Capital gains,Flow
+CGS,Capital gains,Flow
+CHECK_B2,Consistency check: Gross operating surplus,Check
+CHECK_CTR,Consistency check: Capital transactions,Check
+CHECK_EQ,Consistency check: Equity Transactions,Check
+CHECK_ERROR1,Consistency check: Error 1,Check
+CHECK_ERROR2,Consistency check: Error 2,Check
+CHECK_ERROR3,Consistency check: Error 3,Check
+CHECK_IB,Consistency check: Interest bearing transactions,Check
+CHECK_IB_TFLOW,Consistency check: Interest bearing: Flows,Check
+CHECK_INVEST,Consistency check: Investment,Check
+CHECK_NEQ,Consistency check: Net equity,Check
+CHECK_NIB,Consistency check: Net interest bearing,Check
+CHECK_NIB_TFLOW,Consistency check: Net interest bearing: Flows,Check
+CHECK_NP,Consistency check: Net purchases of non-financial assets (NP),Check
+CHECK_NPEN,Consistency check: Net pensions: Revaluations,Check
+CHECK_PEN,Consistency check: Pensions: Transactions,Check
+CHECK_STRA,Consistency check: Social transfers,Check
+CHECK_TAX,Consistency check: Tax,Check
+CHECK_WAGE,Consistency check: Wages,Check
+CPEN,Financial Liabilities: Change in pension entitlements,Flow
+CTR,Capital transfers,Flow
+CU,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+D_1998,Dummy variable: 1998,Dummy
+D_200,Dummy variable: 2000,Dummy
+D_2004,Dummy variable: 2004,Dummy
+D_2006,Dummy variable: 2006,Dummy
+D_2007,Dummy variable: 2007,Dummy
+D_2008,Dummy variable: 2008,Dummy
+D_2009,Dummy variable: 2009,Dummy
+D_2010,Dummy variable: 2010,Dummy
+D_2011,Dummy variable: 2011,Dummy
+D_2014,Dummy variable: High taxes: 2014,Dummy
+D_2015,Dummy variable: 2015,Dummy
+D_2016,Dummy variable: 2016,Dummy
+D21,Taxes on products,Flow
+D29,Other taxes on production,Flow
+D31,Subsidies D31,Flow
+D39,Subsidies D39,Flow
+D41_P,Interest: Paid,Flow
+D41_R,Interest: Received,Flow
+D41B,Interest: Received,Flow
+D42_P,Distributed income of corporations: Paid,Flow
+D42_R,Distributed income of corporations: Received,Flow
+D44_P,Other investment income: Paid,Flow
+D44_R,Other investment income: Received,Flow
+DELTA,Equity to assets ratio,Ratio
+DEP,Depreciation of fixed capital,Flow
+EQA,Financial Assets: Equity assets,Stock
+EQA_R,Equity ratio,Ratio
+EQL,Financial Liabilities: Equity liabilities,Stock
+ERROR_CHECK1,Error check,Check
+ERROR_CHECK2,Error check,Check
+ERROR_CHECK3,Error check,Check
+FA,Financial Assets,Stock
+FAB,Financial account balance,Flow
+FEE59,Danish exports to trading partners: Weighted average total exports (imports by foreign trading partners),Ratio
+FL,Financial liabilities,Stock
+FNL,Financial Net Lending (Balance),Flow
+FNW,Financial net wealth,Stock
+G,Government expenditure,Flow
+GDP,Gross domestic product,Flow
+HFHF,Test variable: Not used,Check
+HH,Price index: Houses,Deflation index
+I,Gross fixed capital formation,Flow
+IBA,Financial Assets: Interest bearing assets,Stock
+IBL,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_RV1,Financial Liabilities: Interest bearing liabilities,Stock
+INFL,Inflation rate: Price inflation,Rate
+INFL_M,Inflation rate: Price inflation: Foreign,Rate
+INV,Gross fixed capital formation,Flow
+K,Stock of Capital,Stock
+K_CG,Capital Gains,Flow
+KCG,Capital Gains,Flow
+KCG_SUM,Capital Gains - Cummulative sum,Flow
+LEV,Leverage ratio: NFC: Funding liabilities to GDP,Ratio
+LEV1,Leverage ratio: NFC: Funding liabilities,Ratio
+LF,Labour force: Total number of employable persons,Stock
+M,Imports,Flow
+N,Labour force: Denmark for workers in production,Stock
+NEQ,Net financial stock: Equity,Stock
+NF,Labour force: Employed persons: Danish waged,Stock
+NIB,Net financial stock: Interest bearing,Stock
+NL,Sector Balance,Flow
+NL_CHECK,Consistency check: Net lending,Check
+NP,Net purchases of non-financial assets (NP),Flow
+NPEN,Net financial stock: Pension,Stock
+NU,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NW,Net Wealth,Stock
+NX,Net Exports,Flow
+OTR,Other current transfers,Flow
+P_CGK,Price index: Capital gains,Deflation index
+P_NEQ,Price index: Net Equity,Deflation index
+P_NIB,Price index: Net interest bearing assets,Deflation index
+P_PEN,Price index: Pensions,Deflation index
+PC,Price deflator: Consumption,Deflation index
+PE,Price deflator: Unknown,Deflation index
+PENA,Financial Assets: Pension assets,Stock
+PENL,Financial Liabilities: Pension liabilities,Stock
+PG,Price deflator: Government consumption,Deflation index
+PH,Price deflator: Houses,Deflation index
+PH01,Price deflator: Houses (Alternative),Deflation index
+PHI1,Social contributions to income,Flow
+PHI2,Pension transactions to social contributions,Flow
+PI,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PIP,Property income paid,Flow
+PIR_IBA,Property income received: IBA,Flow
+PIR_PENA,Property income received: PENA,Flow
+PIR_EQA,Property income received: EQA,Flow
+PIP_IBL,Property income paid: IBL,Flow
+PIP_EQL,Property income paid: EQL,Flow
+PIP_PENL,Property income paid: PENL,Flow
+PIR,Property income received,Flow
+NPIR,Net property income received: Total,Flow
+NPIR_NIB,Net property income received: NIB,Flow
+NPIR_NEQ,Net property income received: NEQ,Flow
+NPIR_NPEN,Net property income received: NPEN,Flow
+PK,Price deflator: Investment (excluding dwellings),Deflation index
+PM,Price deflator: Imports,Deflation index
+PNFC,Price deflator: NFC K,Deflation index
+POP,Population,Stock
+PP,Unknown,Check
+PRIVATE,Gross income,Flow
+PROD,Labour Force: Labour productivity,Stock
+PROFIT,Profit share (Residual of wage share),Ratio
+PX,Price deflator: Exports,Deflation index
+PY,Price deflator: GDP,Deflation index
+R_EQ,Rate of return: Equities,Rate
+R_ERROR1,Property income error,Check
+R_ERROR2,Property income error,Check
+R_ERROR3,Property income error,Check
+R_IBA,Rate of interest: Interest bearing assets,Rate
+R_IBL,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_SENS,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_N,Rate of return: Mean,Rate
+R_NET_ERROR1,Property income error,Check
+R_NET_ERROR101,Property income error,Check
+R_NET_ERROR2,Property income error,Check
+R_NET_ERROR201,Property income error,Check
+R_NET_ERROR3,Property income error,Check
+R_NET_ERROR301,Property income error,Check
+R_PEN,Rate of return: Pensions,Rate
+R_R_IBL,Rate of interest: Interest bearing liabilities,Rate
+RHO,Equity ratio,Ratio
+RR,Rate of return,Rate
+S,Savings,Flow
+SBE,Social benefit transfers,Flow
+SCO,Social benefit contributions,Flow
+STRA,Social transfers,Flow
+T,Taxes on products,Flow
+TAX,Tax,Flow
+TEST,Test variable: Stock of Capital (Change in),Check
+TESTO,Test variable: Stock of Capital (Change in),Check
+TOBIN_Q,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOP,Ratio of foreign to domestic trade,Ratio
+UL_COST,Labour force: Unit labour cost,Rate
+ULC,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+UN,Labour force: Unemployed persons,Stock
+UR,Labour force: Unemployment rate,Ratio
+W,Wages,Flow
+WAGE,Labour force: Wage rate,Rate
+WI,Inflation rate: Wage inflation,Rate
+WS,Wage share,Ratio
+X,Exports,Flow
+XR,Exchange rate,Rate
+Y,Total income,Flow
+Y_D,Disposable Income,Flow
+ZZ,Index: House price index,Index
+ZZ_I,Index: House price: Imported from DST,Index
+ZZ_INDEX,Index: House price: Mark-up pricing on construction costs,Index
+ZZ1,Index: House price: Imported from DST,Index

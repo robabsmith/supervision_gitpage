@@ -1,0 +1,23 @@
+﻿Flows;Current (ch);Capital (ch);Current (wh);Capital (wh);Current (f);Capital (f);Current (b);Capital (b);Central Bank;Government;$\Sigma$ 
+Consumption;$-C_{c}$;NA;$-C_{w}$;NA;$+C$;NA;NA;NA;NA;NA;0
+Wages;NA;NA;$+WB$;NA;$-WB$;NA;NA;NA;NA;NA;0
+Taxes and transfers;$-T_{c}$;NA;$-T_{w}$;NA;NA;NA;NA;NA;NA;$+T$;0
+Private profits;$+F$;NA;NA;NA;$-F_{f}$;NA;$-D_{b}$;NA;NA;NA;0
+Public profits;NA;NA;NA;NA;NA;NA;NA;NA;$-F_{cb}$;$+F_{cb}$;0
+Goverment Expenditure;NA;NA;NA;NA;$+G$;NA;NA;NA;NA;$-G$;0
+Houses sold;NA;$- P_{h}\cdot \Delta h_{c}$;NA;$-P_{h}\cdot \Delta h_{w}$;$+P_{h}\cdot \Delta h_{s}$;NA;NA;NA;NA;NA;0
+Housing inventory;NA;NA;NA;NA;$+UC_{h}\cdot \Delta h_{INV}$;$-UC_{h}\cdot \Delta h_{INV}$;NA;NA;NA;NA;0
+Deposits (r);$+r_{M-1}\cdot M_{c-1}$;NA;$+r_{M-1}\cdot M_{w-1}$;NA;NA;NA;$-r_{M-1}\cdot M_{-1}$;NA;NA;NA;0
+Savings account (r);$+r_{SA-1}\cdot SA_{c-1}$;NA;$+r_{SA-1}\cdot SA_{w-1}$;NA;NA;NA;$-r_{SA-1}\cdot SA_{-1}$;NA;NA;NA;0
+Mortgages (r);NA;NA;$-r_{MO-1}\cdot MO_{-1}$;NA;NA;NA;$+r_{MO-1}\cdot MO_{-1}$;NA;NA;NA;0
+Loans (r);NA;NA;NA;NA;$-r_{L-1}\cdot L_{-1}$;NA;$+r_{L-1}\cdot L_{-1}$;NA;NA;NA;0
+Bills (r);$-r_{B-1}\cdot B_{c-1}$;NA;NA;NA;NA;NA;$-r_{B-1}\cdot B_{B-1}$;NA;$-r_{B-1}\cdot B_{CB-1}$;$-r_{B-1}\cdot B_{-1}$;0
+\midrule Savings (per sector);$-SAV_{c}$;$+SAV_{c}$;$-SAV_{w}$;$+SAV_{w}$;0;0;$-RE_{B}$;$+RE_{B}$;NA;$-Deficit$;0
+Change in cash;NA;$-\Delta HPM_{c}$;NA;$-\Delta HPM_{w}$;NA;NA;$-\Delta H_{b}$;NA;$+\Delta HPM$;NA;0
+Change in deposits;NA;$-\Delta M_{c}$;NA;$-\Delta M_{w}$;NA;NA;$+\Delta M$;NA;NA;NA;0
+Change in savings account;NA;$-\Delta SA_{c}$;NA;$-\Delta SA_{w}$;NA;NA;$+\Delta SA$;NA;NA;NA;0
+Change in mortgages;NA;NA;NA;$+\Delta MO_{w}$;NA;NA;$-\Delta MO_{w}$;NA;NA;NA;0
+Change in loans;NA;NA;NA;NA;NA;$+\Delta L_{f}$;$-\Delta L$;NA;NA;NA;0
+Change in bills;NA;$-\Delta B_{c}$;NA;NA;NA;NA;$-\Delta B_{B}$;NA;$-\Delta B_{CB}$;$+\Delta B$;0
+Change in equities;NA;$-\Delta OF$;NA;NA;NA;NA;$+\Delta OF$;NA;NA;NA;0
+\midrule $\Sigma$ ;0;0;;0;0;0;0;0;0;0;0

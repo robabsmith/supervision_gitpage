@@ -1,0 +1,136 @@
+Abbreviation;Full_text
+BOP;Balance of payments
+CU;Capacity Utilisation (Real GNI  /  real capital stock)
+KCG;Capital Gains
+K;Capital Gains on Stock of Housing
+CGS;Capital gains: Nominal Prices
+CGK;Capital gains: Real Prices
+CTR;Capital transfers
+C;Consumption
+CAB;Current account balance
+FEE59;Danish exports to trading partners: Weighted average total exports (imports by foreign trading partners)
+DEP;Depreciation
+DEP;Depreciation on houses
+Y-D;Disposable Income
+D42;Distributed income of corporations
+D-200;Dummy variable: _200
+D-1998;Dummy variable: 1998
+D-2004;Dummy variable: 2004
+D-2006;Dummy variable: 2006
+D-2007;Dummy variable: 2007
+D-2008;Dummy variable: 2008
+D-2009;Dummy variable: 2009
+D-2010;Dummy variable: 2010
+D-2011;Dummy variable: 2011
+D-2015;Dummy variable: 2015
+D-2016;Dummy variable: 2016
+D-2014;Dummy variable: High taxes: 2014
+RHO;Equity ratio
+BETA;Equity to assets ratio
+DELTA;Equity to assets ratio
+X;Exports
+FAB;Financial account balance
+FA;Financial Assets
+EQA-R;Financial Assets: Equity asset ratio
+EQA;Financial Assets: Equity assets
+IBA;Financial Assets: Interest bearing assets
+IBA-H;Financial Assets: Interest bearing assets of the household sector
+PENA;Financial Assets: Pension assets
+FL;Financial liabilities
+CPEN;Financial Liabilities: Change in pension entitlements
+EQL;Financial Liabilities: Equity liabilities
+IBL;Financial Liabilities: Interest bearing liabilities
+IBL-H;Financial Liabilities: Interest bearing liabilities of the household sector
+IBL-FI;Financial Liabilities: Interest bearing liabilities: Fixed rate
+IBL-FL;Financial Liabilities: Interest bearing liabilities: Flexible rate
+PENL;Financial Liabilities: Pension liabilities
+FNL;Financial Net Lending (Balance)
+FNW;Financial net wealth
+Y;GDP of EU: 2010 reference levels (in Euros)
+G;Government expenditure
+GDP;Gross domestic product
+GDP-EU;Gross domestic product: EU
+I;Gross fixed capital formation
+INV;Gross fixed capital formation (Investment)
+PRIVATE;Gross income
+B2;Gross operating surplus
+M;Imports
+ZZ;Index: House price index
+TOBIN-Q;Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index
+ZZ1;Index: House price: Imported from DST
+ZZ-I;Index: House price: Imported from DST
+ZZ-INDEX;Index: House price: Mark-up pricing on construction costs
+INFL;Inflation rate: Price inflation
+WI;Inflation rate: Wage inflation
+D41;Interest
+NU;Labour force: DK: Employed persons: Employed abroad
+NF;Labour force: DK: Employed persons: Paid by Danish employers
+LF;Labour force: DK: Total number of employable persons
+N;Labour force: DK: Workers in production
+PROD;Labour force: Labour productivity
+UN;Labour force: Unemployed persons
+UR;Labour force: Unemployment rate
+UL-COST;Labour force: Unit labour cost
+ULC;Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010)
+WAGE;Labour force: Wage rate
+LEV1;Leverage ratio: NFC: Funding liabilities
+LEV;Leverage ratio: NFC: Funding liabilities to GDP
+NX;Net Exports
+NEQ;Net financial stock: Equity
+NIB;Net financial stock: Interest bearing
+NPEN;Net financial stock: Pension
+NL;Net lending (+) / borrowing (-) (Sector balance)
+NP;Net purchases of non-financial assets (NP)
+NW;Net Wealth
+OTR;Other current transfers
+D44;Other investment income
+POP;Population
+PC;Price deflator: Consumption
+PX;Price deflator: Exports
+PY;Price deflator: GDP
+PG;Price deflator: Government consumption
+PH;Price deflator: Houses
+PH01;Price deflator: Houses
+PM;Price deflator: Imports
+PI;Price deflator: Investment
+PK;Price deflator: Investment (excluding dwellings)
+PNFC-K;Price deflator: NFC capital
+PE;Price deflator: Unknown
+P-KCGH;Price index: Capital gains: Houses
+P-KCGNF;Price Index: Capital gains: NFC
+P-NEQ;Price index: Net Equity
+P-NIB;Price index: Net interest bearing assets
+P-PEN;Price index: Pensions
+PROFIT;Profit share (Residual of wage share)
+PIP;Property income paid
+PIR;Property income received
+R-IBA;Rate of interest: Interest bearing assets
+R-IBL;Rate of interest: Interest bearing liabilities
+R-IBL-FI;Rate of Interest: Morgage lending: Fixed rate
+R-IBL-FL;Rate of Interest: Morgage lending: Flexible rate
+R-EQ;Rate of return: Equities: Denmark
+R-EQ;Rate of return: Equities: Foreign
+R-N;Rate of return: Mean
+R-PEN;Rate of return: Pensions
+ALPHA;Ratio of fixed interest mortgage debt
+TOP;Ratio of foreign to domestic trade
+PHI2;Ratio: Pension transactions to social contributions
+PHI1;Ratio: Social contributions to income
+S;Savings
+SBA;Sector Balance Analysis
+SCO;Social benefit contributions
+SBE;Social benefit transfers
+K;Stock of Capital
+D39;Subsidies: Other subsidies on production
+D31;Subsidies: Subsidies on products
+TAX;Tax
+D29;Tax: Other taxes on production
+D21;Tax: Taxes on products
+T;Taxes on products
+HFHF;Test variable: Not used
+TEST;Test variable: Stock of Capital (Change in)
+Y;Total income
+TRA;Transfers
+PH-K;Variable not used: House prices
+WS;Wage share
+W;Wages

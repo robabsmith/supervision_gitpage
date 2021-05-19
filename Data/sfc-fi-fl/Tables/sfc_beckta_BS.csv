@@ -1,0 +1,10 @@
+﻿Stocks;Capitalist households;Worker households;Firms;Commercial banks;Central bank;Government;$\Sigma$ 
+Cash;$+HPM_{c}$;$+HPM_{w}$;NA;NA;$-HPM$;NA;0
+Deposits;$+M_{c}$;$+M_{w}$;NA;$-M$;NA;NA;0
+Savings account;$+SA_{c}$;$+SA_{w}$;NA;NA;$-SA$;NA;0
+Mortgages;NA;$-MO_{w}$;NA;NA;$+MO$;NA;0
+Loans;NA;NA;$-L$;$+L$;NA;NA;0
+Bills;$+B_{c}$;NA;NA;NA;$+B_{cb}$;$-B_{h}$;0
+Bank capital;$+OF$;NA;NA;$-OF$;NA;NA;0
+Houses;$+p_{h}\cdot h_{c}$;$+p_{h}\cdot h_{w}$;$+UC_{h}\cdot h_{INV}$;NA;NA;NA;$+H$
+\midrule Sum (net worth);$-V_{c}$;$-V_{w}$;0;0;0;$-V_{g}$;$-H$
