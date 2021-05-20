@@ -36,6 +36,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 always_allow_html: true
 link-citations: yes
+cover-image: "images/Dunning_kruger.png"
 github-repo: robabsmith/supervision_gitpage
 description: "This resource provides some simple startup-guides to aid students in the development of research projects."
 ---
