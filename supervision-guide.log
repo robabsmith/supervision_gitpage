@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.24)  20 MAY 2021 18:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.24)  2 JUN 2021 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,7 +936,7 @@ STATEMENT
  []
 
 [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1046
 
  []
 
@@ -1008,18 +1008,18 @@ Chapter 8.
 ] [34]
 Chapter 9.
 
-Package hyperref Warning: Suppressing link with empty target on input line 1613
+Package hyperref Warning: Suppressing link with empty target on input line 1615
 .
 
 [35
 
 ]
 
-Package hyperref Warning: Suppressing link with empty target on input line 1615
+Package hyperref Warning: Suppressing link with empty target on input line 1617
 .
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 1617
+Package hyperref Warning: Suppressing link with empty target on input line 1619
 .
 
 [36]
@@ -1032,45 +1032,45 @@ Chapter 10.
 Chapter 11.
 [45]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2015.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2017.
 
 LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 2015.
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 2017.
 
 
 
-Underfull \vbox (badness 10000) detected at line 2066
+Underfull \vbox (badness 10000) detected at line 2068
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [46] [47]
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2274
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2274
  []
 
 [48]
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2274
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2274
  []
 
 [49]
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2274
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2274
  []
 
 [50]
-Underfull \hbox (badness 10000) in paragraph at lines 2279--2281
+Underfull \hbox (badness 10000) in paragraph at lines 2281--2283
 \TU/lmtt/m/n/10 caption = "Source: Statistics Denmark (Danmarks Statistik), own
 
  []
@@ -1088,34 +1088,34 @@ File: figures/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-4-1.pdf>
 [55]
 
-LaTeX Warning: Float too large for page by 607.44945pt on input line 2598.
+LaTeX Warning: Float too large for page by 619.84944pt on input line 2602.
 
 [56] [57] [58]
 Chapter 12.
 [59
 
 ] [60] [61] [62] [63] [64] [65] [66]
-Underfull \hbox (badness 1303) in paragraph at lines 2747--2747
+Underfull \hbox (badness 1303) in paragraph at lines 2751--2751
 []\TU/lmr/bx/n/12 Key innovations and developments in product
  []
 
 [67] [68] [69] [70] [71]
 
 LaTeX Warning: Reference `fig:debt-composition-dk-all-term' on page 72 undefine
-d on input line 2861.
+d on input line 2865.
 
 File: figures/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-8-1.pdf>
 File: figures/unnamed-chunk-8-2.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-8-2.pdf>
 
-Overfull \hbox (2.21277pt too wide) in paragraph at lines 2864--2864
+Overfull \hbox (2.21277pt too wide) in paragraph at lines 2868--2868
 [][] []
  []
 
 
 LaTeX Warning: Reference `fig:debt-composition-dk-all-term' on page 72 undefine
-d on input line 2868.
+d on input line 2872.
 
 [72]
 File: figures/debt-composition-dk-det-term-1.pdf Graphic file (type pdf)
@@ -1141,17 +1141,17 @@ File: figures/interest-rate-composition-dk-simp-1.pdf Graphic file (type pdf)
 File: figures/debt-service-1.pdf Graphic file (type pdf)
 <use figures/debt-service-1.pdf>
 [78]
-Overfull \hbox (20.51001pt too wide) in paragraph at lines 2972--2985
+Overfull \hbox (20.51001pt too wide) in paragraph at lines 2976--2989
  [][] 
  []
 
 [79] [80]
-Overfull \hbox (232.5049pt too wide) in paragraph at lines 3017--3044
+Overfull \hbox (232.5049pt too wide) in paragraph at lines 3021--3048
  [][] 
  []
 
 [81]
-Overfull \hbox (535.98993pt too wide) in paragraph at lines 3064--3105
+Overfull \hbox (535.98993pt too wide) in paragraph at lines 3068--3109
  [][] 
  []
 
@@ -1163,7 +1163,7 @@ File: figures/dst-mortgage-debt-interest-2.pdf Graphic file (type pdf)
 File: figures/dst-mortgage-debt-interest-3.pdf Graphic file (type pdf)
 <use figures/dst-mortgage-debt-interest-3.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3171--3171
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3175
 [][] []
  []
 
@@ -1178,11 +1178,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [88] [89] [90] [91]
 
 LaTeX Warning: Reference `fig:fl-fi-sfc-plot-gdp-indicators_s1_s2' on page 92 u
-ndefined on input line 3305.
+ndefined on input line 3309.
 
 
 LaTeX Warning: Reference `fig:fl-fi-sfc-plot-gdp-indicators_s3_s4' on page 92 u
-ndefined on input line 3305.
+ndefined on input line 3309.
 
 [92]
 File: figures/fl-fi-sfc-plot-gdp-indicators-s1-s2-1.pdf Graphic file (type pdf)
@@ -1192,13 +1192,13 @@ File: figures/fl-fi-sfc-plot-gdp-indicators-s1-s2-2.pdf Graphic file (type pdf)
 
 <use figures/fl-fi-sfc-plot-gdp-indicators-s1-s2-2.pdf>
 
-Overfull \hbox (2.21277pt too wide) in paragraph at lines 3310--3310
+Overfull \hbox (2.21277pt too wide) in paragraph at lines 3314--3314
 [][] []
  []
 
 
 LaTeX Warning: Reference `fig:fl-fi-sfc-plot-gdp-indicators_s3_s4' on page 93 u
-ndefined on input line 3315.
+ndefined on input line 3319.
 
 File: figures/fl-fi-sfc-plot-gdp-indicators-s3-s4-1.pdf Graphic file (type pdf)
 
@@ -1207,7 +1207,7 @@ File: figures/fl-fi-sfc-plot-gdp-indicators-s3-s4-2.pdf Graphic file (type pdf)
 
 <use figures/fl-fi-sfc-plot-gdp-indicators-s3-s4-2.pdf>
 
-Overfull \hbox (2.21277pt too wide) in paragraph at lines 3318--3318
+Overfull \hbox (2.21277pt too wide) in paragraph at lines 3322--3322
 [][] []
  []
 
@@ -1257,7 +1257,7 @@ f)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [106] [107]
-Underfull \hbox (badness 1675) in paragraph at lines 3551--3552
+Underfull \hbox (badness 1675) in paragraph at lines 3555--3556
 []\TU/lmr/m/n/10 Equation ([]12.21[]) describes the source of changes in $[][][
 ][][][]$, where
  []
@@ -1291,12 +1291,12 @@ File: figures/fl-fi-sfc-plot-dk-equity-int-1.pdf Graphic file (type pdf)
 File: figures/fl-fi-sfc-plot-dk-equity-int-2.pdf Graphic file (type pdf)
 <use figures/fl-fi-sfc-plot-dk-equity-int-2.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3697--3697
+Underfull \hbox (badness 10000) in paragraph at lines 3701--3701
 [][]
  []
 
 [115] [116] [117] [118] [119] [120]
-Underfull \hbox (badness 1490) in paragraph at lines 3745--3745
+Underfull \hbox (badness 1490) in paragraph at lines 3749--3749
 \TU/lmr/bx/n/12 to non-financial private sector (nominal, local
  []
 
@@ -1309,163 +1309,163 @@ File: figures/oecd-house-prices-1.pdf Graphic file (type pdf)
 File: figures/oecd-house-prices-facet-1.pdf Graphic file (type pdf)
 <use figures/oecd-house-prices-facet-1.pdf>
 
-Overfull \hbox (539.54001pt too wide) in paragraph at lines 3863--3904
+Overfull \hbox (539.54001pt too wide) in paragraph at lines 3867--3908
  [][] 
  []
 
 
-Overfull \hbox (84.73pt too wide) in paragraph at lines 3911--3986
+Overfull \hbox (84.73pt too wide) in paragraph at lines 3915--3990
  [][] 
  []
 
 
-Overfull \hbox (37.27002pt too wide) in paragraph at lines 3994--4017
+Overfull \hbox (37.27002pt too wide) in paragraph at lines 3998--4021
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 4024--4063
+Overfull \hbox (97.91pt too wide) in paragraph at lines 4028--4067
  [][] 
  []
 
 
-Overfull \hbox (39.15002pt too wide) in paragraph at lines 4070--4091
+Overfull \hbox (39.15002pt too wide) in paragraph at lines 4074--4095
  [][] 
  []
 
 
-Overfull \hbox (41.16002pt too wide) in paragraph at lines 4098--4117
+Overfull \hbox (41.16002pt too wide) in paragraph at lines 4102--4121
  [][] 
  []
 
 
-Overfull \hbox (539.54001pt too wide) in paragraph at lines 4127--4186
+Overfull \hbox (539.54001pt too wide) in paragraph at lines 4131--4190
  [][] 
  []
 
 
-Overfull \hbox (91.26pt too wide) in paragraph at lines 4193--4284
+Overfull \hbox (91.26pt too wide) in paragraph at lines 4197--4288
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 36.64973pt on input line 4284.
+LaTeX Warning: Float too large for page by 36.64973pt on input line 4288.
 
 
-Overfull \hbox (38.29001pt too wide) in paragraph at lines 4291--4328
+Overfull \hbox (38.29001pt too wide) in paragraph at lines 4295--4332
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 4335--4386
+Overfull \hbox (97.91pt too wide) in paragraph at lines 4339--4390
  [][] 
  []
 
 
-Overfull \hbox (40.17001pt too wide) in paragraph at lines 4393--4420
+Overfull \hbox (40.17001pt too wide) in paragraph at lines 4397--4424
  [][] 
  []
 
 
-Overfull \hbox (42.18001pt too wide) in paragraph at lines 4427--4450
+Overfull \hbox (42.18001pt too wide) in paragraph at lines 4431--4454
  [][] 
  []
 
 
-Overfull \hbox (544.54001pt too wide) in paragraph at lines 4460--4507
+Overfull \hbox (544.54001pt too wide) in paragraph at lines 4464--4511
  [][] 
  []
 
 
-Overfull \hbox (83.06pt too wide) in paragraph at lines 4514--4571
+Overfull \hbox (83.06pt too wide) in paragraph at lines 4518--4575
  [][] 
  []
 
 
-Overfull \hbox (32.27002pt too wide) in paragraph at lines 4578--4601
+Overfull \hbox (32.27002pt too wide) in paragraph at lines 4582--4605
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 4608--4637
+Overfull \hbox (97.91pt too wide) in paragraph at lines 4612--4641
  [][] 
  []
 
 
-Overfull \hbox (34.15002pt too wide) in paragraph at lines 4644--4665
+Overfull \hbox (34.15002pt too wide) in paragraph at lines 4648--4669
  [][] 
  []
 
 
-Overfull \hbox (36.16002pt too wide) in paragraph at lines 4672--4691
+Overfull \hbox (36.16002pt too wide) in paragraph at lines 4676--4695
  [][] 
  []
 
 
-Overfull \hbox (539.54001pt too wide) in paragraph at lines 4701--4768
+Overfull \hbox (539.54001pt too wide) in paragraph at lines 4705--4772
  [][] 
  []
 
 
-Overfull \hbox (89.59pt too wide) in paragraph at lines 4775--4862
+Overfull \hbox (89.59pt too wide) in paragraph at lines 4779--4866
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 11.84975pt on input line 4862.
+LaTeX Warning: Float too large for page by 11.84975pt on input line 4866.
 
 
-Overfull \hbox (33.29001pt too wide) in paragraph at lines 4869--4906
+Overfull \hbox (33.29001pt too wide) in paragraph at lines 4873--4910
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 4913--4964
+Overfull \hbox (97.91pt too wide) in paragraph at lines 4917--4968
  [][] 
  []
 
 
-Overfull \hbox (35.17001pt too wide) in paragraph at lines 4971--4998
+Overfull \hbox (35.17001pt too wide) in paragraph at lines 4975--5002
  [][] 
  []
 
 
-Overfull \hbox (42.18001pt too wide) in paragraph at lines 5005--5028
+Overfull \hbox (42.18001pt too wide) in paragraph at lines 5009--5032
  [][] 
  []
 
 
-Overfull \hbox (539.54001pt too wide) in paragraph at lines 5038--5079
+Overfull \hbox (539.54001pt too wide) in paragraph at lines 5042--5083
  [][] 
  []
 
 
-Overfull \hbox (84.73pt too wide) in paragraph at lines 5086--5161
+Overfull \hbox (84.73pt too wide) in paragraph at lines 5090--5165
  [][] 
  []
 
 
-Overfull \hbox (37.27002pt too wide) in paragraph at lines 5168--5191
+Overfull \hbox (37.27002pt too wide) in paragraph at lines 5172--5195
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 5198--5237
+Overfull \hbox (97.91pt too wide) in paragraph at lines 5202--5241
  [][] 
  []
 
 
-Overfull \hbox (39.15002pt too wide) in paragraph at lines 5244--5265
+Overfull \hbox (39.15002pt too wide) in paragraph at lines 5248--5269
  [][] 
  []
 
 
-Overfull \hbox (41.16002pt too wide) in paragraph at lines 5272--5291
+Overfull \hbox (41.16002pt too wide) in paragraph at lines 5276--5295
  [][] 
  []
 
 
-Overfull \hbox (539.54001pt too wide) in paragraph at lines 5301--5368
+Overfull \hbox (539.54001pt too wide) in paragraph at lines 5305--5372
  [][] 
  []
 
@@ -1476,93 +1476,93 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [131] [132] [133] [134] [135] [136] [137]
-Overfull \hbox (91.26pt too wide) in paragraph at lines 5375--5466
+Overfull \hbox (91.26pt too wide) in paragraph at lines 5379--5470
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 36.64973pt on input line 5466.
+LaTeX Warning: Float too large for page by 36.64973pt on input line 5470.
 
 
-Overfull \hbox (38.29001pt too wide) in paragraph at lines 5473--5510
+Overfull \hbox (38.29001pt too wide) in paragraph at lines 5477--5514
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 5517--5568
+Overfull \hbox (97.91pt too wide) in paragraph at lines 5521--5572
  [][] 
  []
 
 
-Overfull \hbox (40.17001pt too wide) in paragraph at lines 5575--5602
+Overfull \hbox (40.17001pt too wide) in paragraph at lines 5579--5606
  [][] 
  []
 
 
-Overfull \hbox (42.18001pt too wide) in paragraph at lines 5609--5632
+Overfull \hbox (42.18001pt too wide) in paragraph at lines 5613--5636
  [][] 
  []
 
 
-Overfull \hbox (541.21pt too wide) in paragraph at lines 5642--5685
+Overfull \hbox (541.21pt too wide) in paragraph at lines 5646--5689
  [][] 
  []
 
 
-Overfull \hbox (214.44002pt too wide) in paragraph at lines 5692--5769
+Overfull \hbox (214.44002pt too wide) in paragraph at lines 5696--5773
  [][] 
  []
 
 
-Overfull \hbox (32.27002pt too wide) in paragraph at lines 5776--5799
+Overfull \hbox (32.27002pt too wide) in paragraph at lines 5780--5803
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 5806--5845
+Overfull \hbox (97.91pt too wide) in paragraph at lines 5810--5849
  [][] 
  []
 
 
-Overfull \hbox (39.15002pt too wide) in paragraph at lines 5852--5873
+Overfull \hbox (39.15002pt too wide) in paragraph at lines 5856--5877
  [][] 
  []
 
 
-Overfull \hbox (36.16002pt too wide) in paragraph at lines 5880--5899
+Overfull \hbox (36.16002pt too wide) in paragraph at lines 5884--5903
  [][] 
  []
 
 
-Overfull \hbox (541.21pt too wide) in paragraph at lines 5909--5978
+Overfull \hbox (541.21pt too wide) in paragraph at lines 5913--5982
  [][] 
  []
 
 
-Overfull \hbox (220.97002pt too wide) in paragraph at lines 5985--6078
+Overfull \hbox (220.97002pt too wide) in paragraph at lines 5989--6082
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 49.04973pt on input line 6078.
+LaTeX Warning: Float too large for page by 49.04973pt on input line 6082.
 
 
-Overfull \hbox (38.29001pt too wide) in paragraph at lines 6085--6122
+Overfull \hbox (38.29001pt too wide) in paragraph at lines 6089--6126
  [][] 
  []
 
 
-Overfull \hbox (97.91pt too wide) in paragraph at lines 6129--6180
+Overfull \hbox (97.91pt too wide) in paragraph at lines 6133--6184
  [][] 
  []
 
 
-Overfull \hbox (40.17001pt too wide) in paragraph at lines 6187--6214
+Overfull \hbox (40.17001pt too wide) in paragraph at lines 6191--6218
  [][] 
  []
 
 
-Overfull \hbox (42.18001pt too wide) in paragraph at lines 6221--6244
+Overfull \hbox (42.18001pt too wide) in paragraph at lines 6225--6248
  [][] 
  []
 
@@ -1587,7 +1587,7 @@ File: figures/fl-fi-sfc-passive-FC-HH-1.pdf Graphic file (type pdf)
 File: figures/fl-fi-sfc-passive-FC-HH-2.pdf Graphic file (type pdf)
 <use figures/fl-fi-sfc-passive-FC-HH-2.pdf>
 
-Overfull \hbox (2.21277pt too wide) in paragraph at lines 6274--6274
+Overfull \hbox (2.21277pt too wide) in paragraph at lines 6278--6278
 [][] []
  []
 
@@ -1629,7 +1629,7 @@ File: figures/fl-fi-sfc-plot-ibl-h-1.pdf Graphic file (type pdf)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [162]
-Overfull \hbox (916.56003pt too wide) in paragraph at lines 6361--6740
+Overfull \hbox (916.56003pt too wide) in paragraph at lines 6365--6744
  [][] 
  []
 
@@ -1650,7 +1650,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [
 184] [185] [186] [187] [188]
-Overfull \hbox (464.71002pt too wide) in paragraph at lines 7821--8018
+Overfull \hbox (464.71002pt too wide) in paragraph at lines 7825--8022
  [][] 
  []
 
@@ -1663,12 +1663,12 @@ Overfull \vbox (657.79941pt too high) has occurred while \output is active []
 [190] (./supervision-guide.bbl [191] [192
 
 ] [193] [194] [195])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8023.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8027.
 [196]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8023.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8027.
 (./supervision-guide.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8023.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 8023.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8027.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 8027.
 
 LaTeX Warning: There were undefined references.
 
