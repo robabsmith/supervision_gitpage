@@ -336,8 +336,8 @@ variable_key <- variable_list %>%
     mutate(Type = ifelse(Transaction_type == "", yes = Type, no = "Flow")) %>%
     mutate(Type = case_when(is.na(Type) ~ "", TRUE ~ as.character(Type)))
            
-    # write.csv2(variable_key,"variable_list_detailed.csv")
-
+    write_csv(variable_key,(file.path(danish_model_lists_path, "variable_list_detailed.csv")))
+     
 ##################################################################################
 # Prepare model data
 ##################################################################################

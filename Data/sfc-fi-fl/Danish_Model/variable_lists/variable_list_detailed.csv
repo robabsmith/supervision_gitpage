@@ -1,910 +1,1302 @@
-";""Variable_name"";""Interest_type"";""Variable"";""Sector"";""Dependent_sector"";""Scenario"";""Price_type"";""Transaction_type"";""Description""",
-"1;""ALPHA"";"""";""ALPHA"";"""";"""";"""";"""";"""";""Ratio of fixed interest mortgage debt""",
-"2;""B2"";"""";""B2"";"""";"""";"""";"""";"""";""Gross operating surplus""",
-"3;""B2_0"";"""";""B2"";"""";"""";""Baseline"";"""";"""";""Gross operating surplus""",
-"4;""B2_1"";"""";""B2"";"""";"""";""Scenario 1"";"""";"""";""Gross operating surplus""",
-"5;""B2_2"";"""";""B2"";"""";"""";""Scenario 2"";"""";"""";""Gross operating surplus""",
-"6;""B2_F"";"""";""B2"";""FC"";"""";"""";"""";"""";""Gross operating surplus""",
-"7;""B2_G"";"""";""B2"";""GOVT"";"""";"""";"""";"""";""Gross operating surplus""",
-"8;""B2_H"";"""";""B2"";""HH"";"""";"""";"""";"""";""Gross operating surplus""",
-"9;""B2_NF"";"""";""B2"";""NFC"";"""";"""";"""";"""";""Gross operating surplus""",
-"10;""B2_NF_0"";"""";""B2"";""NFC"";"""";""Baseline"";"""";"""";""Gross operating surplus""",
-"11;""B2_NF_1"";"""";""B2"";""NFC"";"""";""Scenario 1"";"""";"""";""Gross operating surplus""",
-"12;""B2_NF_2"";"""";""B2"";""NFC"";"""";""Scenario 2"";"""";"""";""Gross operating surplus""",
-"13;""BETA"";"""";""BETA"";"""";"""";"""";"""";"""";""Equity to assets ratio""",
-"14;""BOP"";"""";""BOP"";"""";"""";"""";"""";"""";""Balance of payments""",
-"15;""BOP_0"";"""";""BOP"";"""";"""";""Baseline"";"""";"""";""Balance of payments""",
-"16;""BOP_1"";"""";""BOP"";"""";"""";""Scenario 1"";"""";"""";""Balance of payments""",
-"17;""BOP_2"";"""";""BOP"";"""";"""";""Scenario 2"";"""";"""";""Balance of payments""",
-"18;""C_H"";"""";""C"";""HH"";"""";"""";"""";"""";""Consumption""",
-"19;""C_H_0"";"""";""C"";""HH"";"""";""Baseline"";"""";"""";""Consumption""",
-"20;""C_H_1"";"""";""C"";""HH"";"""";""Scenario 1"";"""";"""";""Consumption""",
-"21;""C_H_2"";"""";""C"";""HH"";"""";""Scenario 2"";"""";"""";""Consumption""",
-"22;""C_H_K"";"""";""C"";""HH"";"""";"""";""Real prices"";"""";""Consumption""",
-"23;""C_H_K_0"";"""";""C"";""HH"";"""";""Baseline"";""Real prices"";"""";""Consumption""",
-"24;""C_H_K_1"";"""";""C"";""HH"";"""";""Scenario 1"";""Real prices"";"""";""Consumption""",
-"25;""C_H_K_2"";"""";""C"";""HH"";"""";""Scenario 2"";""Real prices"";"""";""Consumption""",
-"26;""CAB"";"""";""CAB"";"""";"""";"""";"""";"""";""Current account balance""",
-"27;""CAB_0"";"""";""CAB"";"""";"""";""Baseline"";"""";"""";""Current account balance""",
-"28;""CAB_1"";"""";""CAB"";"""";"""";""Scenario 1"";"""";"""";""Current account balance""",
-"29;""CAB_2"";"""";""CAB"";"""";"""";""Scenario 2"";"""";"""";""Current account balance""",
-"30;""CGK_F"";"""";""CGK"";""FC"";"""";"""";"""";"""";""Capital gains""",
-"31;""CGK_G"";"""";""CGK"";""GOVT"";"""";"""";"""";"""";""Capital gains""",
-"32;""CGK_H"";"""";""CGK"";""HH"";"""";"""";"""";"""";""Capital gains""",
-"33;""CGK_NF"";"""";""CGK"";""NFC"";"""";"""";"""";"""";""Capital gains""",
-"34;""CGS_DK"";"""";""CGS"";""DK"";"""";"""";"""";"""";""Capital gains""",
-"35;""CGS_ROW"";"""";""CGS"";""ROW"";"""";"""";"""";"""";""Capital gains""",
-"36;""CHECK_B2"";"""";""CHECK_B2"";"""";"""";"""";"""";"""";""Consistency check: Gross operating surplus""",
-"37;""CHECK_B2_0"";"""";""CHECK_B2"";"""";"""";""Baseline"";"""";"""";""Consistency check: Gross operating surplus""",
-"38;""CHECK_B2_1"";"""";""CHECK_B2"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Gross operating surplus""",
-"39;""CHECK_B2_2"";"""";""CHECK_B2"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Gross operating surplus""",
-"40;""CHECK_CTR"";"""";""CHECK_CTR"";"""";"""";"""";"""";"""";""Consistency check: Capital transactions""",
-"41;""CHECK_CTR_0"";"""";""CHECK_CTR"";"""";"""";""Baseline"";"""";"""";""Consistency check: Capital transactions""",
-"42;""CHECK_CTR_1"";"""";""CHECK_CTR"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Capital transactions""",
-"43;""CHECK_CTR_2"";"""";""CHECK_CTR"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Capital transactions""",
-"44;""CHECK_EQ_TR"";"""";""CHECK_EQ"";"""";"""";"""";"""";""Transactions"";""Consistency check: Equity Transactions""",
-"45;""CHECK_EQ_TR_0"";"""";""CHECK_EQ"";"""";"""";""Baseline"";"""";""Transactions"";""Consistency check: Equity Transactions""",
-"46;""CHECK_EQ_TR_1"";"""";""CHECK_EQ"";"""";"""";""Scenario 1"";"""";""Transactions"";""Consistency check: Equity Transactions""",
-"47;""CHECK_EQ_TR_2"";"""";""CHECK_EQ"";"""";"""";""Scenario 2"";"""";""Transactions"";""Consistency check: Equity Transactions""",
-"48;""CHECK_ERROR1"";"""";""CHECK_ERROR1"";"""";"""";"""";"""";"""";""Consistency check: Error 1""",
-"49;""CHECK_ERROR1_0"";"""";""CHECK_ERROR1"";"""";"""";""Baseline"";"""";"""";""Consistency check: Error 1""",
-"50;""CHECK_ERROR1_1"";"""";""CHECK_ERROR1"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Error 1""",
-"51;""CHECK_ERROR1_2"";"""";""CHECK_ERROR1"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Error 1""",
-"52;""CHECK_ERROR2"";"""";""CHECK_ERROR2"";"""";"""";"""";"""";"""";""Consistency check: Error 2""",
-"53;""CHECK_ERROR2_0"";"""";""CHECK_ERROR2"";"""";"""";""Baseline"";"""";"""";""Consistency check: Error 2""",
-"54;""CHECK_ERROR2_1"";"""";""CHECK_ERROR2"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Error 2""",
-"55;""CHECK_ERROR2_2"";"""";""CHECK_ERROR2"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Error 2""",
-"56;""CHECK_ERROR3"";"""";""CHECK_ERROR3"";"""";"""";"""";"""";"""";""Consistency check: Error 3""",
-"57;""CHECK_ERROR3_0"";"""";""CHECK_ERROR3"";"""";"""";""Baseline"";"""";"""";""Consistency check: Error 3""",
-"58;""CHECK_ERROR3_1"";"""";""CHECK_ERROR3"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Error 3""",
-"59;""CHECK_ERROR3_2"";"""";""CHECK_ERROR3"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Error 3""",
-"60;""CHECK_IB_TR"";"""";""CHECK_IB"";"""";"""";"""";"""";""Transactions"";""Consistency check: Interest bearing transactions""",
-"61;""CHECK_IB_TR_0"";"""";""CHECK_IB"";"""";"""";""Baseline"";"""";""Transactions"";""Consistency check: Interest bearing transactions""",
-"62;""CHECK_IB_TR_1"";"""";""CHECK_IB"";"""";"""";""Scenario 1"";"""";""Transactions"";""Consistency check: Interest bearing transactions""",
-"63;""CHECK_IB_TR_2"";"""";""CHECK_IB"";"""";"""";""Scenario 2"";"""";""Transactions"";""Consistency check: Interest bearing transactions""",
-"64;""CHECK_IB_TFLOW"";"""";""CHECK_IB_TFLOW"";"""";"""";"""";"""";"""";""Consistency check: Interest bearing: Flows""",
-"65;""CHECK_IB_FLOW_0"";""Flexible"";""CHECK_IBOW"";"""";"""";""Baseline"";"""";"""";NA",
-"66;""CHECK_IB_FLOW_1"";""Flexible"";""CHECK_IBOW"";"""";"""";""Scenario 1"";"""";"""";NA",
-"67;""CHECK_IB_FLOW_2"";""Flexible"";""CHECK_IBOW"";"""";"""";""Scenario 2"";"""";"""";NA",
-"68;""CHECK_INVEST"";"""";""CHECK_INVEST"";"""";"""";"""";"""";"""";""Consistency check: Investment""",
-"69;""CHECK_INVEST_0"";"""";""CHECK_INVEST"";"""";"""";""Baseline"";"""";"""";""Consistency check: Investment""",
-"70;""CHECK_INVEST_1"";"""";""CHECK_INVEST"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Investment""",
-"71;""CHECK_INVEST_2"";"""";""CHECK_INVEST"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Investment""",
-"72;""CHECK_NEQ_RV"";"""";""CHECK_NEQ"";"""";"""";"""";"""";""Revaluations"";""Consistency check: Net equity""",
-"73;""CHECK_NEQ_RV_0"";"""";""CHECK_NEQ"";"""";"""";""Baseline"";"""";""Revaluations"";""Consistency check: Net equity""",
-"74;""CHECK_NEQ_RV_1"";"""";""CHECK_NEQ"";"""";"""";""Scenario 1"";"""";""Revaluations"";""Consistency check: Net equity""",
-"75;""CHECK_NEQ_RV_2"";"""";""CHECK_NEQ"";"""";"""";""Scenario 2"";"""";""Revaluations"";""Consistency check: Net equity""",
-"76;""CHECK_NIB"";"""";""CHECK_NIB"";"""";"""";"""";"""";"""";""Consistency check: Net interest bearing""",
-"77;""CHECK_NIB_0"";"""";""CHECK_NIB"";"""";"""";""Baseline"";"""";"""";""Consistency check: Net interest bearing""",
-"78;""CHECK_NIB_1"";"""";""CHECK_NIB"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Net interest bearing""",
-"79;""CHECK_NIB_2"";"""";""CHECK_NIB"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Net interest bearing""",
-"80;""CHECK_NIB_RV"";"""";""CHECK_NIB"";"""";"""";"""";"""";""Revaluations"";""Consistency check: Net interest bearing""",
-"81;""CHECK_NIB_RV_0"";"""";""CHECK_NIB"";"""";"""";""Baseline"";"""";""Revaluations"";""Consistency check: Net interest bearing""",
-"82;""CHECK_NIB_RV_1"";"""";""CHECK_NIB"";"""";"""";""Scenario 1"";"""";""Revaluations"";""Consistency check: Net interest bearing""",
-"83;""CHECK_NIB_RV_2"";"""";""CHECK_NIB"";"""";"""";""Scenario 2"";"""";""Revaluations"";""Consistency check: Net interest bearing""",
-"84;""CHECK_NIB_TR"";"""";""CHECK_NIB"";"""";"""";"""";"""";""Transactions"";""Consistency check: Net interest bearing""",
-"85;""CHECK_NIB_TR_0"";"""";""CHECK_NIB"";"""";"""";""Baseline"";"""";""Transactions"";""Consistency check: Net interest bearing""",
-"86;""CHECK_NIB_TR_1"";"""";""CHECK_NIB"";"""";"""";""Scenario 1"";"""";""Transactions"";""Consistency check: Net interest bearing""",
-"87;""CHECK_NIB_TR_2"";"""";""CHECK_NIB"";"""";"""";""Scenario 2"";"""";""Transactions"";""Consistency check: Net interest bearing""",
-"88;""CHECK_NIB_TFLOW"";"""";""CHECK_NIB_TFLOW"";"""";"""";"""";"""";"""";""Consistency check: Net interest bearing: Flows""",
-"89;""CHECK_NIB_FLOW_0"";""Flexible"";""CHECK_NIBOW"";"""";"""";""Baseline"";"""";"""";NA",
-"90;""CHECK_NIB_FLOW_1"";""Flexible"";""CHECK_NIBOW"";"""";"""";""Scenario 1"";"""";"""";NA",
-"91;""CHECK_NIB_FLOW_2"";""Flexible"";""CHECK_NIBOW"";"""";"""";""Scenario 2"";"""";"""";NA",
-"92;""CHECK_NP"";"""";""CHECK_NP"";"""";"""";"""";"""";"""";""Consistency check: Net purchases of non-financial assets (NP)""",
-"93;""CHECK_NP_0"";"""";""CHECK_NP"";"""";"""";""Baseline"";"""";"""";""Consistency check: Net purchases of non-financial assets (NP)""",
-"94;""CHECK_NP_1"";"""";""CHECK_NP"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Net purchases of non-financial assets (NP)""",
-"95;""CHECK_NP_2"";"""";""CHECK_NP"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Net purchases of non-financial assets (NP)""",
-"96;""CHECK_NPEN_RV"";"""";""CHECK_NPEN"";"""";"""";"""";"""";""Revaluations"";""Consistency check: Net pensions: Revaluations""",
-"97;""CHECK_NPEN_RV_0"";"""";""CHECK_NPEN"";"""";"""";""Baseline"";"""";""Revaluations"";""Consistency check: Net pensions: Revaluations""",
-"98;""CHECK_NPEN_RV_1"";"""";""CHECK_NPEN"";"""";"""";""Scenario 1"";"""";""Revaluations"";""Consistency check: Net pensions: Revaluations""",
-"99;""CHECK_NPEN_RV_2"";"""";""CHECK_NPEN"";"""";"""";""Scenario 2"";"""";""Revaluations"";""Consistency check: Net pensions: Revaluations""",
-"100;""CHECK_PEN_TR"";"""";""CHECK_PEN"";"""";"""";"""";"""";""Transactions"";""Consistency check: Pensions: Transactions""",
-"101;""CHECK_PEN_TR_0"";"""";""CHECK_PEN"";"""";"""";""Baseline"";"""";""Transactions"";""Consistency check: Pensions: Transactions""",
-"102;""CHECK_PEN_TR_1"";"""";""CHECK_PEN"";"""";"""";""Scenario 1"";"""";""Transactions"";""Consistency check: Pensions: Transactions""",
-"103;""CHECK_PEN_TR_2"";"""";""CHECK_PEN"";"""";"""";""Scenario 2"";"""";""Transactions"";""Consistency check: Pensions: Transactions""",
-"104;""CHECK_STRA"";"""";""CHECK_STRA"";"""";"""";"""";"""";"""";""Consistency check: Social transfers""",
-"105;""CHECK_STRA_0"";"""";""CHECK_STRA"";"""";"""";""Baseline"";"""";"""";""Consistency check: Social transfers""",
-"106;""CHECK_STRA_1"";"""";""CHECK_STRA"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Social transfers""",
-"107;""CHECK_STRA_2"";"""";""CHECK_STRA"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Social transfers""",
-"108;""CHECK_TAX"";"""";""CHECK_TAX"";"""";"""";"""";"""";"""";""Consistency check: Tax""",
-"109;""CHECK_TAX_0"";"""";""CHECK_TAX"";"""";"""";""Baseline"";"""";"""";""Consistency check: Tax""",
-"110;""CHECK_TAX_1"";"""";""CHECK_TAX"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Tax""",
-"111;""CHECK_TAX_2"";"""";""CHECK_TAX"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Tax""",
-"112;""CHECK_WAGE"";"""";""CHECK_WAGE"";"""";"""";"""";"""";"""";""Consistency check: Wages""",
-"113;""CHECK_WAGE_0"";"""";""CHECK_WAGE"";"""";"""";""Baseline"";"""";"""";""Consistency check: Wages""",
-"114;""CHECK_WAGE_1"";"""";""CHECK_WAGE"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Wages""",
-"115;""CHECK_WAGE_2"";"""";""CHECK_WAGE"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Wages""",
-"116;""CPEN_F"";"""";""CPEN"";""FC"";"""";"""";"""";"""";""Financial Liabilities: Change in pension entitlements""",
-"117;""CPEN_F_0"";"""";""CPEN"";""FC"";"""";""Baseline"";"""";"""";""Financial Liabilities: Change in pension entitlements""",
-"118;""CPEN_F_1"";"""";""CPEN"";""FC"";"""";""Scenario 1"";"""";"""";""Financial Liabilities: Change in pension entitlements""",
-"119;""CPEN_F_2"";"""";""CPEN"";""FC"";"""";""Scenario 2"";"""";"""";""Financial Liabilities: Change in pension entitlements""",
-"120;""CPEN_H"";"""";""CPEN"";""HH"";"""";"""";"""";"""";""Financial Liabilities: Change in pension entitlements""",
-"121;""CTR_F"";"""";""CTR"";""FC"";"""";"""";"""";"""";""Capital transfers""",
-"122;""CTR_G"";"""";""CTR"";""GOVT"";"""";"""";"""";"""";""Capital transfers""",
-"123;""CTR_H"";"""";""CTR"";""HH"";"""";"""";"""";"""";""Capital transfers""",
-"124;""CTR_NF"";"""";""CTR"";""NFC"";"""";"""";"""";"""";""Capital transfers""",
-"125;""CTR_NF_0"";"""";""CTR"";""NFC"";"""";""Baseline"";"""";"""";""Capital transfers""",
-"126;""CTR_NF_1"";"""";""CTR"";""NFC"";"""";""Scenario 1"";"""";"""";""Capital transfers""",
-"127;""CTR_NF_2"";"""";""CTR"";""NFC"";"""";""Scenario 2"";"""";"""";""Capital transfers""",
-"128;""CTR_ROW"";"""";""CTR"";""ROW"";"""";"""";"""";"""";""Capital transfers""",
-"129;""CU"";"""";""CU"";"""";"""";"""";"""";"""";""Capacity Utilisation (Real GNI  /  real capital stock)""",
-"130;""CU_0"";"""";""CU"";"""";"""";""Baseline"";"""";"""";""Capacity Utilisation (Real GNI  /  real capital stock)""",
-"131;""CU_1"";"""";""CU"";"""";"""";""Scenario 1"";"""";"""";""Capacity Utilisation (Real GNI  /  real capital stock)""",
-"132;""CU_2"";"""";""CU"";"""";"""";""Scenario 2"";"""";"""";""Capacity Utilisation (Real GNI  /  real capital stock)""",
-"133;""D_1998"";"""";""D_1998"";"""";"""";""Scenario 1"";"""";"""";""Dummy variable: 1998""",
-"134;""D_200"";"""";""D_200"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2000""",
-"135;""D_2004"";"""";""D_2004"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2004""",
-"136;""D_2006"";"""";""D_2006"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2006""",
-"137;""D_2007"";"""";""D_2007"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2007""",
-"138;""D_2008"";"""";""D_2008"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2008""",
-"139;""D_2009"";"""";""D_2009"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2009""",
-"140;""D_2010"";"""";""D_2010"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2010""",
-"141;""D_2011"";"""";""D_2011"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2011""",
-"142;""D_2014"";"""";""D_2014"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: High taxes: 2014""",
-"143;""D_2015"";"""";""D_2015"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2015""",
-"144;""D_2016"";"""";""D_2016"";"""";"""";""Scenario 2"";"""";"""";""Dummy variable: 2016""",
-"145;""D21"";"""";""D21"";"""";"""";"""";"""";"""";""Taxes on products""",
-"146;""D21_G"";"""";""D21"";""GOVT"";"""";"""";"""";"""";""Taxes on products""",
-"147;""D21_NF"";"""";""D21"";""NFC"";"""";"""";"""";"""";""Taxes on products""",
-"148;""D21_ROW"";"""";""D21"";""ROW"";"""";"""";"""";"""";""Taxes on products""",
-"149;""D29_G"";"""";""D29"";""GOVT"";"""";"""";"""";"""";""Other taxes on production""",
-"150;""D29_NF"";"""";""D29"";""NFC"";"""";"""";"""";"""";""Other taxes on production""",
-"151;""D31_G"";"""";""D31"";""GOVT"";"""";"""";"""";"""";""Subsidies D31""",
-"152;""D31_NF"";"""";""D31"";""NFC"";"""";"""";"""";"""";""Subsidies D31""",
-"153;""D31_ROW"";"""";""D31"";""ROW"";"""";"""";"""";"""";""Subsidies D31""",
-"154;""D39_G"";"""";""D39"";""GOVT"";"""";"""";"""";"""";""Subsidies D39""",
-"155;""D39_NF"";"""";""D39"";""NFC"";"""";"""";"""";"""";""Subsidies D39""",
-"156;""D39_ROW"";"""";""D39"";""ROW"";"""";"""";"""";"""";""Subsidies D39""",
-"157;""D41_F_P"";"""";""D41_P"";""FC"";"""";"""";"""";"""";""Interest: Paid""",
-"158;""D41_G_P"";"""";""D41_P"";""GOVT"";"""";"""";"""";"""";""Interest: Paid""",
-"159;""D41_H_P"";"""";""D41_P"";""HH"";"""";"""";"""";"""";""Interest: Paid""",
-"160;""D41_NF_P"";"""";""D41_P"";""NFC"";"""";"""";"""";"""";""Interest: Paid""",
-"161;""D41_ROW_P"";"""";""D41_P"";""ROW"";"""";"""";"""";"""";""Interest: Paid""",
-"162;""D41_F_R"";"""";""D41_R"";""FC"";"""";"""";"""";"""";""Interest: Received""",
-"163;""D41_G_R"";"""";""D41_R"";""GOVT"";"""";"""";"""";"""";""Interest: Received""",
-"164;""D41_H_R"";"""";""D41_R"";""HH"";"""";"""";"""";"""";""Interest: Received""",
-"165;""D41_NF_R"";"""";""D41_R"";""NFC"";"""";"""";"""";"""";""Interest: Received""",
-"166;""D41_ROW_R"";"""";""D41_R"";""ROW"";"""";"""";"""";"""";""Interest: Received""",
-"167;""D41B_F"";"""";""D41B"";""FC"";"""";"""";"""";"""";""Interest: Received""",
-"168;""D41B_G"";"""";""D41B"";""GOVT"";"""";"""";"""";"""";""Interest: Received""",
-"169;""D42_F_P"";"""";""D42_P"";""FC"";"""";"""";"""";"""";""Distributed income of corporations: Paid""",
-"170;""D42_NF_P"";"""";""D42_P"";""NFC"";"""";"""";"""";"""";""Distributed income of corporations: Paid""",
-"171;""D42_ROW_P"";"""";""D42_P"";""ROW"";"""";"""";"""";"""";""Distributed income of corporations: Paid""",
-"172;""D42_F_R"";"""";""D42_R"";""FC"";"""";"""";"""";"""";""Distributed income of corporations: Received""",
-"173;""D42_G_R"";"""";""D42_R"";""GOVT"";"""";"""";"""";"""";""Distributed income of corporations: Received""",
-"174;""D42_H_R"";"""";""D42_R"";""HH"";"""";"""";"""";"""";""Distributed income of corporations: Received""",
-"175;""D42_NF_R"";"""";""D42_R"";""NFC"";"""";"""";"""";"""";""Distributed income of corporations: Received""",
-"176;""D42_ROW_R"";"""";""D42_R"";""ROW"";"""";"""";"""";"""";""Distributed income of corporations: Received""",
-"177;""D44_F_P"";"""";""D44_P"";""FC"";"""";"""";"""";"""";""Other investment income: Paid""",
-"178;""D44_ROW_P"";"""";""D44_P"";""ROW"";"""";"""";"""";"""";""Other investment income: Paid""",
-"179;""D44_H_R"";"""";""D44_R"";""HH"";"""";"""";"""";"""";""Other investment income: Received""",
-"180;""D44_ROW_R"";"""";""D44_R"";""ROW"";"""";"""";"""";"""";""Other investment income: Received""",
-"181;""DELTA"";"""";""DELTA"";"""";"""";"""";"""";"""";""Equity to assets ratio""",
-"182;""DEP_F"";"""";""DEP"";""FC"";"""";"""";"""";"""";""Depreciation of fixed capital""",
-"183;""DEP_G"";"""";""DEP"";""GOVT"";"""";"""";"""";"""";""Depreciation of fixed capital""",
-"184;""DEP_H"";"""";""DEP"";""HH"";"""";"""";"""";"""";""Depreciation of fixed capital""",
-"185;""DEP_H_0"";"""";""DEP"";""HH"";"""";""Baseline"";"""";"""";""Depreciation of fixed capital""",
-"186;""DEP_H_1"";"""";""DEP"";""HH"";"""";""Scenario 1"";"""";"""";""Depreciation of fixed capital""",
-"187;""DEP_H_2"";"""";""DEP"";""HH"";"""";""Scenario 2"";"""";"""";""Depreciation of fixed capital""",
-"188;""DEP_H_K"";"""";""DEP"";""HH"";"""";"""";""Real prices"";"""";""Depreciation of fixed capital""",
-"189;""DEP_NF"";"""";""DEP"";""NFC"";"""";"""";"""";"""";""Depreciation of fixed capital""",
-"190;""DEP_NF_K"";"""";""DEP"";""NFC"";"""";"""";""Real prices"";"""";""Depreciation of fixed capital""",
-"191;""EQA_F"";"""";""EQA"";""FC"";"""";"""";"""";"""";""Financial Assets: Equity assets""",
-"192;""EQA_F_RV"";"""";""EQA"";""FC"";"""";"""";"""";""Revaluations"";""Financial Assets: Equity assets""",
-"193;""EQA_F_TR"";"""";""EQA"";""FC"";"""";"""";"""";""Transactions"";""Financial Assets: Equity assets""",
-"194;""EQA_G"";"""";""EQA"";""GOVT"";"""";"""";"""";"""";""Financial Assets: Equity assets""",
-"195;""EQA_G_RV"";"""";""EQA"";""GOVT"";"""";"""";"""";""Revaluations"";""Financial Assets: Equity assets""",
-"196;""EQA_G_TR"";"""";""EQA"";""GOVT"";"""";"""";"""";""Transactions"";""Financial Assets: Equity assets""",
-"197;""EQA_H"";"""";""EQA"";""HH"";"""";"""";"""";"""";""Financial Assets: Equity assets""",
-"198;""EQA_H_0"";"""";""EQA"";""HH"";"""";""Baseline"";"""";"""";""Financial Assets: Equity assets""",
-"199;""EQA_H_1"";"""";""EQA"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Assets: Equity assets""",
-"200;""EQA_H_2"";"""";""EQA"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Assets: Equity assets""",
-"201;""EQA_H_RV"";"""";""EQA"";""HH"";"""";"""";"""";""Revaluations"";""Financial Assets: Equity assets""",
-"202;""EQA_H_TR"";"""";""EQA"";""HH"";"""";"""";"""";""Transactions"";""Financial Assets: Equity assets""",
-"203;""EQA_H_TR_0"";"""";""EQA"";""HH"";"""";""Baseline"";"""";""Transactions"";""Financial Assets: Equity assets""",
-"204;""EQA_H_TR_1"";"""";""EQA"";""HH"";"""";""Scenario 1"";"""";""Transactions"";""Financial Assets: Equity assets""",
-"205;""EQA_H_TR_2"";"""";""EQA"";""HH"";"""";""Scenario 2"";"""";""Transactions"";""Financial Assets: Equity assets""",
-"206;""EQA_NF"";"""";""EQA"";""NFC"";"""";"""";"""";"""";""Financial Assets: Equity assets""",
-"207;""EQA_NF_RV"";"""";""EQA"";""NFC"";"""";"""";"""";""Revaluations"";""Financial Assets: Equity assets""",
-"208;""EQA_NF_TR"";"""";""EQA"";""NFC"";"""";"""";"""";""Transactions"";""Financial Assets: Equity assets""",
-"209;""EQA_ROW"";"""";""EQA"";""ROW"";"""";"""";"""";"""";""Financial Assets: Equity assets""",
-"210;""EQA_ROW_RV"";"""";""EQA"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Assets: Equity assets""",
-"211;""EQA_ROW_TR"";"""";""EQA"";""ROW"";"""";"""";"""";""Transactions"";""Financial Assets: Equity assets""",
-"212;""EQA_R_H"";"""";""EQA_R"";""HH"";"""";"""";"""";"""";""Equity ratio""",
-"213;""EQL_F"";"""";""EQL"";""FC"";"""";"""";"""";"""";""Financial Liabilities: Equity liabilities""",
-"214;""EQL_F_RV"";"""";""EQL"";""FC"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Equity liabilities""",
-"215;""EQL_F_TR"";"""";""EQL"";""FC"";"""";"""";"""";""Transactions"";""Financial Liabilities: Equity liabilities""",
-"216;""EQL_NF"";"""";""EQL"";""NFC"";"""";"""";"""";"""";""Financial Liabilities: Equity liabilities""",
-"217;""EQL_NF_RV"";"""";""EQL"";""NFC"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Equity liabilities""",
-"218;""EQL_NF_TR"";"""";""EQL"";""NFC"";"""";"""";"""";""Transactions"";""Financial Liabilities: Equity liabilities""",
-"219;""EQL_ROW"";"""";""EQL"";""ROW"";"""";"""";"""";"""";""Financial Liabilities: Equity liabilities""",
-"220;""EQL_ROW_RV"";"""";""EQL"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Equity liabilities""",
-"221;""EQL_ROW_TR"";"""";""EQL"";""ROW"";"""";"""";"""";""Transactions"";""Financial Liabilities: Equity liabilities""",
-"222;""ERROR_CHECK1"";"""";""ERROR_CHECK1"";"""";"""";"""";"""";"""";""Error check""",
-"223;""ERROR_CHECK2"";"""";""ERROR_CHECK2"";"""";"""";"""";"""";"""";""Error check""",
-"224;""ERROR_CHECK3"";"""";""ERROR_CHECK3"";"""";"""";"""";"""";"""";""Error check""",
-"225;""FA_F"";"""";""FA"";""FC"";"""";"""";"""";"""";""Financial Assets""",
-"226;""FA_F_TR"";"""";""FA"";""FC"";"""";"""";"""";""Transactions"";""Financial Assets""",
-"227;""FA_G"";"""";""FA"";""GOVT"";"""";"""";"""";"""";""Financial Assets""",
-"228;""FA_G_TR"";"""";""FA"";""GOVT"";"""";"""";"""";""Transactions"";""Financial Assets""",
-"229;""FA_H"";"""";""FA"";""HH"";"""";"""";"""";"""";""Financial Assets""",
-"230;""FA_H_0"";"""";""FA"";""HH"";"""";""Baseline"";"""";"""";""Financial Assets""",
-"231;""FA_H_1"";"""";""FA"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Assets""",
-"232;""FA_H_2"";"""";""FA"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Assets""",
-"233;""FA_H_TR"";"""";""FA"";""HH"";"""";"""";"""";""Transactions"";""Financial Assets""",
-"234;""FA_H_TR_0"";"""";""FA"";""HH"";"""";""Baseline"";"""";""Transactions"";""Financial Assets""",
-"235;""FA_H_TR_1"";"""";""FA"";""HH"";"""";""Scenario 1"";"""";""Transactions"";""Financial Assets""",
-"236;""FA_H_TR_2"";"""";""FA"";""HH"";"""";""Scenario 2"";"""";""Transactions"";""Financial Assets""",
-"237;""FA_NF"";"""";""FA"";""NFC"";"""";"""";"""";"""";""Financial Assets""",
-"238;""FA_NF_TR"";"""";""FA"";""NFC"";"""";"""";"""";""Transactions"";""Financial Assets""",
-"239;""FA_ROW"";"""";""FA"";""ROW"";"""";"""";"""";"""";""Financial Assets""",
-"240;""FA_ROW_TR"";"""";""FA"";""ROW"";"""";"""";"""";""Transactions"";""Financial Assets""",
-"241;""FAB"";"""";""FAB"";"""";"""";"""";"""";"""";""Financial account balance""",
-"242;""FAB_0"";"""";""FAB"";"""";"""";""Baseline"";"""";"""";""Financial account balance""",
-"243;""FAB_1"";"""";""FAB"";"""";"""";""Scenario 1"";"""";"""";""Financial account balance""",
-"244;""FAB_2"";"""";""FAB"";"""";"""";""Scenario 2"";"""";"""";""Financial account balance""",
-"245;""FEE59"";"""";""FEE59"";"""";"""";"""";"""";"""";""Danish exports to trading partners: Weighted average total exports (imports by foreign trading partners)""",
-"246;""FL_F"";"""";""FL"";""FC"";"""";"""";"""";"""";""Financial liabilities""",
-"247;""FL_F_TR"";"""";""FL"";""FC"";"""";"""";"""";""Transactions"";""Financial liabilities""",
-"248;""FL_G"";"""";""FL"";""GOVT"";"""";"""";"""";"""";""Financial liabilities""",
-"249;""FL_G_TR"";"""";""FL"";""GOVT"";"""";"""";"""";""Transactions"";""Financial liabilities""",
-"250;""FL_H"";"""";""FL"";""HH"";"""";"""";"""";"""";""Financial liabilities""",
-"251;""FL_H_TR"";"""";""FL"";""HH"";"""";"""";"""";""Transactions"";""Financial liabilities""",
-"252;""FL_H_TR_0"";"""";""FL"";""HH"";"""";""Baseline"";"""";""Transactions"";""Financial liabilities""",
-"253;""FL_H_TR_1"";"""";""FL"";""HH"";"""";""Scenario 1"";"""";""Transactions"";""Financial liabilities""",
-"254;""FL_H_TR_2"";"""";""FL"";""HH"";"""";""Scenario 2"";"""";""Transactions"";""Financial liabilities""",
-"255;""FL_NF"";"""";""FL"";""NFC"";"""";"""";"""";"""";""Financial liabilities""",
-"256;""FL_NF_TR"";"""";""FL"";""NFC"";"""";"""";"""";""Transactions"";""Financial liabilities""",
-"257;""FL_ROW"";"""";""FL"";""ROW"";"""";"""";"""";"""";""Financial liabilities""",
-"258;""FL_ROW_TR"";"""";""FL"";""ROW"";"""";"""";"""";""Transactions"";""Financial liabilities""",
-"259;""FNL_F"";"""";""FNL"";""FC"";"""";"""";"""";"""";""Financial Net Lending (Balance)""",
-"260;""FNL_F_0"";"""";""FNL"";""FC"";"""";""Baseline"";"""";"""";""Financial Net Lending (Balance)""",
-"261;""FNL_F_1"";"""";""FNL"";""FC"";"""";""Scenario 1"";"""";"""";""Financial Net Lending (Balance)""",
-"262;""FNL_F_2"";"""";""FNL"";""FC"";"""";""Scenario 2"";"""";"""";""Financial Net Lending (Balance)""",
-"263;""FNL_G"";"""";""FNL"";""GOVT"";"""";"""";"""";"""";""Financial Net Lending (Balance)""",
-"264;""FNL_G_0"";"""";""FNL"";""GOVT"";"""";""Baseline"";"""";"""";""Financial Net Lending (Balance)""",
-"265;""FNL_G_1"";"""";""FNL"";""GOVT"";"""";""Scenario 1"";"""";"""";""Financial Net Lending (Balance)""",
-"266;""FNL_G_2"";"""";""FNL"";""GOVT"";"""";""Scenario 2"";"""";"""";""Financial Net Lending (Balance)""",
-"267;""FNL_H"";"""";""FNL"";""HH"";"""";"""";"""";"""";""Financial Net Lending (Balance)""",
-"268;""FNL_H_0"";"""";""FNL"";""HH"";"""";""Baseline"";"""";"""";""Financial Net Lending (Balance)""",
-"269;""FNL_H_1"";"""";""FNL"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Net Lending (Balance)""",
-"270;""FNL_H_2"";"""";""FNL"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Net Lending (Balance)""",
-"271;""FNL_NF"";"""";""FNL"";""NFC"";"""";"""";"""";"""";""Financial Net Lending (Balance)""",
-"272;""FNL_NF_0"";"""";""FNL"";""NFC"";"""";""Baseline"";"""";"""";""Financial Net Lending (Balance)""",
-"273;""FNL_NF_1"";"""";""FNL"";""NFC"";"""";""Scenario 1"";"""";"""";""Financial Net Lending (Balance)""",
-"274;""FNL_NF_2"";"""";""FNL"";""NFC"";"""";""Scenario 2"";"""";"""";""Financial Net Lending (Balance)""",
-"275;""FNL_ROW"";"""";""FNL"";""ROW"";"""";"""";"""";"""";""Financial Net Lending (Balance)""",
-"276;""FNL_ROW_0"";"""";""FNL"";""ROW"";"""";""Baseline"";"""";"""";""Financial Net Lending (Balance)""",
-"277;""FNL_ROW_1"";"""";""FNL"";""ROW"";"""";""Scenario 1"";"""";"""";""Financial Net Lending (Balance)""",
-"278;""FNL_ROW_2"";"""";""FNL"";""ROW"";"""";""Scenario 2"";"""";"""";""Financial Net Lending (Balance)""",
-"279;""FNW_F"";"""";""FNW"";""FC"";"""";"""";"""";"""";""Financial net wealth""",
-"280;""FNW_F_0"";"""";""FNW"";""FC"";"""";""Baseline"";"""";"""";""Financial net wealth""",
-"281;""FNW_F_1"";"""";""FNW"";""FC"";"""";""Scenario 1"";"""";"""";""Financial net wealth""",
-"282;""FNW_F_2"";"""";""FNW"";""FC"";"""";""Scenario 2"";"""";"""";""Financial net wealth""",
-"283;""FNW_G"";"""";""FNW"";""GOVT"";"""";"""";"""";"""";""Financial net wealth""",
-"284;""FNW_G_0"";"""";""FNW"";""GOVT"";"""";""Baseline"";"""";"""";""Financial net wealth""",
-"285;""FNW_G_1"";"""";""FNW"";""GOVT"";"""";""Scenario 1"";"""";"""";""Financial net wealth""",
-"286;""FNW_G_2"";"""";""FNW"";""GOVT"";"""";""Scenario 2"";"""";"""";""Financial net wealth""",
-"287;""FNW_H"";"""";""FNW"";""HH"";"""";"""";"""";"""";""Financial net wealth""",
-"288;""FNW_H_0"";"""";""FNW"";""HH"";"""";""Baseline"";"""";"""";""Financial net wealth""",
-"289;""FNW_H_1"";"""";""FNW"";""HH"";"""";""Scenario 1"";"""";"""";""Financial net wealth""",
-"290;""FNW_H_2"";"""";""FNW"";""HH"";"""";""Scenario 2"";"""";"""";""Financial net wealth""",
-"291;""FNW_H_K"";"""";""FNW"";""HH"";"""";"""";""Real prices"";"""";""Financial net wealth""",
-"292;""FNW_H_K_0"";"""";""FNW"";""HH"";"""";""Baseline"";""Real prices"";"""";""Financial net wealth""",
-"293;""FNW_H_K_1"";"""";""FNW"";""HH"";"""";""Scenario 1"";""Real prices"";"""";""Financial net wealth""",
-"294;""FNW_H_K_2"";"""";""FNW"";""HH"";"""";""Scenario 2"";""Real prices"";"""";""Financial net wealth""",
-"295;""FNW_NF"";"""";""FNW"";""NFC"";"""";"""";"""";"""";""Financial net wealth""",
-"296;""FNW_NF_0"";"""";""FNW"";""NFC"";"""";""Baseline"";"""";"""";""Financial net wealth""",
-"297;""FNW_NF_1"";"""";""FNW"";""NFC"";"""";""Scenario 1"";"""";"""";""Financial net wealth""",
-"298;""FNW_NF_2"";"""";""FNW"";""NFC"";"""";""Scenario 2"";"""";"""";""Financial net wealth""",
-"299;""FNW_ROW"";"""";""FNW"";""ROW"";"""";"""";"""";"""";""Financial net wealth""",
-"300;""FNW_ROW_0"";"""";""FNW"";""ROW"";"""";""Baseline"";"""";"""";""Financial net wealth""",
-"301;""FNW_ROW_1"";"""";""FNW"";""ROW"";"""";""Scenario 1"";"""";"""";""Financial net wealth""",
-"302;""FNW_ROW_2"";"""";""FNW"";""ROW"";"""";""Scenario 2"";"""";"""";""Financial net wealth""",
-"303;""G"";"""";""G"";"""";"""";"""";"""";"""";""Government expenditure: Nominal prices""",
-"304;""G_K"";"""";""G"";"""";"""";"""";""Real prices"";"""";""Government expenditure: Nominal prices""",
-"305;""G_K_0"";"""";""G"";"""";"""";""Baseline"";""Real prices"";"""";""Government expenditure: Nominal prices""",
-"306;""G_K_1"";"""";""G"";"""";"""";""Scenario 1"";""Real prices"";"""";""Government expenditure: Nominal prices""",
-"307;""G_K_2"";"""";""G"";"""";"""";""Scenario 2"";""Real prices"";"""";""Government expenditure: Nominal prices""",
-"308;""GDP"";"""";""GDP"";"""";"""";"""";"""";"""";""Gross domestic product""",
-"309;""GDP_EU"";"""";""GDP"";""EU"";"""";"""";"""";"""";""Gross domestic product""",
-"310;""HFHF"";"""";""HFHF"";"""";"""";"""";"""";"""";""Test variable: Not used""",
-"311;""HH_K"";"""";""HH"";"""";"""";"""";""Real prices"";"""";""Price index: Houses""",
-"312;""I"";"""";""I"";"""";"""";"""";"""";"""";""Gross fixed capital formation""",
-"313;""I_0"";"""";""I"";"""";"""";""Baseline"";"""";"""";""Gross fixed capital formation""",
-"314;""I_1"";"""";""I"";"""";"""";""Scenario 1"";"""";"""";""Gross fixed capital formation""",
-"315;""I_2"";"""";""I"";"""";"""";""Scenario 2"";"""";"""";""Gross fixed capital formation""",
-"316;""I_K"";"""";""I"";"""";"""";"""";""Real prices"";"""";""Gross fixed capital formation""",
-"317;""I_K_0"";"""";""I"";"""";"""";""Baseline"";""Real prices"";"""";""Gross fixed capital formation""",
-"318;""I_K_1"";"""";""I"";"""";"""";""Scenario 1"";""Real prices"";"""";""Gross fixed capital formation""",
-"319;""I_K_2"";"""";""I"";"""";"""";""Scenario 2"";""Real prices"";"""";""Gross fixed capital formation""",
-"320;""IBA_F"";"""";""IBA"";""FC"";"""";"""";"""";"""";""Financial Assets: Interest bearing assets""",
-"321;""IBA_F_H"";"""";""IBA"";""FC"";""HH"";"""";"""";"""";""Financial Assets: Interest bearing assets""",
-"322;""IBA_F_H_0"";"""";""IBA"";""FC"";""HH"";""Baseline"";"""";"""";""Financial Assets: Interest bearing assets""",
-"323;""IBA_F_H_1"";"""";""IBA"";""FC"";""HH"";""Scenario 1"";"""";"""";""Financial Assets: Interest bearing assets""",
-"324;""IBA_F_H_2"";"""";""IBA"";""FC"";""HH"";""Scenario 2"";"""";"""";""Financial Assets: Interest bearing assets""",
-"325;""IBA_F_H_RV"";"""";""IBA"";""FC"";""HH"";"""";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"326;""IBA_F_H_RV_0"";"""";""IBA"";""FC"";""HH"";""Baseline"";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"327;""IBA_F_H_RV_1"";"""";""IBA"";""FC"";""HH"";""Scenario 1"";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"328;""IBA_F_H_RV_2"";"""";""IBA"";""FC"";""HH"";""Scenario 2"";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"329;""IBA_F_H_TR"";"""";""IBA"";""FC"";""HH"";"""";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"330;""IBA_F_H_TR_0"";"""";""IBA"";""FC"";""HH"";""Baseline"";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"331;""IBA_F_H_TR_1"";"""";""IBA"";""FC"";""HH"";""Scenario 1"";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"332;""IBA_F_H_TR_2"";"""";""IBA"";""FC"";""HH"";""Scenario 2"";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"333;""IBA_F_RV"";"""";""IBA"";""FC"";"""";"""";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"334;""IBA_F_TR"";"""";""IBA"";""FC"";"""";"""";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"335;""IBA_G"";"""";""IBA"";""GOVT"";"""";"""";"""";"""";""Financial Assets: Interest bearing assets""",
-"336;""IBA_G_RV"";"""";""IBA"";""GOVT"";"""";"""";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"337;""IBA_G_TR"";"""";""IBA"";""GOVT"";"""";"""";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"338;""IBA_H"";"""";""IBA"";""HH"";"""";"""";"""";"""";""Financial Assets: Interest bearing assets""",
-"339;""IBA_H_0"";"""";""IBA"";""HH"";"""";""Baseline"";"""";"""";""Financial Assets: Interest bearing assets""",
-"340;""IBA_H_1"";"""";""IBA"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Assets: Interest bearing assets""",
-"341;""IBA_H_2"";"""";""IBA"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Assets: Interest bearing assets""",
-"342;""IBA_H_RV"";"""";""IBA"";""HH"";"""";"""";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"343;""IBA_H_TR"";"""";""IBA"";""HH"";"""";"""";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"344;""IBA_H_TR_0"";"""";""IBA"";""HH"";"""";""Baseline"";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"345;""IBA_H_TR_1"";"""";""IBA"";""HH"";"""";""Scenario 1"";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"346;""IBA_H_TR_2"";"""";""IBA"";""HH"";"""";""Scenario 2"";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"347;""IBA_NF"";"""";""IBA"";""NFC"";"""";"""";"""";"""";""Financial Assets: Interest bearing assets""",
-"348;""IBA_NF_RV"";"""";""IBA"";""NFC"";"""";"""";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"349;""IBA_NF_TR"";"""";""IBA"";""NFC"";"""";"""";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"350;""IBA_ROW"";"""";""IBA"";""ROW"";"""";"""";"""";"""";""Financial Assets: Interest bearing assets""",
-"351;""IBA_ROW_RV"";"""";""IBA"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Assets: Interest bearing assets""",
-"352;""IBA_ROW_TR"";"""";""IBA"";""ROW"";"""";"""";"""";""Transactions"";""Financial Assets: Interest bearing assets""",
-"353;""IBL_F"";"""";""IBL"";""FC"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"354;""IBL_F_H"";"""";""IBL"";""FC"";""HH"";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"355;""IBL_F_H_0"";"""";""IBL"";""FC"";""HH"";""Baseline"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"356;""IBL_F_H_1"";"""";""IBL"";""FC"";""HH"";""Scenario 1"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"357;""IBL_F_H_2"";"""";""IBL"";""FC"";""HH"";""Scenario 2"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"358;""IBL_F_H_RV"";"""";""IBL"";""FC"";""HH"";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"359;""IBL_F_H_RV_0"";"""";""IBL"";""FC"";""HH"";""Baseline"";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"360;""IBL_F_H_RV_1"";"""";""IBL"";""FC"";""HH"";""Scenario 1"";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"361;""IBL_F_H_RV_2"";"""";""IBL"";""FC"";""HH"";""Scenario 2"";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"362;""IBL_F_H_TR"";"""";""IBL"";""FC"";""HH"";"""";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"363;""IBL_F_H_TR_0"";"""";""IBL"";""FC"";""HH"";""Baseline"";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"364;""IBL_F_H_TR_1"";"""";""IBL"";""FC"";""HH"";""Scenario 1"";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"365;""IBL_F_H_TR_2"";"""";""IBL"";""FC"";""HH"";""Scenario 2"";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"366;""IBL_F_RV"";"""";""IBL"";""FC"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"367;""IBL_F_TR"";"""";""IBL"";""FC"";"""";"""";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"368;""IBL_FI_H"";""Fixed"";""IBL"";""HH"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"369;""IBL_FI_H_0"";""Fixed"";""IBL"";""HH"";"""";""Baseline"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"370;""IBL_FI_H_1"";""Fixed"";""IBL"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"371;""IBL_FI_H_2"";""Fixed"";""IBL"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"372;""IBL_FL_H"";""Flexible"";""IBL"";""HH"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"373;""IBL_FL_H_0"";""Flexible"";""IBL"";""HH"";"""";""Baseline"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"374;""IBL_FL_H_1"";""Flexible"";""IBL"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"375;""IBL_FL_H_2"";""Flexible"";""IBL"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"376;""IBL_G"";"""";""IBL"";""GOVT"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"377;""IBL_G_RV"";"""";""IBL"";""GOVT"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"378;""IBL_G_TR"";"""";""IBL"";""GOVT"";"""";"""";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"379;""IBL_H"";"""";""IBL"";""HH"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"380;""IBL_H_0"";"""";""IBL"";""HH"";"""";""Baseline"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"381;""IBL_H_1"";"""";""IBL"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"382;""IBL_H_2"";"""";""IBL"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"383;""IBL_H_RV"";"""";""IBL"";""HH"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"384;""IBL_H_TR"";"""";""IBL"";""HH"";"""";"""";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"385;""IBL_H_TR_0"";"""";""IBL"";""HH"";"""";""Baseline"";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"386;""IBL_H_TR_1"";"""";""IBL"";""HH"";"""";""Scenario 1"";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"387;""IBL_H_TR_2"";"""";""IBL"";""HH"";"""";""Scenario 2"";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"388;""IBL_NF"";"""";""IBL"";""NFC"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"389;""IBL_NF_RV"";"""";""IBL"";""NFC"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"390;""IBL_NF_TR"";"""";""IBL"";""NFC"";"""";"""";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"391;""IBL_ROW"";"""";""IBL"";""ROW"";"""";"""";"""";"""";""Financial Liabilities: Interest bearing liabilities""",
-"392;""IBL_ROW_RV"";"""";""IBL"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"393;""IBL_ROW_TR"";"""";""IBL"";""ROW"";"""";"""";"""";""Transactions"";""Financial Liabilities: Interest bearing liabilities""",
-"394;""IBL_ROW_RV1"";"""";""IBL_RV1"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Interest bearing liabilities""",
-"395;""INFL"";"""";""INFL"";"""";"""";"""";"""";"""";""Inflation rate: Price inflation""",
-"396;""INFL_M"";"""";""INFL_M"";"""";"""";"""";"""";"""";""Inflation rate: Price inflation: Foreign""",
-"397;""INV_F"";"""";""INV"";""FC"";"""";"""";"""";"""";""Gross fixed capital formation""",
-"398;""INV_F_K"";"""";""INV"";""FC"";"""";"""";""Real prices"";"""";""Gross fixed capital formation""",
-"399;""INV_G"";"""";""INV"";""GOVT"";"""";"""";"""";"""";""Gross fixed capital formation""",
-"400;""INV_G_K"";"""";""INV"";""GOVT"";"""";"""";""Real prices"";"""";""Gross fixed capital formation""",
-"401;""INV_H"";"""";""INV"";""HH"";"""";"""";"""";"""";""Gross fixed capital formation""",
-"402;""INV_H_0"";"""";""INV"";""HH"";"""";""Baseline"";"""";"""";""Gross fixed capital formation""",
-"403;""INV_H_1"";"""";""INV"";""HH"";"""";""Scenario 1"";"""";"""";""Gross fixed capital formation""",
-"404;""INV_H_2"";"""";""INV"";""HH"";"""";""Scenario 2"";"""";"""";""Gross fixed capital formation""",
-"405;""INV_H_K"";"""";""INV"";""HH"";"""";"""";""Real prices"";"""";""Gross fixed capital formation""",
-"406;""INV_H_K_0"";"""";""INV"";""HH"";"""";""Baseline"";""Real prices"";"""";""Gross fixed capital formation""",
-"407;""INV_H_K_1"";"""";""INV"";""HH"";"""";""Scenario 1"";""Real prices"";"""";""Gross fixed capital formation""",
-"408;""INV_H_K_2"";"""";""INV"";""HH"";"""";""Scenario 2"";""Real prices"";"""";""Gross fixed capital formation""",
-"409;""INV_NF"";"""";""INV"";""NFC"";"""";"""";"""";"""";""Gross fixed capital formation""",
-"410;""INV_NF_0"";"""";""INV"";""NFC"";"""";""Baseline"";"""";"""";""Gross fixed capital formation""",
-"411;""INV_NF_1"";"""";""INV"";""NFC"";"""";""Scenario 1"";"""";"""";""Gross fixed capital formation""",
-"412;""INV_NF_2"";"""";""INV"";""NFC"";"""";""Scenario 2"";"""";"""";""Gross fixed capital formation""",
-"413;""INV_NF_K"";"""";""INV"";""NFC"";"""";"""";""Real prices"";"""";""Gross fixed capital formation""",
-"414;""INV_NF_K_0"";"""";""INV"";""NFC"";"""";""Baseline"";""Real prices"";"""";""Gross fixed capital formation""",
-"415;""INV_NF_K_1"";"""";""INV"";""NFC"";"""";""Scenario 1"";""Real prices"";"""";""Gross fixed capital formation""",
-"416;""INV_NF_K_2"";"""";""INV"";""NFC"";"""";""Scenario 2"";""Real prices"";"""";""Gross fixed capital formation""",
-"417;""K_F"";"""";""K"";""FC"";"""";"""";"""";"""";""Stock of Capital""",
-"418;""K_F_0"";"""";""K"";""FC"";"""";""Baseline"";"""";"""";""Stock of Capital""",
-"419;""K_F_1"";"""";""K"";""FC"";"""";""Scenario 1"";"""";"""";""Stock of Capital""",
-"420;""K_F_2"";"""";""K"";""FC"";"""";""Scenario 2"";"""";"""";""Stock of Capital""",
-"421;""K_G"";"""";""K"";""GOVT"";"""";"""";"""";"""";""Stock of Capital""",
-"422;""K_G_0"";"""";""K"";""GOVT"";"""";""Baseline"";"""";"""";""Stock of Capital""",
-"423;""K_G_1"";"""";""K"";""GOVT"";"""";""Scenario 1"";"""";"""";""Stock of Capital""",
-"424;""K_G_2"";"""";""K"";""GOVT"";"""";""Scenario 2"";"""";"""";""Stock of Capital""",
-"425;""K_H"";"""";""K"";""HH"";"""";"""";"""";"""";""Stock of Capital""",
-"426;""K_H_0"";"""";""K"";""HH"";"""";""Baseline"";"""";"""";""Stock of Capital""",
-"427;""K_H_1"";"""";""K"";""HH"";"""";""Scenario 1"";"""";"""";""Stock of Capital""",
-"428;""K_H_2"";"""";""K"";""HH"";"""";""Scenario 2"";"""";"""";""Stock of Capital""",
-"429;""K_H_K"";"""";""K"";""HH"";"""";"""";""Real prices"";"""";""Stock of Capital""",
-"430;""K_H_K_0"";"""";""K"";""HH"";"""";""Baseline"";""Real prices"";"""";""Stock of Capital""",
-"431;""K_H_K_1"";"""";""K"";""HH"";"""";""Scenario 1"";""Real prices"";"""";""Stock of Capital""",
-"432;""K_H_K_2"";"""";""K"";""HH"";"""";""Scenario 2"";""Real prices"";"""";""Stock of Capital""",
-"433;""K_NF"";"""";""K"";""NFC"";"""";"""";"""";"""";""Stock of Capital""",
-"434;""K_NF_0"";"""";""K"";""NFC"";"""";""Baseline"";"""";"""";""Stock of Capital""",
-"435;""K_NF_1"";"""";""K"";""NFC"";"""";""Scenario 1"";"""";"""";""Stock of Capital""",
-"436;""K_NF_2"";"""";""K"";""NFC"";"""";""Scenario 2"";"""";"""";""Stock of Capital""",
-"437;""K_NF_K"";"""";""K"";""NFC"";"""";"""";""Real prices"";"""";""Stock of Capital""",
-"438;""K_NF_K_0"";"""";""K"";""NFC"";"""";""Baseline"";""Real prices"";"""";""Stock of Capital""",
-"439;""K_NF_K_1"";"""";""K"";""NFC"";"""";""Scenario 1"";""Real prices"";"""";""Stock of Capital""",
-"440;""K_NF_K_2"";"""";""K"";""NFC"";"""";""Scenario 2"";""Real prices"";"""";""Stock of Capital""",
-"441;""K_H_CG"";"""";""K_CG"";""HH"";"""";"""";"""";"""";""Capital Gains""",
-"442;""KCG_F"";"""";""KCG"";""FC"";"""";"""";"""";"""";""Capital Gains""",
-"443;""KCG_G"";"""";""KCG"";""GOVT"";"""";"""";"""";"""";""Capital Gains""",
-"444;""KCG_H"";"""";""KCG"";""HH"";"""";"""";"""";"""";""Capital Gains""",
-"445;""KCG_H_K"";"""";""KCG"";""HH"";"""";"""";""Real prices"";"""";""Capital Gains""",
-"446;""KCG_NF"";"""";""KCG"";""NFC"";"""";"""";"""";"""";""Capital Gains""",
-"447;""KCG_H_SUM"";"""";""KCG_SUM"";""HH"";"""";"""";"""";"""";NA",
-"448;""LEV"";"""";""LEV"";"""";"""";"""";"""";"""";""Leverage ratio: NFC: Funding liabilities to GDP""",
-"449;""LEV1"";"""";""LEV1"";"""";"""";"""";"""";"""";""Leverage ratio: NFC: Funding liabilities""",
-"450;""LF"";"""";""LF"";"""";"""";"""";"""";"""";""Labour force: Total number of employable persons""",
-"451;""M"";"""";""M"";"""";"""";"""";"""";"""";""Imports""",
-"452;""M_0"";"""";""M"";"""";"""";""Baseline"";"""";"""";""Imports""",
-"453;""M_1"";"""";""M"";"""";"""";""Scenario 1"";"""";"""";""Imports""",
-"454;""M_2"";"""";""M"";"""";"""";""Scenario 2"";"""";"""";""Imports""",
-"455;""M_K"";"""";""M"";"""";"""";"""";""Real prices"";"""";""Imports""",
-"456;""M_K_0"";"""";""M"";"""";"""";""Baseline"";""Real prices"";"""";""Imports""",
-"457;""M_K_1"";"""";""M"";"""";"""";""Scenario 1"";""Real prices"";"""";""Imports""",
-"458;""M_K_2"";"""";""M"";"""";"""";""Scenario 2"";""Real prices"";"""";""Imports""",
-"459;""N"";"""";""N"";"""";"""";"""";"""";"""";""Labour force: Denmark for workers in production""",
-"460;""N_0"";"""";""N"";"""";"""";""Baseline"";"""";"""";""Labour force: Denmark for workers in production""",
-"461;""N_1"";"""";""N"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Denmark for workers in production""",
-"462;""N_2"";"""";""N"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Denmark for workers in production""",
-"463;""NEQ_F"";"""";""NEQ"";""FC"";"""";"""";"""";"""";""Net financial stock: Equity""",
-"464;""NEQ_F_0"";"""";""NEQ"";""FC"";"""";""Baseline"";"""";"""";""Net financial stock: Equity""",
-"465;""NEQ_F_1"";"""";""NEQ"";""FC"";"""";""Scenario 1"";"""";"""";""Net financial stock: Equity""",
-"466;""NEQ_F_2"";"""";""NEQ"";""FC"";"""";""Scenario 2"";"""";"""";""Net financial stock: Equity""",
-"467;""NEQ_F_RV"";"""";""NEQ"";""FC"";"""";"""";"""";""Revaluations"";""Net financial stock: Equity""",
-"468;""NEQ_F_TR"";"""";""NEQ"";""FC"";"""";"""";"""";""Transactions"";""Net financial stock: Equity""",
-"469;""NEQ_F_TR_0"";"""";""NEQ"";""FC"";"""";""Baseline"";"""";""Transactions"";""Net financial stock: Equity""",
-"470;""NEQ_F_TR_1"";"""";""NEQ"";""FC"";"""";""Scenario 1"";"""";""Transactions"";""Net financial stock: Equity""",
-"471;""NEQ_F_TR_2"";"""";""NEQ"";""FC"";"""";""Scenario 2"";"""";""Transactions"";""Net financial stock: Equity""",
-"472;""NEQ_NF"";"""";""NEQ"";""NFC"";"""";"""";"""";"""";""Net financial stock: Equity""",
-"473;""NEQ_NF_0"";"""";""NEQ"";""NFC"";"""";""Baseline"";"""";"""";""Net financial stock: Equity""",
-"474;""NEQ_NF_1"";"""";""NEQ"";""NFC"";"""";""Scenario 1"";"""";"""";""Net financial stock: Equity""",
-"475;""NEQ_NF_2"";"""";""NEQ"";""NFC"";"""";""Scenario 2"";"""";"""";""Net financial stock: Equity""",
-"476;""NEQ_NF_RV"";"""";""NEQ"";""NFC"";"""";"""";"""";""Revaluations"";""Net financial stock: Equity""",
-"477;""NEQ_NF_RV_0"";"""";""NEQ"";""NFC"";"""";""Baseline"";"""";""Revaluations"";""Net financial stock: Equity""",
-"478;""NEQ_NF_RV_1"";"""";""NEQ"";""NFC"";"""";""Scenario 1"";"""";""Revaluations"";""Net financial stock: Equity""",
-"479;""NEQ_NF_RV_2"";"""";""NEQ"";""NFC"";"""";""Scenario 2"";"""";""Revaluations"";""Net financial stock: Equity""",
-"480;""NEQ_NF_TR"";"""";""NEQ"";""NFC"";"""";"""";"""";""Transactions"";""Net financial stock: Equity""",
-"481;""NEQ_ROW"";"""";""NEQ"";""ROW"";"""";"""";"""";"""";""Net financial stock: Equity""",
-"482;""NEQ_ROW_0"";"""";""NEQ"";""ROW"";"""";""Baseline"";"""";"""";""Net financial stock: Equity""",
-"483;""NEQ_ROW_1"";"""";""NEQ"";""ROW"";"""";""Scenario 1"";"""";"""";""Net financial stock: Equity""",
-"484;""NEQ_ROW_2"";"""";""NEQ"";""ROW"";"""";""Scenario 2"";"""";"""";""Net financial stock: Equity""",
-"485;""NEQ_ROW_RV"";"""";""NEQ"";""ROW"";"""";"""";"""";""Revaluations"";""Net financial stock: Equity""",
-"486;""NEQ_ROW_TR"";"""";""NEQ"";""ROW"";"""";"""";"""";""Transactions"";""Net financial stock: Equity""",
-"487;""NF"";"""";""NF"";"""";"""";"""";"""";"""";""Labour force: Employed persons: Danish waged""",
-"488;""NF_0"";"""";""NF"";"""";"""";""Baseline"";"""";"""";""Labour force: Employed persons: Danish waged""",
-"489;""NF_1"";"""";""NF"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Employed persons: Danish waged""",
-"490;""NF_2"";"""";""NF"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Employed persons: Danish waged""",
-"491;""NIB_F"";"""";""NIB"";""FC"";"""";"""";"""";"""";""Net financial stock: Interest bearing""",
-"492;""NIB_F_0"";"""";""NIB"";""FC"";"""";""Baseline"";"""";"""";""Net financial stock: Interest bearing""",
-"493;""NIB_F_1"";"""";""NIB"";""FC"";"""";""Scenario 1"";"""";"""";""Net financial stock: Interest bearing""",
-"494;""NIB_F_2"";"""";""NIB"";""FC"";"""";""Scenario 2"";"""";"""";""Net financial stock: Interest bearing""",
-"495;""NIB_F_RV"";"""";""NIB"";""FC"";"""";"""";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"496;""NIB_F_RV_0"";"""";""NIB"";""FC"";"""";""Baseline"";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"497;""NIB_F_RV_1"";"""";""NIB"";""FC"";"""";""Scenario 1"";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"498;""NIB_F_RV_2"";"""";""NIB"";""FC"";"""";""Scenario 2"";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"499;""NIB_F_TR"";"""";""NIB"";""FC"";"""";"""";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"500;""NIB_F_TR_0"";"""";""NIB"";""FC"";"""";""Baseline"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"501;""NIB_F_TR_1"";"""";""NIB"";""FC"";"""";""Scenario 1"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"502;""NIB_F_TR_2"";"""";""NIB"";""FC"";"""";""Scenario 2"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"503;""NIB_G"";"""";""NIB"";""GOVT"";"""";"""";"""";"""";""Net financial stock: Interest bearing""",
-"504;""NIB_G_0"";"""";""NIB"";""GOVT"";"""";""Baseline"";"""";"""";""Net financial stock: Interest bearing""",
-"505;""NIB_G_1"";"""";""NIB"";""GOVT"";"""";""Scenario 1"";"""";"""";""Net financial stock: Interest bearing""",
-"506;""NIB_G_2"";"""";""NIB"";""GOVT"";"""";""Scenario 2"";"""";"""";""Net financial stock: Interest bearing""",
-"507;""NIB_G_RV"";"""";""NIB"";""GOVT"";"""";"""";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"508;""NIB_G_TR"";"""";""NIB"";""GOVT"";"""";"""";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"509;""NIB_G_TR_0"";"""";""NIB"";""GOVT"";"""";""Baseline"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"510;""NIB_G_TR_1"";"""";""NIB"";""GOVT"";"""";""Scenario 1"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"511;""NIB_G_TR_2"";"""";""NIB"";""GOVT"";"""";""Scenario 2"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"512;""NIB_NF"";"""";""NIB"";""NFC"";"""";"""";"""";"""";""Net financial stock: Interest bearing""",
-"513;""NIB_NF_0"";"""";""NIB"";""NFC"";"""";""Baseline"";"""";"""";""Net financial stock: Interest bearing""",
-"514;""NIB_NF_1"";"""";""NIB"";""NFC"";"""";""Scenario 1"";"""";"""";""Net financial stock: Interest bearing""",
-"515;""NIB_NF_2"";"""";""NIB"";""NFC"";"""";""Scenario 2"";"""";"""";""Net financial stock: Interest bearing""",
-"516;""NIB_NF_RV"";"""";""NIB"";""NFC"";"""";"""";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"517;""NIB_NF_TR"";"""";""NIB"";""NFC"";"""";"""";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"518;""NIB_NF_TR_0"";"""";""NIB"";""NFC"";"""";""Baseline"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"519;""NIB_NF_TR_1"";"""";""NIB"";""NFC"";"""";""Scenario 1"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"520;""NIB_NF_TR_2"";"""";""NIB"";""NFC"";"""";""Scenario 2"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"521;""NIB_ROW"";"""";""NIB"";""ROW"";"""";"""";"""";"""";""Net financial stock: Interest bearing""",
-"522;""NIB_ROW_0"";"""";""NIB"";""ROW"";"""";""Baseline"";"""";"""";""Net financial stock: Interest bearing""",
-"523;""NIB_ROW_1"";"""";""NIB"";""ROW"";"""";""Scenario 1"";"""";"""";""Net financial stock: Interest bearing""",
-"524;""NIB_ROW_2"";"""";""NIB"";""ROW"";"""";""Scenario 2"";"""";"""";""Net financial stock: Interest bearing""",
-"525;""NIB_ROW_RV"";"""";""NIB"";""ROW"";"""";"""";"""";""Revaluations"";""Net financial stock: Interest bearing""",
-"526;""NIB_ROW_TR"";"""";""NIB"";""ROW"";"""";"""";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"527;""NIB_ROW_TR_0"";"""";""NIB"";""ROW"";"""";""Baseline"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"528;""NIB_ROW_TR_1"";"""";""NIB"";""ROW"";"""";""Scenario 1"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"529;""NIB_ROW_TR_2"";"""";""NIB"";""ROW"";"""";""Scenario 2"";"""";""Transactions"";""Net financial stock: Interest bearing""",
-"530;""NL_F"";"""";""NL"";""FC"";"""";"""";"""";"""";""Sector Balance""",
-"531;""NL_F_0"";"""";""NL"";""FC"";"""";""Baseline"";"""";"""";""Sector Balance""",
-"532;""NL_F_1"";"""";""NL"";""FC"";"""";""Scenario 1"";"""";"""";""Sector Balance""",
-"533;""NL_F_2"";"""";""NL"";""FC"";"""";""Scenario 2"";"""";"""";""Sector Balance""",
-"534;""NL_G"";"""";""NL"";""GOVT"";"""";"""";"""";"""";""Sector Balance""",
-"535;""NL_G_0"";"""";""NL"";""GOVT"";"""";""Baseline"";"""";"""";""Sector Balance""",
-"536;""NL_G_1"";"""";""NL"";""GOVT"";"""";""Scenario 1"";"""";"""";""Sector Balance""",
-"537;""NL_G_2"";"""";""NL"";""GOVT"";"""";""Scenario 2"";"""";"""";""Sector Balance""",
-"538;""NL_H"";"""";""NL"";""HH"";"""";"""";"""";"""";""Sector Balance""",
-"539;""NL_H_0"";"""";""NL"";""HH"";"""";""Baseline"";"""";"""";""Sector Balance""",
-"540;""NL_H_1"";"""";""NL"";""HH"";"""";""Scenario 1"";"""";"""";""Sector Balance""",
-"541;""NL_H_2"";"""";""NL"";""HH"";"""";""Scenario 2"";"""";"""";""Sector Balance""",
-"542;""NL_NF"";"""";""NL"";""NFC"";"""";"""";"""";"""";""Sector Balance""",
-"543;""NL_NF_0"";"""";""NL"";""NFC"";"""";""Baseline"";"""";"""";""Sector Balance""",
-"544;""NL_NF_1"";"""";""NL"";""NFC"";"""";""Scenario 1"";"""";"""";""Sector Balance""",
-"545;""NL_NF_2"";"""";""NL"";""NFC"";"""";""Scenario 2"";"""";"""";""Sector Balance""",
-"546;""NL_ROW"";"""";""NL"";""ROW"";"""";"""";"""";"""";""Sector Balance""",
-"547;""NL_ROW_0"";"""";""NL"";""ROW"";"""";""Baseline"";"""";"""";""Sector Balance""",
-"548;""NL_ROW_1"";"""";""NL"";""ROW"";"""";""Scenario 1"";"""";"""";""Sector Balance""",
-"549;""NL_ROW_2"";"""";""NL"";""ROW"";"""";""Scenario 2"";"""";"""";""Sector Balance""",
-"550;""NL_CHECK"";"""";""NL_CHECK"";"""";"""";"""";"""";"""";""Consistency check: Net lending""",
-"551;""NL_CHECK_0"";"""";""NL_CHECK"";"""";"""";""Baseline"";"""";"""";""Consistency check: Net lending""",
-"552;""NL_CHECK_1"";"""";""NL_CHECK"";"""";"""";""Scenario 1"";"""";"""";""Consistency check: Net lending""",
-"553;""NL_CHECK_2"";"""";""NL_CHECK"";"""";"""";""Scenario 2"";"""";"""";""Consistency check: Net lending""",
-"554;""NP_F"";"""";""NP"";""FC"";"""";"""";"""";"""";""Net purchases of non-financial assets (NP)""",
-"555;""NP_G"";"""";""NP"";""GOVT"";"""";"""";"""";"""";""Net purchases of non-financial assets (NP)""",
-"556;""NP_H"";"""";""NP"";""HH"";"""";"""";"""";"""";""Net purchases of non-financial assets (NP)""",
-"557;""NP_NF"";"""";""NP"";""NFC"";"""";"""";"""";"""";""Net purchases of non-financial assets (NP)""",
-"558;""NP_NF_0"";"""";""NP"";""NFC"";"""";""Baseline"";"""";"""";""Net purchases of non-financial assets (NP)""",
-"559;""NP_NF_1"";"""";""NP"";""NFC"";"""";""Scenario 1"";"""";"""";""Net purchases of non-financial assets (NP)""",
-"560;""NP_NF_2"";"""";""NP"";""NFC"";"""";""Scenario 2"";"""";"""";""Net purchases of non-financial assets (NP)""",
-"561;""NP_ROW"";"""";""NP"";""ROW"";"""";"""";"""";"""";""Net purchases of non-financial assets (NP)""",
-"562;""NPEN_ROW"";"""";""NPEN"";""ROW"";"""";"""";"""";"""";""Net financial stock: Pension""",
-"563;""NPEN_ROW_0"";"""";""NPEN"";""ROW"";"""";""Baseline"";"""";"""";""Net financial stock: Pension""",
-"564;""NPEN_ROW_1"";"""";""NPEN"";""ROW"";"""";""Scenario 1"";"""";"""";""Net financial stock: Pension""",
-"565;""NPEN_ROW_2"";"""";""NPEN"";""ROW"";"""";""Scenario 2"";"""";"""";""Net financial stock: Pension""",
-"566;""NPEN_ROW_RV"";"""";""NPEN"";""ROW"";"""";"""";"""";""Revaluations"";""Net financial stock: Pension""",
-"567;""NPEN_ROW_TR"";"""";""NPEN"";""ROW"";"""";"""";"""";""Transactions"";""Net financial stock: Pension""",
-"568;""NU"";"""";""NU"";"""";"""";"""";"""";"""";""Labour force: Employed persons: Danish nationals: Employed abroad""",
-"569;""NU_0"";"""";""NU"";"""";"""";""Baseline"";"""";"""";""Labour force: Employed persons: Danish nationals: Employed abroad""",
-"570;""NU_1"";"""";""NU"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Employed persons: Danish nationals: Employed abroad""",
-"571;""NU_2"";"""";""NU"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Employed persons: Danish nationals: Employed abroad""",
-"572;""NW_F"";"""";""NW"";""FC"";"""";"""";"""";"""";""Net Wealth""",
-"573;""NW_F_0"";"""";""NW"";""FC"";"""";""Baseline"";"""";"""";""Net Wealth""",
-"574;""NW_F_1"";"""";""NW"";""FC"";"""";""Scenario 1"";"""";"""";""Net Wealth""",
-"575;""NW_F_2"";"""";""NW"";""FC"";"""";""Scenario 2"";"""";"""";""Net Wealth""",
-"576;""NW_G"";"""";""NW"";""GOVT"";"""";"""";"""";"""";""Net Wealth""",
-"577;""NW_G_0"";"""";""NW"";""GOVT"";"""";""Baseline"";"""";"""";""Net Wealth""",
-"578;""NW_G_1"";"""";""NW"";""GOVT"";"""";""Scenario 1"";"""";"""";""Net Wealth""",
-"579;""NW_G_2"";"""";""NW"";""GOVT"";"""";""Scenario 2"";"""";"""";""Net Wealth""",
-"580;""NW_H"";"""";""NW"";""HH"";"""";"""";"""";"""";""Net Wealth""",
-"581;""NW_H_0"";"""";""NW"";""HH"";"""";""Baseline"";"""";"""";""Net Wealth""",
-"582;""NW_H_1"";"""";""NW"";""HH"";"""";""Scenario 1"";"""";"""";""Net Wealth""",
-"583;""NW_H_2"";"""";""NW"";""HH"";"""";""Scenario 2"";"""";"""";""Net Wealth""",
-"584;""NW_H_K"";"""";""NW"";""HH"";"""";"""";""Real prices"";"""";""Net Wealth""",
-"585;""NW_H_K_0"";"""";""NW"";""HH"";"""";""Baseline"";""Real prices"";"""";""Net Wealth""",
-"586;""NW_H_K_1"";"""";""NW"";""HH"";"""";""Scenario 1"";""Real prices"";"""";""Net Wealth""",
-"587;""NW_H_K_2"";"""";""NW"";""HH"";"""";""Scenario 2"";""Real prices"";"""";""Net Wealth""",
-"588;""NW_NF"";"""";""NW"";""NFC"";"""";"""";"""";"""";""Net Wealth""",
-"589;""NW_NF_0"";"""";""NW"";""NFC"";"""";""Baseline"";"""";"""";""Net Wealth""",
-"590;""NW_NF_1"";"""";""NW"";""NFC"";"""";""Scenario 1"";"""";"""";""Net Wealth""",
-"591;""NW_NF_2"";"""";""NW"";""NFC"";"""";""Scenario 2"";"""";"""";""Net Wealth""",
-"592;""NW_ROW"";"""";""NW"";""ROW"";"""";"""";"""";"""";""Net Wealth""",
-"593;""NW_ROW_0"";"""";""NW"";""ROW"";"""";""Baseline"";"""";"""";""Net Wealth""",
-"594;""NW_ROW_1"";"""";""NW"";""ROW"";"""";""Scenario 1"";"""";"""";""Net Wealth""",
-"595;""NW_ROW_2"";"""";""NW"";""ROW"";"""";""Scenario 2"";"""";"""";""Net Wealth""",
-"596;""NX"";"""";""NX"";"""";"""";"""";"""";"""";""Net Exports""",
-"597;""NX_0"";"""";""NX"";"""";"""";""Baseline"";"""";"""";""Net Exports""",
-"598;""NX_1"";"""";""NX"";"""";"""";""Scenario 1"";"""";"""";""Net Exports""",
-"599;""NX_2"";"""";""NX"";"""";"""";""Scenario 2"";"""";"""";""Net Exports""",
-"600;""OTR_F"";"""";""OTR"";""FC"";"""";"""";"""";"""";""Other current transfers""",
-"601;""OTR_G"";"""";""OTR"";""GOVT"";"""";"""";"""";"""";""Other current transfers""",
-"602;""OTR_H"";"""";""OTR"";""HH"";"""";"""";"""";"""";""Other current transfers""",
-"603;""OTR_NF"";"""";""OTR"";""NFC"";"""";"""";"""";"""";""Other current transfers""",
-"604;""OTR_ROW"";"""";""OTR"";""ROW"";"""";"""";"""";"""";""Other current transfers""",
-"605;""P_CGK_H"";"""";""P_CGK"";""HH"";"""";"""";"""";"""";""Price index: Capital gains""",
-"606;""P_CGK_NF"";"""";""P_CGK"";""NFC"";"""";"""";"""";"""";""Price index: Capital gains""",
-"607;""P_NEQ"";"""";""P_NEQ"";"""";"""";"""";"""";"""";""Price index: Net Equity""",
-"608;""P_NIB"";"""";""P_NIB"";"""";"""";"""";"""";"""";""Price index: Net interest bearing assets""",
-"609;""P_PEN"";"""";""P_PEN"";"""";"""";"""";"""";"""";""Price index: Pensions""",
-"610;""PC"";"""";""PC"";"""";"""";"""";"""";"""";""Price deflator: Consumption""",
-"611;""PC_0"";"""";""PC"";"""";"""";""Baseline"";"""";"""";""Price deflator: Consumption""",
-"612;""PC_1"";"""";""PC"";"""";"""";""Scenario 1"";"""";"""";""Price deflator: Consumption""",
-"613;""PC_2"";"""";""PC"";"""";"""";""Scenario 2"";"""";"""";""Price deflator: Consumption""",
-"614;""PE"";"""";""PE"";"""";"""";"""";"""";"""";""Price deflator: Unknown""",
-"615;""PENA_F"";"""";""PENA"";""FC"";"""";"""";"""";"""";""Financial Assets: Pension assets""",
-"616;""PENA_F_RV"";"""";""PENA"";""FC"";"""";"""";"""";""Revaluations"";""Financial Assets: Pension assets""",
-"617;""PENA_F_TR"";"""";""PENA"";""FC"";"""";"""";"""";""Transactions"";""Financial Assets: Pension assets""",
-"618;""PENA_G"";"""";""PENA"";""GOVT"";"""";"""";"""";"""";""Financial Assets: Pension assets""",
-"619;""PENA_H"";"""";""PENA"";""HH"";"""";"""";"""";"""";""Financial Assets: Pension assets""",
-"620;""PENA_H_0"";"""";""PENA"";""HH"";"""";""Baseline"";"""";"""";""Financial Assets: Pension assets""",
-"621;""PENA_H_1"";"""";""PENA"";""HH"";"""";""Scenario 1"";"""";"""";""Financial Assets: Pension assets""",
-"622;""PENA_H_2"";"""";""PENA"";""HH"";"""";""Scenario 2"";"""";"""";""Financial Assets: Pension assets""",
-"623;""PENA_H_RV"";"""";""PENA"";""HH"";"""";"""";"""";""Revaluations"";""Financial Assets: Pension assets""",
-"624;""PENA_H_TR"";"""";""PENA"";""HH"";"""";"""";"""";""Transactions"";""Financial Assets: Pension assets""",
-"625;""PENA_H_TR_0"";"""";""PENA"";""HH"";"""";""Baseline"";"""";""Transactions"";""Financial Assets: Pension assets""",
-"626;""PENA_H_TR_1"";"""";""PENA"";""HH"";"""";""Scenario 1"";"""";""Transactions"";""Financial Assets: Pension assets""",
-"627;""PENA_H_TR_2"";"""";""PENA"";""HH"";"""";""Scenario 2"";"""";""Transactions"";""Financial Assets: Pension assets""",
-"628;""PENA_NF"";"""";""PENA"";""NFC"";"""";"""";"""";"""";""Financial Assets: Pension assets""",
-"629;""PENA_ROW"";"""";""PENA"";""ROW"";"""";"""";"""";"""";""Financial Assets: Pension assets""",
-"630;""PENA_ROW_RV"";"""";""PENA"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Assets: Pension assets""",
-"631;""PENA_ROW_TR"";"""";""PENA"";""ROW"";"""";"""";"""";""Transactions"";""Financial Assets: Pension assets""",
-"632;""PENL_F"";"""";""PENL"";""FC"";"""";"""";"""";"""";""Financial Liabilities: Pension liabilities""",
-"633;""PENL_F_0"";"""";""PENL"";""FC"";"""";""Baseline"";"""";"""";""Financial Liabilities: Pension liabilities""",
-"634;""PENL_F_1"";"""";""PENL"";""FC"";"""";""Scenario 1"";"""";"""";""Financial Liabilities: Pension liabilities""",
-"635;""PENL_F_2"";"""";""PENL"";""FC"";"""";""Scenario 2"";"""";"""";""Financial Liabilities: Pension liabilities""",
-"636;""PENL_F_RV"";"""";""PENL"";""FC"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Pension liabilities""",
-"637;""PENL_F_RV_0"";"""";""PENL"";""FC"";"""";""Baseline"";"""";""Revaluations"";""Financial Liabilities: Pension liabilities""",
-"638;""PENL_F_RV_1"";"""";""PENL"";""FC"";"""";""Scenario 1"";"""";""Revaluations"";""Financial Liabilities: Pension liabilities""",
-"639;""PENL_F_RV_2"";"""";""PENL"";""FC"";"""";""Scenario 2"";"""";""Revaluations"";""Financial Liabilities: Pension liabilities""",
-"640;""PENL_F_TR"";"""";""PENL"";""FC"";"""";"""";"""";""Transactions"";""Financial Liabilities: Pension liabilities""",
-"641;""PENL_F_TR_0"";"""";""PENL"";""FC"";"""";""Baseline"";"""";""Transactions"";""Financial Liabilities: Pension liabilities""",
-"642;""PENL_F_TR_1"";"""";""PENL"";""FC"";"""";""Scenario 1"";"""";""Transactions"";""Financial Liabilities: Pension liabilities""",
-"643;""PENL_F_TR_2"";"""";""PENL"";""FC"";"""";""Scenario 2"";"""";""Transactions"";""Financial Liabilities: Pension liabilities""",
-"644;""PENL_ROW"";"""";""PENL"";""ROW"";"""";"""";"""";"""";""Financial Liabilities: Pension liabilities""",
-"645;""PENL_ROW_RV"";"""";""PENL"";""ROW"";"""";"""";"""";""Revaluations"";""Financial Liabilities: Pension liabilities""",
-"646;""PENL_ROW_TR"";"""";""PENL"";""ROW"";"""";"""";"""";""Transactions"";""Financial Liabilities: Pension liabilities""",
-"647;""PG"";"""";""PG"";"""";"""";"""";"""";"""";""Price deflator: Government consumption""",
-"648;""PH"";"""";""PH"";"""";"""";"""";"""";"""";""Price deflator: Houses""",
-"649;""PH_K"";"""";""PH"";"""";"""";"""";""Real prices"";"""";""Price deflator: Houses""",
-"650;""PH01"";"""";""PH01"";"""";"""";"""";"""";"""";NA",
-"651;""PHI1"";"""";""PHI1"";"""";"""";"""";"""";"""";""Social contributions to income""",
-"652;""PHI2"";"""";""PHI2"";"""";"""";"""";"""";"""";""Pension transactions to social contributions""",
-"653;""PI"";"""";""PI"";"""";"""";"""";"""";"""";""Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22"," and pi closely resembles the deflator for total investment reported by ameco."""
-"654;""PI_F"";"""";""PI"";""FC"";"""";"""";"""";"""";""Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22"," and pi closely resembles the deflator for total investment reported by ameco."""
-"655;""PI_G"";"""";""PI"";""GOVT"";"""";"""";"""";"""";""Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22"," and pi closely resembles the deflator for total investment reported by ameco."""
-"656;""PI_H"";"""";""PI"";""HH"";"""";"""";"""";"""";""Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22"," and pi closely resembles the deflator for total investment reported by ameco."""
-"657;""PI_NF"";"""";""PI"";""NFC"";"""";"""";"""";"""";""Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22"," and pi closely resembles the deflator for total investment reported by ameco."""
-"658;""PI_ROW"";"""";""PI"";""ROW"";"""";"""";"""";"""";""Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22"," and pi closely resembles the deflator for total investment reported by ameco."""
-"659;""PIP_F"";"""";""PIP"";""FC"";"""";"""";"""";"""";""Property income paid""",
-"660;""PIP_G"";"""";""PIP"";""GOVT"";"""";"""";"""";"""";""Property income paid""",
-"661;""PIP_H"";"""";""PIP"";""HH"";"""";"""";"""";"""";""Property income paid""",
-"662;""PIP_NF"";"""";""PIP"";""NFC"";"""";"""";"""";"""";""Property income paid""",
-"663;""PIP_ROW"";"""";""PIP"";""ROW"";"""";"""";"""";"""";""Property income paid""",
-"664;""PIP_IBA_FI_H_F"";""Fixed"";""PIP_IBA"";""HH"";"""";"""";"""";"""";""Property income paid: IBA""",
-"665;""PIP_IBA_FI_H_F_0"";""Fixed"";""PIP_IBA"";""HH"";"""";""Baseline"";"""";"""";""Property income paid: IBA""",
-"666;""PIP_IBA_FI_H_F_1"";""Fixed"";""PIP_IBA"";""HH"";"""";""Scenario 1"";"""";"""";""Property income paid: IBA""",
-"667;""PIP_IBA_FI_H_F_2"";""Fixed"";""PIP_IBA"";""HH"";"""";""Scenario 2"";"""";"""";""Property income paid: IBA""",
-"668;""PIP_IBA_FL_H_F"";""Flexible"";""PIP_IBA"";""HH"";"""";"""";"""";"""";""Property income paid: IBA""",
-"669;""PIP_IBA_FL_H_F_0"";""Flexible"";""PIP_IBA"";""HH"";"""";""Baseline"";"""";"""";""Property income paid: IBA""",
-"670;""PIP_IBA_FL_H_F_1"";""Flexible"";""PIP_IBA"";""HH"";"""";""Scenario 1"";"""";"""";""Property income paid: IBA""",
-"671;""PIP_IBA_FL_H_F_2"";""Flexible"";""PIP_IBA"";""HH"";"""";""Scenario 2"";"""";"""";""Property income paid: IBA""",
-"672;""PIP_IBL_FI_H"";""Fixed"";""PIP_IBL"";""HH"";"""";"""";"""";"""";""Property income paid: IBL""",
-"673;""PIP_IBL_FI_H_0"";""Fixed"";""PIP_IBL"";""HH"";"""";""Baseline"";"""";"""";""Property income paid: IBL""",
-"674;""PIP_IBL_FI_H_1"";""Fixed"";""PIP_IBL"";""HH"";"""";""Scenario 1"";"""";"""";""Property income paid: IBL""",
-"675;""PIP_IBL_FI_H_2"";""Fixed"";""PIP_IBL"";""HH"";"""";""Scenario 2"";"""";"""";""Property income paid: IBL""",
-"676;""PIP_IBL_FL_H"";""Flexible"";""PIP_IBL"";""HH"";"""";"""";"""";"""";""Property income paid: IBL""",
-"677;""PIP_IBL_FL_H_0"";""Flexible"";""PIP_IBL"";""HH"";"""";""Baseline"";"""";"""";""Property income paid: IBL""",
-"678;""PIP_IBL_FL_H_1"";""Flexible"";""PIP_IBL"";""HH"";"""";""Scenario 1"";"""";"""";""Property income paid: IBL""",
-"679;""PIP_IBL_FL_H_2"";""Flexible"";""PIP_IBL"";""HH"";"""";""Scenario 2"";"""";"""";""Property income paid: IBL""",
-"680;""PIR_F"";"""";""PIR"";""FC"";"""";"""";"""";"""";""Property income received""",
-"681;""PIR_G"";"""";""PIR"";""GOVT"";"""";"""";"""";"""";""Property income received""",
-"682;""PIR_H"";"""";""PIR"";""HH"";"""";"""";"""";"""";""Property income received""",
-"683;""PIR_NF"";"""";""PIR"";""NFC"";"""";"""";"""";"""";""Property income received""",
-"684;""PIR_ROW"";"""";""PIR"";""ROW"";"""";"""";"""";"""";""Property income received""",
-"685;""PK"";"""";""PK"";"""";"""";"""";"""";"""";""Price deflator: Investment (excluding dwellings)""",
-"686;""PM"";"""";""PM"";"""";"""";"""";"""";"""";""Price deflator: Imports""",
-"687;""PNFC_K"";"""";""PNFC"";"""";"""";"""";""Real prices"";"""";""Price deflator: NFC K""",
-"688;""POP"";"""";""POP"";"""";"""";"""";"""";"""";""Population""",
-"689;""PP"";"""";""PP"";"""";"""";"""";"""";"""";""Unknown""",
-"690;""PRIVATE"";"""";""PRIVATE"";"""";"""";"""";"""";"""";""Gross income""",
-"691;""PRIVATE_0"";"""";""PRIVATE"";"""";"""";""Baseline"";"""";"""";""Gross income""",
-"692;""PRIVATE_1"";"""";""PRIVATE"";"""";"""";""Scenario 1"";"""";"""";""Gross income""",
-"693;""PRIVATE_2"";"""";""PRIVATE"";"""";"""";""Scenario 2"";"""";"""";""Gross income""",
-"694;""PROD"";"""";""PROD"";"""";"""";"""";"""";"""";""Labour Force: Labour productivity""",
-"695;""PROFIT"";"""";""PROFIT"";"""";"""";"""";"""";"""";""Profit share (Residual of wage share)""",
-"696;""PX"";"""";""PX"";"""";"""";"""";"""";"""";""Price deflator: Exports""",
-"697;""PX_0"";"""";""PX"";"""";"""";""Baseline"";"""";"""";""Price deflator: Exports""",
-"698;""PX_1"";"""";""PX"";"""";"""";""Scenario 1"";"""";"""";""Price deflator: Exports""",
-"699;""PX_2"";"""";""PX"";"""";"""";""Scenario 2"";"""";"""";""Price deflator: Exports""",
-"700;""PY"";"""";""PY"";"""";"""";"""";"""";"""";""Price deflator: GDP""",
-"701;""PY_0"";"""";""PY"";"""";"""";""Baseline"";"""";"""";""Price deflator: GDP""",
-"702;""PY_1"";"""";""PY"";"""";"""";""Scenario 1"";"""";"""";""Price deflator: GDP""",
-"703;""PY_2"";"""";""PY"";"""";"""";""Scenario 2"";"""";"""";""Price deflator: GDP""",
-"704;""R_EQ_DK"";"""";""R_EQ"";""DK"";"""";"""";"""";"""";""Rate of return: Equities""",
-"705;""R_EQ_ROW"";"""";""R_EQ"";""ROW"";"""";"""";"""";"""";""Rate of return: Equities""",
-"706;""R_H_ERROR1"";"""";""R_ERROR1"";""HH"";"""";"""";"""";"""";""Property income error""",
-"707;""R_H_ERROR1_0"";"""";""R_ERROR1"";""HH"";"""";""Baseline"";"""";"""";""Property income error""",
-"708;""R_H_ERROR1_1"";"""";""R_ERROR1"";""HH"";"""";""Scenario 1"";"""";"""";""Property income error""",
-"709;""R_H_ERROR1_2"";"""";""R_ERROR1"";""HH"";"""";""Scenario 2"";"""";"""";""Property income error""",
-"710;""R_G_ERROR2"";"""";""R_ERROR2"";""GOVT"";"""";"""";"""";"""";""Property income error""",
-"711;""R_H_ERROR2"";"""";""R_ERROR2"";""HH"";"""";"""";"""";"""";""Property income error""",
-"712;""R_H_ERROR2_0"";"""";""R_ERROR2"";""HH"";"""";""Baseline"";"""";"""";""Property income error""",
-"713;""R_H_ERROR2_1"";"""";""R_ERROR2"";""HH"";"""";""Scenario 1"";"""";"""";""Property income error""",
-"714;""R_H_ERROR2_2"";"""";""R_ERROR2"";""HH"";"""";""Scenario 2"";"""";"""";""Property income error""",
-"715;""R_F_ERROR3"";"""";""R_ERROR3"";""FC"";"""";"""";"""";"""";""Property income error""",
-"716;""R_H_ERROR3"";"""";""R_ERROR3"";""HH"";"""";"""";"""";"""";""Property income error""",
-"717;""R_H_ERROR3_0"";"""";""R_ERROR3"";""HH"";"""";""Baseline"";"""";"""";""Property income error""",
-"718;""R_H_ERROR3_1"";"""";""R_ERROR3"";""HH"";"""";""Scenario 1"";"""";"""";""Property income error""",
-"719;""R_H_ERROR3_2"";"""";""R_ERROR3"";""HH"";"""";""Scenario 2"";"""";"""";""Property income error""",
-"720;""R_IBA_F"";"""";""R_IBA"";""FC"";"""";"""";"""";"""";""Rate of interest: Interest bearing assets""",
-"721;""R_IBA_H"";"""";""R_IBA"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing assets""",
-"722;""R_IBL_F"";"""";""R_IBL"";""FC"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities""",
-"723;""R_IBL_FI_H"";""Fixed"";""R_IBL"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities""",
-"724;""R_IBL_FL_H"";""Flexible"";""R_IBL"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities""",
-"725;""R_IBL_H"";"""";""R_IBL"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities""",
-"726;""R_IBL_H_SENS"";"""";""R_IBL_SENS"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate""",
-"727;""R_IBL_H_SENS_0"";"""";""R_IBL_SENS"";""HH"";"""";""Baseline"";"""";"""";""Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate""",
-"728;""R_IBL_H_SENS_1"";"""";""R_IBL_SENS"";""HH"";"""";""Scenario 1"";"""";"""";""Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate""",
-"729;""R_IBL_H_SENS_2"";"""";""R_IBL_SENS"";""HH"";"""";""Scenario 2"";"""";"""";""Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate""",
-"730;""R_N"";"""";""R_N"";"""";"""";"""";"""";"""";""Rate of return: Mean""",
-"731;""R_F_NET_ERROR1"";"""";""R_NET_ERROR1"";""FC"";"""";"""";"""";"""";""Property income error""",
-"732;""R_G_NET_ERROR1"";"""";""R_NET_ERROR1"";""GOVT"";"""";"""";"""";"""";""Property income error""",
-"733;""R_NF_NET_ERROR1"";"""";""R_NET_ERROR1"";""NFC"";"""";"""";"""";"""";""Property income error""",
-"734;""R_ROW_NET_ERROR1"";"""";""R_NET_ERROR1"";""ROW"";"""";"""";"""";"""";""Property income error""",
-"735;""R_ROW_NET_ERROR101"";"""";""R_NET_ERROR101"";""ROW"";"""";"""";"""";"""";NA",
-"736;""R_F_NET_ERROR2"";"""";""R_NET_ERROR2"";""FC"";"""";"""";"""";"""";""Property income error""",
-"737;""R_NF_NET_ERROR2"";"""";""R_NET_ERROR2"";""NFC"";"""";"""";"""";"""";""Property income error""",
-"738;""R_ROW_NET_ERROR2"";"""";""R_NET_ERROR2"";""ROW"";"""";"""";"""";"""";""Property income error""",
-"739;""R_ROW_NET_ERROR201"";"""";""R_NET_ERROR201"";""ROW"";"""";"""";"""";"""";NA",
-"740;""R_ROW_NET_ERROR3"";"""";""R_NET_ERROR3"";""ROW"";"""";"""";"""";"""";""Property income error""",
-"741;""R_ROW_NET_ERROR301"";"""";""R_NET_ERROR301"";""ROW"";"""";"""";"""";"""";NA",
-"742;""R_PEN"";"""";""R_PEN"";"""";"""";"""";"""";"""";""Rate of return: Pensions""",
-"743;""R_R_IBL_FI_H"";""Fixed"";""R_R_IBL"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities""",
-"744;""R_R_IBL_FL_H"";""Flexible"";""R_R_IBL"";""HH"";"""";"""";"""";"""";""Rate of interest: Interest bearing liabilities""",
-"745;""RHO"";"""";""RHO"";"""";"""";"""";"""";"""";""Equity ratio""",
-"746;""RR_DK"";"""";""RR"";""DK"";"""";"""";"""";"""";""Rate of return""",
-"747;""RR_ROW"";"""";""RR"";""ROW"";"""";"""";"""";"""";""Rate of return""",
-"748;""S"";"""";""S"";"""";"""";"""";"""";"""";""Savings""",
-"749;""S_0"";"""";""S"";"""";"""";""Baseline"";"""";"""";""Savings""",
-"750;""S_1"";"""";""S"";"""";"""";""Scenario 1"";"""";"""";""Savings""",
-"751;""S_2"";"""";""S"";"""";"""";""Scenario 2"";"""";"""";""Savings""",
-"752;""S_F"";"""";""S"";""FC"";"""";"""";"""";"""";""Savings""",
-"753;""S_F_0"";"""";""S"";""FC"";"""";""Baseline"";"""";"""";""Savings""",
-"754;""S_F_1"";"""";""S"";""FC"";"""";""Scenario 1"";"""";"""";""Savings""",
-"755;""S_F_2"";"""";""S"";""FC"";"""";""Scenario 2"";"""";"""";""Savings""",
-"756;""S_G"";"""";""S"";""GOVT"";"""";"""";"""";"""";""Savings""",
-"757;""S_G_0"";"""";""S"";""GOVT"";"""";""Baseline"";"""";"""";""Savings""",
-"758;""S_G_1"";"""";""S"";""GOVT"";"""";""Scenario 1"";"""";"""";""Savings""",
-"759;""S_G_2"";"""";""S"";""GOVT"";"""";""Scenario 2"";"""";"""";""Savings""",
-"760;""S_H"";"""";""S"";""HH"";"""";"""";"""";"""";""Savings""",
-"761;""S_H_0"";"""";""S"";""HH"";"""";""Baseline"";"""";"""";""Savings""",
-"762;""S_H_1"";"""";""S"";""HH"";"""";""Scenario 1"";"""";"""";""Savings""",
-"763;""S_H_2"";"""";""S"";""HH"";"""";""Scenario 2"";"""";"""";""Savings""",
-"764;""S_K"";"""";""S"";"""";"""";"""";""Real prices"";"""";""Savings""",
-"765;""S_K_0"";"""";""S"";"""";"""";""Baseline"";""Real prices"";"""";""Savings""",
-"766;""S_K_1"";"""";""S"";"""";"""";""Scenario 1"";""Real prices"";"""";""Savings""",
-"767;""S_K_2"";"""";""S"";"""";"""";""Scenario 2"";""Real prices"";"""";""Savings""",
-"768;""S_NF"";"""";""S"";""NFC"";"""";"""";"""";"""";""Savings""",
-"769;""S_NF_0"";"""";""S"";""NFC"";"""";""Baseline"";"""";"""";""Savings""",
-"770;""S_NF_1"";"""";""S"";""NFC"";"""";""Scenario 1"";"""";"""";""Savings""",
-"771;""S_NF_2"";"""";""S"";""NFC"";"""";""Scenario 2"";"""";"""";""Savings""",
-"772;""S_ROW"";"""";""S"";""ROW"";"""";"""";"""";"""";""Savings""",
-"773;""S_ROW_0"";"""";""S"";""ROW"";"""";""Baseline"";"""";"""";""Savings""",
-"774;""S_ROW_1"";"""";""S"";""ROW"";"""";""Scenario 1"";"""";"""";""Savings""",
-"775;""S_ROW_2"";"""";""S"";""ROW"";"""";""Scenario 2"";"""";"""";""Savings""",
-"776;""SBE_F"";"""";""SBE"";""FC"";"""";"""";"""";"""";""Social benefit transfers""",
-"777;""SBE_G"";"""";""SBE"";""GOVT"";"""";"""";"""";"""";""Social benefit transfers""",
-"778;""SBE_H"";"""";""SBE"";""HH"";"""";"""";"""";"""";""Social benefit transfers""",
-"779;""SBE_H_0"";"""";""SBE"";""HH"";"""";""Baseline"";"""";"""";""Social benefit transfers""",
-"780;""SBE_H_1"";"""";""SBE"";""HH"";"""";""Scenario 1"";"""";"""";""Social benefit transfers""",
-"781;""SBE_H_2"";"""";""SBE"";""HH"";"""";""Scenario 2"";"""";"""";""Social benefit transfers""",
-"782;""SBE_NF"";"""";""SBE"";""NFC"";"""";"""";"""";"""";""Social benefit transfers""",
-"783;""SBE_ROW"";"""";""SBE"";""ROW"";"""";"""";"""";"""";""Social benefit transfers""",
-"784;""SCO_F"";"""";""SCO"";""FC"";"""";"""";"""";"""";""Social benefit contributions""",
-"785;""SCO_G"";"""";""SCO"";""GOVT"";"""";"""";"""";"""";""Social benefit contributions""",
-"786;""SCO_H"";"""";""SCO"";""HH"";"""";"""";"""";"""";""Social benefit contributions""",
-"787;""SCO_H_0"";"""";""SCO"";""HH"";"""";""Baseline"";"""";"""";""Social benefit contributions""",
-"788;""SCO_H_1"";"""";""SCO"";""HH"";"""";""Scenario 1"";"""";"""";""Social benefit contributions""",
-"789;""SCO_H_2"";"""";""SCO"";""HH"";"""";""Scenario 2"";"""";"""";""Social benefit contributions""",
-"790;""SCO_NF"";"""";""SCO"";""NFC"";"""";"""";"""";"""";""Social benefit contributions""",
-"791;""SCO_ROW"";"""";""SCO"";""ROW"";"""";"""";"""";"""";""Social benefit contributions""",
-"792;""STRA_F"";"""";""STRA"";""FC"";"""";"""";"""";"""";""Social transfers""",
-"793;""STRA_G"";"""";""STRA"";""GOVT"";"""";"""";"""";"""";""Social transfers""",
-"794;""STRA_G_0"";"""";""STRA"";""GOVT"";"""";""Baseline"";"""";"""";""Social transfers""",
-"795;""STRA_G_1"";"""";""STRA"";""GOVT"";"""";""Scenario 1"";"""";"""";""Social transfers""",
-"796;""STRA_G_2"";"""";""STRA"";""GOVT"";"""";""Scenario 2"";"""";"""";""Social transfers""",
-"797;""STRA_H"";"""";""STRA"";""HH"";"""";"""";"""";"""";""Social transfers""",
-"798;""STRA_H_0"";"""";""STRA"";""HH"";"""";""Baseline"";"""";"""";""Social transfers""",
-"799;""STRA_H_1"";"""";""STRA"";""HH"";"""";""Scenario 1"";"""";"""";""Social transfers""",
-"800;""STRA_H_2"";"""";""STRA"";""HH"";"""";""Scenario 2"";"""";"""";""Social transfers""",
-"801;""STRA_NF"";"""";""STRA"";""NFC"";"""";"""";"""";"""";""Social transfers""",
-"802;""STRA_ROW"";"""";""STRA"";""ROW"";"""";"""";"""";"""";""Social transfers""",
-"803;""T_F"";"""";""T"";""FC"";"""";"""";"""";"""";""Taxes on products""",
-"804;""T_G"";"""";""T"";""GOVT"";"""";"""";"""";"""";""Taxes on products""",
-"805;""T_H"";"""";""T"";""HH"";"""";"""";"""";"""";""Taxes on products""",
-"806;""T_NF"";"""";""T"";""NFC"";"""";"""";"""";"""";""Taxes on products""",
-"807;""T_ROW"";"""";""T"";""ROW"";"""";"""";"""";"""";""Taxes on products""",
-"808;""TAX_F"";"""";""TAX"";""FC"";"""";"""";"""";"""";""Tax""",
-"809;""TAX_G"";"""";""TAX"";""GOVT"";"""";"""";"""";"""";""Tax""",
-"810;""TAX_G_0"";"""";""TAX"";""GOVT"";"""";""Baseline"";"""";"""";""Tax""",
-"811;""TAX_G_1"";"""";""TAX"";""GOVT"";"""";""Scenario 1"";"""";"""";""Tax""",
-"812;""TAX_G_2"";"""";""TAX"";""GOVT"";"""";""Scenario 2"";"""";"""";""Tax""",
-"813;""TAX_H"";"""";""TAX"";""HH"";"""";"""";"""";"""";""Tax""",
-"814;""TAX_H_0"";"""";""TAX"";""HH"";"""";""Baseline"";"""";"""";""Tax""",
-"815;""TAX_H_1"";"""";""TAX"";""HH"";"""";""Scenario 1"";"""";"""";""Tax""",
-"816;""TAX_H_2"";"""";""TAX"";""HH"";"""";""Scenario 2"";"""";"""";""Tax""",
-"817;""TAX_NF"";"""";""TAX"";""NFC"";"""";"""";"""";"""";""Tax""",
-"818;""TAX_NF_0"";"""";""TAX"";""NFC"";"""";""Baseline"";"""";"""";""Tax""",
-"819;""TAX_NF_1"";"""";""TAX"";""NFC"";"""";""Scenario 1"";"""";"""";""Tax""",
-"820;""TAX_NF_2"";"""";""TAX"";""NFC"";"""";""Scenario 2"";"""";"""";""Tax""",
-"821;""TAX_ROW"";"""";""TAX"";""ROW"";"""";"""";"""";"""";""Tax""",
-"822;""TEST"";"""";""TEST"";"""";"""";"""";"""";"""";""Test variable: Stock of Capital (Change in)""",
-"823;""TESTO"";"""";""TESTO"";"""";"""";"""";"""";"""";""Test variable: Stock of Capital (Change in)""",
-"824;""TOBIN_Q"";"""";""TOBIN_Q"";"""";"""";"""";"""";"""";""Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index""",
-"825;""TOBIN_Q_0"";"""";""TOBIN_Q"";"""";"""";""Baseline"";"""";"""";""Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index""",
-"826;""TOBIN_Q_1"";"""";""TOBIN_Q"";"""";"""";""Scenario 1"";"""";"""";""Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index""",
-"827;""TOBIN_Q_2"";"""";""TOBIN_Q"";"""";"""";""Scenario 2"";"""";"""";""Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index""",
-"828;""TOP"";"""";""TOP"";"""";"""";"""";"""";"""";""Ratio of foreign to domestic trade""",
-"829;""UL_COST"";"""";""UL_COST"";"""";"""";"""";"""";"""";""Labour force: Unit labour cost""",
-"830;""UL_COST_0"";"""";""UL_COST"";"""";"""";""Baseline"";"""";"""";""Labour force: Unit labour cost""",
-"831;""UL_COST_1"";"""";""UL_COST"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Unit labour cost""",
-"832;""UL_COST_2"";"""";""UL_COST"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Unit labour cost""",
-"833;""ULC"";"""";""ULC"";"""";"""";"""";"""";"""";""Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010)""",
-"834;""ULC_0"";"""";""ULC"";"""";"""";""Baseline"";"""";"""";""Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010)""",
-"835;""ULC_1"";"""";""ULC"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010)""",
-"836;""ULC_2"";"""";""ULC"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010)""",
-"837;""UN"";"""";""UN"";"""";"""";"""";"""";"""";""Labour force: Unemployed persons""",
-"838;""UN_0"";"""";""UN"";"""";"""";""Baseline"";"""";"""";""Labour force: Unemployed persons""",
-"839;""UN_1"";"""";""UN"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Unemployed persons""",
-"840;""UN_2"";"""";""UN"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Unemployed persons""",
-"841;""UR"";"""";""UR"";"""";"""";"""";"""";"""";""Labour force: Unemployment rate""",
-"842;""UR_0"";"""";""UR"";"""";"""";""Baseline"";"""";"""";""Labour force: Unemployment rate""",
-"843;""UR_1"";"""";""UR"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Unemployment rate""",
-"844;""UR_2"";"""";""UR"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Unemployment rate""",
-"845;""W_H"";"""";""W"";""HH"";"""";"""";"""";"""";""Wages""",
-"846;""W_H_0"";"""";""W"";""HH"";"""";""Baseline"";"""";"""";""Wages""",
-"847;""W_H_1"";"""";""W"";""HH"";"""";""Scenario 1"";"""";"""";""Wages""",
-"848;""W_H_2"";"""";""W"";""HH"";"""";""Scenario 2"";"""";"""";""Wages""",
-"849;""W_NF"";"""";""W"";""NFC"";"""";"""";"""";"""";""Wages""",
-"850;""W_NF_0"";"""";""W"";""NFC"";"""";""Baseline"";"""";"""";""Wages""",
-"851;""W_NF_1"";"""";""W"";""NFC"";"""";""Scenario 1"";"""";"""";""Wages""",
-"852;""W_NF_2"";"""";""W"";""NFC"";"""";""Scenario 2"";"""";"""";""Wages""",
-"853;""W_ROW"";"""";""W"";""ROW"";"""";"""";"""";"""";""Wages""",
-"854;""WAGE"";"""";""WAGE"";"""";"""";"""";"""";"""";""Labour force: Wage rate""",
-"855;""WAGE_0"";"""";""WAGE"";"""";"""";""Baseline"";"""";"""";""Labour force: Wage rate""",
-"856;""WAGE_1"";"""";""WAGE"";"""";"""";""Scenario 1"";"""";"""";""Labour force: Wage rate""",
-"857;""WAGE_2"";"""";""WAGE"";"""";"""";""Scenario 2"";"""";"""";""Labour force: Wage rate""",
-"858;""WI"";"""";""WI"";"""";"""";"""";"""";"""";""Inflation rate: Wage inflation""",
-"859;""WS"";"""";""WS"";"""";"""";"""";"""";"""";""Wage share""",
-"860;""WS_0"";"""";""WS"";"""";"""";""Baseline"";"""";"""";""Wage share""",
-"861;""WS_1"";"""";""WS"";"""";"""";""Scenario 1"";"""";"""";""Wage share""",
-"862;""WS_2"";"""";""WS"";"""";"""";""Scenario 2"";"""";"""";""Wage share""",
-"863;""X"";"""";""X"";"""";"""";"""";"""";"""";""Exports""",
-"864;""X_0"";"""";""X"";"""";"""";""Baseline"";"""";"""";""Exports""",
-"865;""X_1"";"""";""X"";"""";"""";""Scenario 1"";"""";"""";""Exports""",
-"866;""X_2"";"""";""X"";"""";"""";""Scenario 2"";"""";"""";""Exports""",
-"867;""X_K"";"""";""X"";"""";"""";"""";""Real prices"";"""";""Exports""",
-"868;""X_K_0"";"""";""X"";"""";"""";""Baseline"";""Real prices"";"""";""Exports""",
-"869;""X_K_1"";"""";""X"";"""";"""";""Scenario 1"";""Real prices"";"""";""Exports""",
-"870;""X_K_2"";"""";""X"";"""";"""";""Scenario 2"";""Real prices"";"""";""Exports""",
-"871;""XR"";"""";""XR"";"""";"""";"""";"""";"""";""Exchange rate""",
-"872;""Y"";"""";""Y"";"""";"""";"""";"""";"""";""Total income""",
-"873;""Y_0"";"""";""Y"";"""";"""";""Baseline"";"""";"""";""Total income""",
-"874;""Y_1"";"""";""Y"";"""";"""";""Scenario 1"";"""";"""";""Total income""",
-"875;""Y_2"";"""";""Y"";"""";"""";""Scenario 2"";"""";"""";""Total income""",
-"876;""Y_F"";"""";""Y"";""FC"";"""";"""";"""";"""";""Total income""",
-"877;""Y_F_0"";"""";""Y"";""FC"";"""";""Baseline"";"""";"""";""Total income""",
-"878;""Y_F_1"";"""";""Y"";""FC"";"""";""Scenario 1"";"""";"""";""Total income""",
-"879;""Y_F_2"";"""";""Y"";""FC"";"""";""Scenario 2"";"""";"""";""Total income""",
-"880;""Y_H"";"""";""Y"";""HH"";"""";"""";"""";"""";""Total income""",
-"881;""Y_H_0"";"""";""Y"";""HH"";"""";""Baseline"";"""";"""";""Total income""",
-"882;""Y_H_1"";"""";""Y"";""HH"";"""";""Scenario 1"";"""";"""";""Total income""",
-"883;""Y_H_2"";"""";""Y"";""HH"";"""";""Scenario 2"";"""";"""";""Total income""",
-"884;""Y_H_K"";"""";""Y"";""HH"";"""";"""";""Real prices"";"""";""Total income""",
-"885;""Y_K"";"""";""Y"";"""";"""";"""";""Real prices"";"""";""Total income""",
-"886;""Y_K_0"";"""";""Y"";"""";"""";""Baseline"";""Real prices"";"""";""Total income""",
-"887;""Y_K_1"";"""";""Y"";"""";"""";""Scenario 1"";""Real prices"";"""";""Total income""",
-"888;""Y_K_2"";"""";""Y"";"""";"""";""Scenario 2"";""Real prices"";"""";""Total income""",
-"889;""Y_K_EU"";"""";""Y"";""EU"";"""";"""";""Real prices"";"""";""Total income""",
-"890;""Y_D_F"";"""";""Y_D"";""FC"";"""";"""";"""";"""";""Disposable Income""",
-"891;""Y_D_G"";"""";""Y_D"";""GOVT"";"""";"""";"""";"""";""Disposable Income""",
-"892;""Y_D_H"";"""";""Y_D"";""HH"";"""";"""";"""";"""";""Disposable Income""",
-"893;""Y_D_H_0"";"""";""Y_D"";""HH"";"""";""Baseline"";"""";"""";""Disposable Income""",
-"894;""Y_D_H_1"";"""";""Y_D"";""HH"";"""";""Scenario 1"";"""";"""";""Disposable Income""",
-"895;""Y_D_H_2"";"""";""Y_D"";""HH"";"""";""Scenario 2"";"""";"""";""Disposable Income""",
-"896;""Y_D_H_K"";"""";""Y_D"";""HH"";"""";"""";""Real prices"";"""";""Disposable Income""",
-"897;""Y_D_H_K_0"";"""";""Y_D"";""HH"";"""";""Baseline"";""Real prices"";"""";""Disposable Income""",
-"898;""Y_D_H_K_1"";"""";""Y_D"";""HH"";"""";""Scenario 1"";""Real prices"";"""";""Disposable Income""",
-"899;""Y_D_H_K_2"";"""";""Y_D"";""HH"";"""";""Scenario 2"";""Real prices"";"""";""Disposable Income""",
-"900;""Y_D_K"";"""";""Y_D"";"""";"""";"""";""Real prices"";"""";""Disposable Income""",
-"901;""Y_D_NF"";"""";""Y_D"";""NFC"";"""";"""";"""";"""";""Disposable Income""",
-"902;""YEAR"";"""";""YEAR"";"""";"""";"""";"""";"""";NA",
-"903;""ZZ"";"""";""ZZ"";"""";"""";"""";"""";"""";""Index: House price index""",
-"904;""ZZ_I"";"""";""ZZ_I"";"""";"""";"""";"""";"""";""Index: House price: Imported from DST""",
-"905;""ZZ_INDEX"";"""";""ZZ_INDEX"";"""";"""";"""";"""";"""";""Index: House price: Mark-up pricing on construction costs""",
-"906;""ZZ1"";"""";""ZZ1"";"""";"""";"""";"""";"""";""Index: House price: Imported from DST""",
-"907;""ZZ1_0"";"""";""ZZ1"";"""";"""";""Baseline"";"""";"""";""Index: House price: Imported from DST""",
-"908;""ZZ1_1"";"""";""ZZ1"";"""";"""";""Scenario 1"";"""";"""";""Index: House price: Imported from DST""",
-"909;""ZZ1_2"";"""";""ZZ1"";"""";"""";""Scenario 2"";"""";"""";""Index: House price: Imported from DST""",
+Variable_name,Interest_type,Variable,Sector,Dependent_sector,Scenario,Price_type,Transaction_type,Description,Type
+ALPHA,,ALPHA,,,,,,Ratio of fixed interest mortgage debt,Ratio
+ALPHA_0,,ALPHA,,,Baseline,,,Ratio of fixed interest mortgage debt,Ratio
+ALPHA_4,,ALPHA,,,Scenario 4,,,Ratio of fixed interest mortgage debt,Ratio
+B2,,B2,,,,,,Gross operating surplus,Flow
+B2_0,,B2,,,Baseline,,,Gross operating surplus,Flow
+B2_1,,B2,,,Scenario 1,,,Gross operating surplus,Flow
+B2_2,,B2,,,Scenario 2,,,Gross operating surplus,Flow
+B2_3,,B2,,,Scenario 3,,,Gross operating surplus,Flow
+B2_4,,B2,,,Scenario 4,,,Gross operating surplus,Flow
+B2_F,,B2,FC,,,,,Gross operating surplus,Flow
+B2_G,,B2,GOV,,,,,Gross operating surplus,Flow
+B2_H,,B2,HH,,,,,Gross operating surplus,Flow
+B2_NF,,B2,NFC,,,,,Gross operating surplus,Flow
+B2_NF_0,,B2,NFC,,Baseline,,,Gross operating surplus,Flow
+B2_NF_1,,B2,NFC,,Scenario 1,,,Gross operating surplus,Flow
+B2_NF_2,,B2,NFC,,Scenario 2,,,Gross operating surplus,Flow
+B2_NF_3,,B2,NFC,,Scenario 3,,,Gross operating surplus,Flow
+B2_NF_4,,B2,NFC,,Scenario 4,,,Gross operating surplus,Flow
+BETA_DATA,,BETA_DATA,,,,,,Parameter,Parameter
+BOP_0,,BOP,,,Baseline,,,Balance of payments,Flow
+BOP_1,,BOP,,,Scenario 1,,,Balance of payments,Flow
+BOP_2,,BOP,,,Scenario 2,,,Balance of payments,Flow
+BOP_3,,BOP,,,Scenario 3,,,Balance of payments,Flow
+BOP_4,,BOP,,,Scenario 4,,,Balance of payments,Flow
+C_H,,C,HH,,,,,Consumption,Flow
+C_H_0,,C,HH,,Baseline,,,Consumption,Flow
+C_H_1,,C,HH,,Scenario 1,,,Consumption,Flow
+C_H_2,,C,HH,,Scenario 2,,,Consumption,Flow
+C_H_3,,C,HH,,Scenario 3,,,Consumption,Flow
+C_H_4,,C,HH,,Scenario 4,,,Consumption,Flow
+C_H_K,,C,HH,,,Real prices,,Consumption,Flow
+C_H_K_0,,C,HH,,Baseline,Real prices,,Consumption,Flow
+C_H_K_1,,C,HH,,Scenario 1,Real prices,,Consumption,Flow
+C_H_K_2,,C,HH,,Scenario 2,Real prices,,Consumption,Flow
+C_H_K_3,,C,HH,,Scenario 3,Real prices,,Consumption,Flow
+C_H_K_4,,C,HH,,Scenario 4,Real prices,,Consumption,Flow
+CAB_0,,CAB,,,Baseline,,,Current account balance,Flow
+CAB_1,,CAB,,,Scenario 1,,,Current account balance,Flow
+CAB_2,,CAB,,,Scenario 2,,,Current account balance,Flow
+CAB_3,,CAB,,,Scenario 3,,,Current account balance,Flow
+CAB_4,,CAB,,,Scenario 4,,,Current account balance,Flow
+CGK_F,,CGK,FC,,,,,Capital gains,Flow
+CGK_G,,CGK,GOV,,,,,Capital gains,Flow
+CGK_H,,CGK,HH,,,,,Capital gains,Flow
+CGK_NF,,CGK,NFC,,,,,Capital gains,Flow
+CGS_DK,,CGS,DK,,,,,Capital gains,Flow
+CGS_ROW,,CGS,ROW,,,,,Capital gains,Flow
+CHECK_B2_0,,CHECK_B2,,,Baseline,,,Consistency check: Gross operating surplus,Check
+CHECK_B2_1,,CHECK_B2,,,Scenario 1,,,Consistency check: Gross operating surplus,Check
+CHECK_B2_2,,CHECK_B2,,,Scenario 2,,,Consistency check: Gross operating surplus,Check
+CHECK_B2_3,,CHECK_B2,,,Scenario 3,,,Consistency check: Gross operating surplus,Check
+CHECK_B2_4,,CHECK_B2,,,Scenario 4,,,Consistency check: Gross operating surplus,Check
+CHECK_CTR_0,,CHECK_CTR,,,Baseline,,,Consistency check: Capital transactions,Check
+CHECK_CTR_1,,CHECK_CTR,,,Scenario 1,,,Consistency check: Capital transactions,Check
+CHECK_CTR_2,,CHECK_CTR,,,Scenario 2,,,Consistency check: Capital transactions,Check
+CHECK_CTR_3,,CHECK_CTR,,,Scenario 3,,,Consistency check: Capital transactions,Check
+CHECK_CTR_4,,CHECK_CTR,,,Scenario 4,,,Consistency check: Capital transactions,Check
+CHECK_EQ_TR_0,,CHECK_EQ,,,Baseline,,Transactions,Consistency check: Equity Transactions,Flow
+CHECK_EQ_TR_1,,CHECK_EQ,,,Scenario 1,,Transactions,Consistency check: Equity Transactions,Flow
+CHECK_EQ_TR_2,,CHECK_EQ,,,Scenario 2,,Transactions,Consistency check: Equity Transactions,Flow
+CHECK_EQ_TR_3,,CHECK_EQ,,,Scenario 3,,Transactions,Consistency check: Equity Transactions,Flow
+CHECK_EQ_TR_4,,CHECK_EQ,,,Scenario 4,,Transactions,Consistency check: Equity Transactions,Flow
+CHECK_ERROR1_0,,CHECK_ERROR1,,,Baseline,,,Consistency check: Error 1,Check
+CHECK_ERROR1_1,,CHECK_ERROR1,,,Scenario 1,,,Consistency check: Error 1,Check
+CHECK_ERROR1_2,,CHECK_ERROR1,,,Scenario 2,,,Consistency check: Error 1,Check
+CHECK_ERROR1_3,,CHECK_ERROR1,,,Scenario 3,,,Consistency check: Error 1,Check
+CHECK_ERROR1_4,,CHECK_ERROR1,,,Scenario 4,,,Consistency check: Error 1,Check
+CHECK_ERROR2_0,,CHECK_ERROR2,,,Baseline,,,Consistency check: Error 2,Check
+CHECK_ERROR2_1,,CHECK_ERROR2,,,Scenario 1,,,Consistency check: Error 2,Check
+CHECK_ERROR2_2,,CHECK_ERROR2,,,Scenario 2,,,Consistency check: Error 2,Check
+CHECK_ERROR2_3,,CHECK_ERROR2,,,Scenario 3,,,Consistency check: Error 2,Check
+CHECK_ERROR2_4,,CHECK_ERROR2,,,Scenario 4,,,Consistency check: Error 2,Check
+CHECK_ERROR3_0,,CHECK_ERROR3,,,Baseline,,,Consistency check: Error 3,Check
+CHECK_ERROR3_1,,CHECK_ERROR3,,,Scenario 1,,,Consistency check: Error 3,Check
+CHECK_ERROR3_2,,CHECK_ERROR3,,,Scenario 2,,,Consistency check: Error 3,Check
+CHECK_ERROR3_3,,CHECK_ERROR3,,,Scenario 3,,,Consistency check: Error 3,Check
+CHECK_ERROR3_4,,CHECK_ERROR3,,,Scenario 4,,,Consistency check: Error 3,Check
+CHECK_IB_TR_0,,CHECK_IB,,,Baseline,,Transactions,Consistency check: Interest bearing transactions,Flow
+CHECK_IB_TR_1,,CHECK_IB,,,Scenario 1,,Transactions,Consistency check: Interest bearing transactions,Flow
+CHECK_IB_TR_2,,CHECK_IB,,,Scenario 2,,Transactions,Consistency check: Interest bearing transactions,Flow
+CHECK_IB_TR_3,,CHECK_IB,,,Scenario 3,,Transactions,Consistency check: Interest bearing transactions,Flow
+CHECK_IB_TR_4,,CHECK_IB,,,Scenario 4,,Transactions,Consistency check: Interest bearing transactions,Flow
+CHECK_IB_TFLOW_0,,CHECK_IB_TFLOW,,,Baseline,,,Consistency check: Interest bearing: Flows,Check
+CHECK_IB_TFLOW_1,,CHECK_IB_TFLOW,,,Scenario 1,,,Consistency check: Interest bearing: Flows,Check
+CHECK_IB_TFLOW_2,,CHECK_IB_TFLOW,,,Scenario 2,,,Consistency check: Interest bearing: Flows,Check
+CHECK_IB_TFLOW_3,,CHECK_IB_TFLOW,,,Scenario 3,,,Consistency check: Interest bearing: Flows,Check
+CHECK_IB_TFLOW_4,,CHECK_IB_TFLOW,,,Scenario 4,,,Consistency check: Interest bearing: Flows,Check
+CHECK_INVEST_0,,CHECK_INVEST,,,Baseline,,,Consistency check: Investment,Check
+CHECK_INVEST_1,,CHECK_INVEST,,,Scenario 1,,,Consistency check: Investment,Check
+CHECK_INVEST_2,,CHECK_INVEST,,,Scenario 2,,,Consistency check: Investment,Check
+CHECK_INVEST_3,,CHECK_INVEST,,,Scenario 3,,,Consistency check: Investment,Check
+CHECK_INVEST_4,,CHECK_INVEST,,,Scenario 4,,,Consistency check: Investment,Check
+CHECK_NEQ_RV_0,,CHECK_NEQ,,,Baseline,,Revaluations,Consistency check: Net equity,Flow
+CHECK_NEQ_RV_1,,CHECK_NEQ,,,Scenario 1,,Revaluations,Consistency check: Net equity,Flow
+CHECK_NEQ_RV_2,,CHECK_NEQ,,,Scenario 2,,Revaluations,Consistency check: Net equity,Flow
+CHECK_NEQ_RV_3,,CHECK_NEQ,,,Scenario 3,,Revaluations,Consistency check: Net equity,Flow
+CHECK_NEQ_RV_4,,CHECK_NEQ,,,Scenario 4,,Revaluations,Consistency check: Net equity,Flow
+CHECK_NIB_0,,CHECK_NIB,,,Baseline,,,Consistency check: Net interest bearing,Check
+CHECK_NIB_1,,CHECK_NIB,,,Scenario 1,,,Consistency check: Net interest bearing,Check
+CHECK_NIB_2,,CHECK_NIB,,,Scenario 2,,,Consistency check: Net interest bearing,Check
+CHECK_NIB_3,,CHECK_NIB,,,Scenario 3,,,Consistency check: Net interest bearing,Check
+CHECK_NIB_4,,CHECK_NIB,,,Scenario 4,,,Consistency check: Net interest bearing,Check
+CHECK_NIB_RV_0,,CHECK_NIB,,,Baseline,,Revaluations,Consistency check: Net interest bearing,Flow
+CHECK_NIB_RV_1,,CHECK_NIB,,,Scenario 1,,Revaluations,Consistency check: Net interest bearing,Flow
+CHECK_NIB_RV_2,,CHECK_NIB,,,Scenario 2,,Revaluations,Consistency check: Net interest bearing,Flow
+CHECK_NIB_RV_3,,CHECK_NIB,,,Scenario 3,,Revaluations,Consistency check: Net interest bearing,Flow
+CHECK_NIB_RV_4,,CHECK_NIB,,,Scenario 4,,Revaluations,Consistency check: Net interest bearing,Flow
+CHECK_NIB_TR_0,,CHECK_NIB,,,Baseline,,Transactions,Consistency check: Net interest bearing,Flow
+CHECK_NIB_TR_1,,CHECK_NIB,,,Scenario 1,,Transactions,Consistency check: Net interest bearing,Flow
+CHECK_NIB_TR_2,,CHECK_NIB,,,Scenario 2,,Transactions,Consistency check: Net interest bearing,Flow
+CHECK_NIB_TR_3,,CHECK_NIB,,,Scenario 3,,Transactions,Consistency check: Net interest bearing,Flow
+CHECK_NIB_TR_4,,CHECK_NIB,,,Scenario 4,,Transactions,Consistency check: Net interest bearing,Flow
+CHECK_NIB_TFLOW_0,,CHECK_NIB_TFLOW,,,Baseline,,,Consistency check: Net interest bearing: Flows,Check
+CHECK_NIB_TFLOW_1,,CHECK_NIB_TFLOW,,,Scenario 1,,,Consistency check: Net interest bearing: Flows,Check
+CHECK_NIB_TFLOW_2,,CHECK_NIB_TFLOW,,,Scenario 2,,,Consistency check: Net interest bearing: Flows,Check
+CHECK_NIB_TFLOW_3,,CHECK_NIB_TFLOW,,,Scenario 3,,,Consistency check: Net interest bearing: Flows,Check
+CHECK_NIB_TFLOW_4,,CHECK_NIB_TFLOW,,,Scenario 4,,,Consistency check: Net interest bearing: Flows,Check
+CHECK_NP_0,,CHECK_NP,,,Baseline,,,Consistency check: Net purchases of non-financial assets (NP),Check
+CHECK_NP_1,,CHECK_NP,,,Scenario 1,,,Consistency check: Net purchases of non-financial assets (NP),Check
+CHECK_NP_2,,CHECK_NP,,,Scenario 2,,,Consistency check: Net purchases of non-financial assets (NP),Check
+CHECK_NP_3,,CHECK_NP,,,Scenario 3,,,Consistency check: Net purchases of non-financial assets (NP),Check
+CHECK_NP_4,,CHECK_NP,,,Scenario 4,,,Consistency check: Net purchases of non-financial assets (NP),Check
+CHECK_NPEN_RV_0,,CHECK_NPEN,,,Baseline,,Revaluations,Consistency check: Net pensions: Revaluations,Flow
+CHECK_NPEN_RV_1,,CHECK_NPEN,,,Scenario 1,,Revaluations,Consistency check: Net pensions: Revaluations,Flow
+CHECK_NPEN_RV_2,,CHECK_NPEN,,,Scenario 2,,Revaluations,Consistency check: Net pensions: Revaluations,Flow
+CHECK_NPEN_RV_3,,CHECK_NPEN,,,Scenario 3,,Revaluations,Consistency check: Net pensions: Revaluations,Flow
+CHECK_NPEN_RV_4,,CHECK_NPEN,,,Scenario 4,,Revaluations,Consistency check: Net pensions: Revaluations,Flow
+CHECK_PEN_TR_0,,CHECK_PEN,,,Baseline,,Transactions,Consistency check: Pensions: Transactions,Flow
+CHECK_PEN_TR_1,,CHECK_PEN,,,Scenario 1,,Transactions,Consistency check: Pensions: Transactions,Flow
+CHECK_PEN_TR_2,,CHECK_PEN,,,Scenario 2,,Transactions,Consistency check: Pensions: Transactions,Flow
+CHECK_PEN_TR_3,,CHECK_PEN,,,Scenario 3,,Transactions,Consistency check: Pensions: Transactions,Flow
+CHECK_PEN_TR_4,,CHECK_PEN,,,Scenario 4,,Transactions,Consistency check: Pensions: Transactions,Flow
+CHECK_STRA_0,,CHECK_STRA,,,Baseline,,,Consistency check: Social transfers,Check
+CHECK_STRA_1,,CHECK_STRA,,,Scenario 1,,,Consistency check: Social transfers,Check
+CHECK_STRA_2,,CHECK_STRA,,,Scenario 2,,,Consistency check: Social transfers,Check
+CHECK_STRA_3,,CHECK_STRA,,,Scenario 3,,,Consistency check: Social transfers,Check
+CHECK_STRA_4,,CHECK_STRA,,,Scenario 4,,,Consistency check: Social transfers,Check
+CHECK_TAX_0,,CHECK_TAX,,,Baseline,,,Consistency check: Tax,Check
+CHECK_TAX_1,,CHECK_TAX,,,Scenario 1,,,Consistency check: Tax,Check
+CHECK_TAX_2,,CHECK_TAX,,,Scenario 2,,,Consistency check: Tax,Check
+CHECK_TAX_3,,CHECK_TAX,,,Scenario 3,,,Consistency check: Tax,Check
+CHECK_TAX_4,,CHECK_TAX,,,Scenario 4,,,Consistency check: Tax,Check
+CHECK_WAGE_0,,CHECK_WAGE,,,Baseline,,,Consistency check: Wages,Check
+CHECK_WAGE_1,,CHECK_WAGE,,,Scenario 1,,,Consistency check: Wages,Check
+CHECK_WAGE_2,,CHECK_WAGE,,,Scenario 2,,,Consistency check: Wages,Check
+CHECK_WAGE_3,,CHECK_WAGE,,,Scenario 3,,,Consistency check: Wages,Check
+CHECK_WAGE_4,,CHECK_WAGE,,,Scenario 4,,,Consistency check: Wages,Check
+CPEN_F,,CPEN,FC,,,,,Financial Liabilities: Change in pension entitlements,Flow
+CPEN_F_0,,CPEN,FC,,Baseline,,,Financial Liabilities: Change in pension entitlements,Flow
+CPEN_F_1,,CPEN,FC,,Scenario 1,,,Financial Liabilities: Change in pension entitlements,Flow
+CPEN_F_2,,CPEN,FC,,Scenario 2,,,Financial Liabilities: Change in pension entitlements,Flow
+CPEN_F_3,,CPEN,FC,,Scenario 3,,,Financial Liabilities: Change in pension entitlements,Flow
+CPEN_F_4,,CPEN,FC,,Scenario 4,,,Financial Liabilities: Change in pension entitlements,Flow
+CPEN_H,,CPEN,HH,,,,,Financial Liabilities: Change in pension entitlements,Flow
+CTR_F,,CTR,FC,,,,,Capital transfers,Flow
+CTR_G,,CTR,GOV,,,,,Capital transfers,Flow
+CTR_H,,CTR,HH,,,,,Capital transfers,Flow
+CTR_NF,,CTR,NFC,,,,,Capital transfers,Flow
+CTR_NF_0,,CTR,NFC,,Baseline,,,Capital transfers,Flow
+CTR_NF_1,,CTR,NFC,,Scenario 1,,,Capital transfers,Flow
+CTR_NF_2,,CTR,NFC,,Scenario 2,,,Capital transfers,Flow
+CTR_NF_3,,CTR,NFC,,Scenario 3,,,Capital transfers,Flow
+CTR_NF_4,,CTR,NFC,,Scenario 4,,,Capital transfers,Flow
+CTR_ROW,,CTR,ROW,,,,,Capital transfers,Flow
+CU,,CU,,,,,,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+CU_0,,CU,,,Baseline,,,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+CU_1,,CU,,,Scenario 1,,,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+CU_2,,CU,,,Scenario 2,,,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+CU_3,,CU,,,Scenario 3,,,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+CU_4,,CU,,,Scenario 4,,,Capacity Utilisation (Real GNI  /  real capital stock),Ratio
+D_1998,,D_1998,,,Scenario 1,,,Dummy variable: 1998,Dummy
+D_200,,D_200,,,Scenario 2,,,Dummy variable: 2000,Dummy
+D_2004,,D_2004,,,Scenario 2,,,Dummy variable: 2004,Dummy
+D_2006,,D_2006,,,Scenario 2,,,Dummy variable: 2006,Dummy
+D_2007,,D_2007,,,Scenario 2,,,Dummy variable: 2007,Dummy
+D_2008,,D_2008,,,Scenario 2,,,Dummy variable: 2008,Dummy
+D_2009,,D_2009,,,Scenario 2,,,Dummy variable: 2009,Dummy
+D_2010,,D_2010,,,Scenario 2,,,Dummy variable: 2010,Dummy
+D_2011,,D_2011,,,Scenario 2,,,Dummy variable: 2011,Dummy
+D_2014,,D_2014,,,Scenario 2,,,Dummy variable: High taxes: 2014,Dummy
+D_2015,,D_2015,,,Scenario 2,,,Dummy variable: 2015,Dummy
+D_2016,,D_2016,,,Scenario 2,,,Dummy variable: 2016,Dummy
+D21,,D21,,,,,,Taxes on products,Flow
+D21_G,,D21,GOV,,,,,Taxes on products,Flow
+D21_NF,,D21,NFC,,,,,Taxes on products,Flow
+D21_ROW,,D21,ROW,,,,,Taxes on products,Flow
+D29_G,,D29,GOV,,,,,Other taxes on production,Flow
+D29_NF,,D29,NFC,,,,,Other taxes on production,Flow
+D31_G,,D31,GOV,,,,,Subsidies D31,Flow
+D31_NF,,D31,NFC,,,,,Subsidies D31,Flow
+D31_ROW,,D31,ROW,,,,,Subsidies D31,Flow
+D39_G,,D39,GOV,,,,,Subsidies D39,Flow
+D39_NF,,D39,NFC,,,,,Subsidies D39,Flow
+D39_ROW,,D39,ROW,,,,,Subsidies D39,Flow
+D41_F_P,,D41_P,FC,,,,,Interest: Paid,Flow
+D41_G_P,,D41_P,GOV,,,,,Interest: Paid,Flow
+D41_H_P,,D41_P,HH,,,,,Interest: Paid,Flow
+D41_NF_P,,D41_P,NFC,,,,,Interest: Paid,Flow
+D41_ROW_P,,D41_P,ROW,,,,,Interest: Paid,Flow
+D41_F_R,,D41_R,FC,,,,,Interest: Received,Flow
+D41_G_R,,D41_R,GOV,,,,,Interest: Received,Flow
+D41_H_R,,D41_R,HH,,,,,Interest: Received,Flow
+D41_NF_R,,D41_R,NFC,,,,,Interest: Received,Flow
+D41_ROW_R,,D41_R,ROW,,,,,Interest: Received,Flow
+D41B_F,,D41B,FC,,,,,Interest: Received,Flow
+D41B_G,,D41B,GOV,,,,,Interest: Received,Flow
+D42_F_P,,D42_P,FC,,,,,Distributed income of corporations: Paid,Flow
+D42_NF_P,,D42_P,NFC,,,,,Distributed income of corporations: Paid,Flow
+D42_ROW_P,,D42_P,ROW,,,,,Distributed income of corporations: Paid,Flow
+D42_F_R,,D42_R,FC,,,,,Distributed income of corporations: Received,Flow
+D42_G_R,,D42_R,GOV,,,,,Distributed income of corporations: Received,Flow
+D42_H_R,,D42_R,HH,,,,,Distributed income of corporations: Received,Flow
+D42_NF_R,,D42_R,NFC,,,,,Distributed income of corporations: Received,Flow
+D42_ROW_R,,D42_R,ROW,,,,,Distributed income of corporations: Received,Flow
+D44_F_P,,D44_P,FC,,,,,Other investment income: Paid,Flow
+D44_ROW_P,,D44_P,ROW,,,,,Other investment income: Paid,Flow
+D44_H_R,,D44_R,HH,,,,,Other investment income: Received,Flow
+D44_ROW_R,,D44_R,ROW,,,,,Other investment income: Received,Flow
+DELTA,,DELTA,,,,,,Equity to assets ratio,Ratio
+DEP_F,,DEP,FC,,,,,Depreciation of fixed capital,Flow
+DEP_G,,DEP,GOV,,,,,Depreciation of fixed capital,Flow
+DEP_H,,DEP,HH,,,,,Depreciation of fixed capital,Flow
+DEP_H_0,,DEP,HH,,Baseline,,,Depreciation of fixed capital,Flow
+DEP_H_1,,DEP,HH,,Scenario 1,,,Depreciation of fixed capital,Flow
+DEP_H_2,,DEP,HH,,Scenario 2,,,Depreciation of fixed capital,Flow
+DEP_H_3,,DEP,HH,,Scenario 3,,,Depreciation of fixed capital,Flow
+DEP_H_4,,DEP,HH,,Scenario 4,,,Depreciation of fixed capital,Flow
+DEP_H_K,,DEP,HH,,,Real prices,,Depreciation of fixed capital,Flow
+DEP_NF,,DEP,NFC,,,,,Depreciation of fixed capital,Flow
+DEP_NF_K,,DEP,NFC,,,Real prices,,Depreciation of fixed capital,Flow
+EQA_F,,EQA,FC,,,,,Financial Assets: Equity assets,Stock
+EQA_F_RV,,EQA,FC,,,,Revaluations,Financial Assets: Equity assets,Flow
+EQA_F_TR,,EQA,FC,,,,Transactions,Financial Assets: Equity assets,Flow
+EQA_G,,EQA,GOV,,,,,Financial Assets: Equity assets,Stock
+EQA_G_RV,,EQA,GOV,,,,Revaluations,Financial Assets: Equity assets,Flow
+EQA_G_TR,,EQA,GOV,,,,Transactions,Financial Assets: Equity assets,Flow
+EQA_H,,EQA,HH,,,,,Financial Assets: Equity assets,Stock
+EQA_H_0,,EQA,HH,,Baseline,,,Financial Assets: Equity assets,Stock
+EQA_H_1,,EQA,HH,,Scenario 1,,,Financial Assets: Equity assets,Stock
+EQA_H_2,,EQA,HH,,Scenario 2,,,Financial Assets: Equity assets,Stock
+EQA_H_3,,EQA,HH,,Scenario 3,,,Financial Assets: Equity assets,Stock
+EQA_H_4,,EQA,HH,,Scenario 4,,,Financial Assets: Equity assets,Stock
+EQA_H_RV,,EQA,HH,,,,Revaluations,Financial Assets: Equity assets,Flow
+EQA_H_TR,,EQA,HH,,,,Transactions,Financial Assets: Equity assets,Flow
+EQA_H_TR_0,,EQA,HH,,Baseline,,Transactions,Financial Assets: Equity assets,Flow
+EQA_H_TR_1,,EQA,HH,,Scenario 1,,Transactions,Financial Assets: Equity assets,Flow
+EQA_H_TR_2,,EQA,HH,,Scenario 2,,Transactions,Financial Assets: Equity assets,Flow
+EQA_H_TR_3,,EQA,HH,,Scenario 3,,Transactions,Financial Assets: Equity assets,Flow
+EQA_H_TR_4,,EQA,HH,,Scenario 4,,Transactions,Financial Assets: Equity assets,Flow
+EQA_NF,,EQA,NFC,,,,,Financial Assets: Equity assets,Stock
+EQA_NF_RV,,EQA,NFC,,,,Revaluations,Financial Assets: Equity assets,Flow
+EQA_NF_TR,,EQA,NFC,,,,Transactions,Financial Assets: Equity assets,Flow
+EQA_ROW,,EQA,ROW,,,,,Financial Assets: Equity assets,Stock
+EQA_ROW_RV,,EQA,ROW,,,,Revaluations,Financial Assets: Equity assets,Flow
+EQA_ROW_TR,,EQA,ROW,,,,Transactions,Financial Assets: Equity assets,Flow
+EQA_R_H,,EQA_R,HH,,,,,Equity ratio,Ratio
+EQL_F,,EQL,FC,,,,,Financial Liabilities: Equity liabilities,Stock
+EQL_F_RV,,EQL,FC,,,,Revaluations,Financial Liabilities: Equity liabilities,Flow
+EQL_F_TR,,EQL,FC,,,,Transactions,Financial Liabilities: Equity liabilities,Flow
+EQL_NF,,EQL,NFC,,,,,Financial Liabilities: Equity liabilities,Stock
+EQL_NF_RV,,EQL,NFC,,,,Revaluations,Financial Liabilities: Equity liabilities,Flow
+EQL_NF_TR,,EQL,NFC,,,,Transactions,Financial Liabilities: Equity liabilities,Flow
+EQL_ROW,,EQL,ROW,,,,,Financial Liabilities: Equity liabilities,Stock
+EQL_ROW_RV,,EQL,ROW,,,,Revaluations,Financial Liabilities: Equity liabilities,Flow
+EQL_ROW_TR,,EQL,ROW,,,,Transactions,Financial Liabilities: Equity liabilities,Flow
+ERROR_CHECK1,,ERROR_CHECK1,,,,,,Error check,Check
+ERROR_CHECK2,,ERROR_CHECK2,,,,,,Error check,Check
+ERROR_CHECK3,,ERROR_CHECK3,,,,,,Error check,Check
+FA_F,,FA,FC,,,,,Financial Assets,Stock
+FA_F_TR,,FA,FC,,,,Transactions,Financial Assets,Flow
+FA_G,,FA,GOV,,,,,Financial Assets,Stock
+FA_G_TR,,FA,GOV,,,,Transactions,Financial Assets,Flow
+FA_H,,FA,HH,,,,,Financial Assets,Stock
+FA_H_0,,FA,HH,,Baseline,,,Financial Assets,Stock
+FA_H_1,,FA,HH,,Scenario 1,,,Financial Assets,Stock
+FA_H_2,,FA,HH,,Scenario 2,,,Financial Assets,Stock
+FA_H_3,,FA,HH,,Scenario 3,,,Financial Assets,Stock
+FA_H_4,,FA,HH,,Scenario 4,,,Financial Assets,Stock
+FA_H_TR,,FA,HH,,,,Transactions,Financial Assets,Flow
+FA_H_TR_0,,FA,HH,,Baseline,,Transactions,Financial Assets,Flow
+FA_H_TR_1,,FA,HH,,Scenario 1,,Transactions,Financial Assets,Flow
+FA_H_TR_2,,FA,HH,,Scenario 2,,Transactions,Financial Assets,Flow
+FA_H_TR_3,,FA,HH,,Scenario 3,,Transactions,Financial Assets,Flow
+FA_H_TR_4,,FA,HH,,Scenario 4,,Transactions,Financial Assets,Flow
+FA_NF,,FA,NFC,,,,,Financial Assets,Stock
+FA_NF_TR,,FA,NFC,,,,Transactions,Financial Assets,Flow
+FA_ROW,,FA,ROW,,,,,Financial Assets,Stock
+FA_ROW_TR,,FA,ROW,,,,Transactions,Financial Assets,Flow
+FAB_0,,FAB,,,Baseline,,,Financial account balance,Flow
+FAB_1,,FAB,,,Scenario 1,,,Financial account balance,Flow
+FAB_2,,FAB,,,Scenario 2,,,Financial account balance,Flow
+FAB_3,,FAB,,,Scenario 3,,,Financial account balance,Flow
+FAB_4,,FAB,,,Scenario 4,,,Financial account balance,Flow
+FEE59,,FEE59,,,,,,Danish exports to trading partners: Weighted average total exports (imports by foreign trading partners),Ratio
+FL_F,,FL,FC,,,,,Financial liabilities,Stock
+FL_F_TR,,FL,FC,,,,Transactions,Financial liabilities,Flow
+FL_G,,FL,GOV,,,,,Financial liabilities,Stock
+FL_G_TR,,FL,GOV,,,,Transactions,Financial liabilities,Flow
+FL_H,,FL,HH,,,,,Financial liabilities,Stock
+FL_H_TR,,FL,HH,,,,Transactions,Financial liabilities,Flow
+FL_H_TR_0,,FL,HH,,Baseline,,Transactions,Financial liabilities,Flow
+FL_H_TR_1,,FL,HH,,Scenario 1,,Transactions,Financial liabilities,Flow
+FL_H_TR_2,,FL,HH,,Scenario 2,,Transactions,Financial liabilities,Flow
+FL_H_TR_3,,FL,HH,,Scenario 3,,Transactions,Financial liabilities,Flow
+FL_H_TR_4,,FL,HH,,Scenario 4,,Transactions,Financial liabilities,Flow
+FL_NF,,FL,NFC,,,,,Financial liabilities,Stock
+FL_NF_TR,,FL,NFC,,,,Transactions,Financial liabilities,Flow
+FL_ROW,,FL,ROW,,,,,Financial liabilities,Stock
+FL_ROW_TR,,FL,ROW,,,,Transactions,Financial liabilities,Flow
+FNL_F_0,,FNL,FC,,Baseline,,,Financial Net Lending (Balance),Flow
+FNL_F_1,,FNL,FC,,Scenario 1,,,Financial Net Lending (Balance),Flow
+FNL_F_2,,FNL,FC,,Scenario 2,,,Financial Net Lending (Balance),Flow
+FNL_F_3,,FNL,FC,,Scenario 3,,,Financial Net Lending (Balance),Flow
+FNL_F_4,,FNL,FC,,Scenario 4,,,Financial Net Lending (Balance),Flow
+FNL_G_0,,FNL,GOV,,Baseline,,,Financial Net Lending (Balance),Flow
+FNL_G_1,,FNL,GOV,,Scenario 1,,,Financial Net Lending (Balance),Flow
+FNL_G_2,,FNL,GOV,,Scenario 2,,,Financial Net Lending (Balance),Flow
+FNL_G_3,,FNL,GOV,,Scenario 3,,,Financial Net Lending (Balance),Flow
+FNL_G_4,,FNL,GOV,,Scenario 4,,,Financial Net Lending (Balance),Flow
+FNL_H_0,,FNL,HH,,Baseline,,,Financial Net Lending (Balance),Flow
+FNL_H_1,,FNL,HH,,Scenario 1,,,Financial Net Lending (Balance),Flow
+FNL_H_2,,FNL,HH,,Scenario 2,,,Financial Net Lending (Balance),Flow
+FNL_H_3,,FNL,HH,,Scenario 3,,,Financial Net Lending (Balance),Flow
+FNL_H_4,,FNL,HH,,Scenario 4,,,Financial Net Lending (Balance),Flow
+FNL_NF_0,,FNL,NFC,,Baseline,,,Financial Net Lending (Balance),Flow
+FNL_NF_1,,FNL,NFC,,Scenario 1,,,Financial Net Lending (Balance),Flow
+FNL_NF_2,,FNL,NFC,,Scenario 2,,,Financial Net Lending (Balance),Flow
+FNL_NF_3,,FNL,NFC,,Scenario 3,,,Financial Net Lending (Balance),Flow
+FNL_NF_4,,FNL,NFC,,Scenario 4,,,Financial Net Lending (Balance),Flow
+FNL_ROW_0,,FNL,ROW,,Baseline,,,Financial Net Lending (Balance),Flow
+FNL_ROW_1,,FNL,ROW,,Scenario 1,,,Financial Net Lending (Balance),Flow
+FNL_ROW_2,,FNL,ROW,,Scenario 2,,,Financial Net Lending (Balance),Flow
+FNL_ROW_3,,FNL,ROW,,Scenario 3,,,Financial Net Lending (Balance),Flow
+FNL_ROW_4,,FNL,ROW,,Scenario 4,,,Financial Net Lending (Balance),Flow
+FNW_F,,FNW,FC,,,,,Financial net wealth,Stock
+FNW_F_0,,FNW,FC,,Baseline,,,Financial net wealth,Stock
+FNW_F_1,,FNW,FC,,Scenario 1,,,Financial net wealth,Stock
+FNW_F_2,,FNW,FC,,Scenario 2,,,Financial net wealth,Stock
+FNW_F_3,,FNW,FC,,Scenario 3,,,Financial net wealth,Stock
+FNW_F_4,,FNW,FC,,Scenario 4,,,Financial net wealth,Stock
+FNW_G,,FNW,GOV,,,,,Financial net wealth,Stock
+FNW_G_0,,FNW,GOV,,Baseline,,,Financial net wealth,Stock
+FNW_G_1,,FNW,GOV,,Scenario 1,,,Financial net wealth,Stock
+FNW_G_2,,FNW,GOV,,Scenario 2,,,Financial net wealth,Stock
+FNW_G_3,,FNW,GOV,,Scenario 3,,,Financial net wealth,Stock
+FNW_G_4,,FNW,GOV,,Scenario 4,,,Financial net wealth,Stock
+FNW_H,,FNW,HH,,,,,Financial net wealth,Stock
+FNW_H_0,,FNW,HH,,Baseline,,,Financial net wealth,Stock
+FNW_H_1,,FNW,HH,,Scenario 1,,,Financial net wealth,Stock
+FNW_H_2,,FNW,HH,,Scenario 2,,,Financial net wealth,Stock
+FNW_H_3,,FNW,HH,,Scenario 3,,,Financial net wealth,Stock
+FNW_H_4,,FNW,HH,,Scenario 4,,,Financial net wealth,Stock
+FNW_H_K,,FNW,HH,,,Real prices,,Financial net wealth,Stock
+FNW_H_K_0,,FNW,HH,,Baseline,Real prices,,Financial net wealth,Stock
+FNW_H_K_1,,FNW,HH,,Scenario 1,Real prices,,Financial net wealth,Stock
+FNW_H_K_2,,FNW,HH,,Scenario 2,Real prices,,Financial net wealth,Stock
+FNW_H_K_3,,FNW,HH,,Scenario 3,Real prices,,Financial net wealth,Stock
+FNW_H_K_4,,FNW,HH,,Scenario 4,Real prices,,Financial net wealth,Stock
+FNW_NF,,FNW,NFC,,,,,Financial net wealth,Stock
+FNW_NF_0,,FNW,NFC,,Baseline,,,Financial net wealth,Stock
+FNW_NF_1,,FNW,NFC,,Scenario 1,,,Financial net wealth,Stock
+FNW_NF_2,,FNW,NFC,,Scenario 2,,,Financial net wealth,Stock
+FNW_NF_3,,FNW,NFC,,Scenario 3,,,Financial net wealth,Stock
+FNW_NF_4,,FNW,NFC,,Scenario 4,,,Financial net wealth,Stock
+FNW_ROW,,FNW,ROW,,,,,Financial net wealth,Stock
+FNW_ROW_0,,FNW,ROW,,Baseline,,,Financial net wealth,Stock
+FNW_ROW_1,,FNW,ROW,,Scenario 1,,,Financial net wealth,Stock
+FNW_ROW_2,,FNW,ROW,,Scenario 2,,,Financial net wealth,Stock
+FNW_ROW_3,,FNW,ROW,,Scenario 3,,,Financial net wealth,Stock
+FNW_ROW_4,,FNW,ROW,,Scenario 4,,,Financial net wealth,Stock
+G,,G,,,,,,Government expenditure,Flow
+G_K,,G,,,,Real prices,,Government expenditure,Flow
+G_K_0,,G,,,Baseline,Real prices,,Government expenditure,Flow
+G_K_1,,G,,,Scenario 1,Real prices,,Government expenditure,Flow
+G_K_2,,G,,,Scenario 2,Real prices,,Government expenditure,Flow
+G_K_3,,G,,,Scenario 3,Real prices,,Government expenditure,Flow
+G_K_4,,G,,,Scenario 4,Real prices,,Government expenditure,Flow
+GDP,,GDP,,,,,,Gross domestic product,Flow
+GDP_EU,,GDP,EU,,,,,Gross domestic product,Flow
+HFHF,,HFHF,,,,,,Test variable: Not used,Check
+I,,I,,,,,,Gross fixed capital formation,Flow
+I_0,,I,,,Baseline,,,Gross fixed capital formation,Flow
+I_1,,I,,,Scenario 1,,,Gross fixed capital formation,Flow
+I_2,,I,,,Scenario 2,,,Gross fixed capital formation,Flow
+I_3,,I,,,Scenario 3,,,Gross fixed capital formation,Flow
+I_4,,I,,,Scenario 4,,,Gross fixed capital formation,Flow
+I_K,,I,,,,Real prices,,Gross fixed capital formation,Flow
+I_K_0,,I,,,Baseline,Real prices,,Gross fixed capital formation,Flow
+I_K_1,,I,,,Scenario 1,Real prices,,Gross fixed capital formation,Flow
+I_K_2,,I,,,Scenario 2,Real prices,,Gross fixed capital formation,Flow
+I_K_3,,I,,,Scenario 3,Real prices,,Gross fixed capital formation,Flow
+I_K_4,,I,,,Scenario 4,Real prices,,Gross fixed capital formation,Flow
+IBA_F,,IBA,FC,,,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H,,IBA,FC,HH,,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H_0,,IBA,FC,HH,Baseline,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H_1,,IBA,FC,HH,Scenario 1,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H_2,,IBA,FC,HH,Scenario 2,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H_3,,IBA,FC,HH,Scenario 3,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H_4,,IBA,FC,HH,Scenario 4,,,Financial Assets: Interest bearing assets,Stock
+IBA_F_H_RV,,IBA,FC,HH,,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_RV_0,,IBA,FC,HH,Baseline,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_RV_1,,IBA,FC,HH,Scenario 1,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_RV_2,,IBA,FC,HH,Scenario 2,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_RV_3,,IBA,FC,HH,Scenario 3,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_RV_4,,IBA,FC,HH,Scenario 4,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_TR,,IBA,FC,HH,,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_TR_0,,IBA,FC,HH,Baseline,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_TR_1,,IBA,FC,HH,Scenario 1,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_TR_2,,IBA,FC,HH,Scenario 2,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_TR_3,,IBA,FC,HH,Scenario 3,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_F_H_TR_4,,IBA,FC,HH,Scenario 4,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_F_RV,,IBA,FC,,,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_F_TR,,IBA,FC,,,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_G,,IBA,GOV,,,,,Financial Assets: Interest bearing assets,Stock
+IBA_G_RV,,IBA,GOV,,,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_G_TR,,IBA,GOV,,,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_H,,IBA,HH,,,,,Financial Assets: Interest bearing assets,Stock
+IBA_H_0,,IBA,HH,,Baseline,,,Financial Assets: Interest bearing assets,Stock
+IBA_H_1,,IBA,HH,,Scenario 1,,,Financial Assets: Interest bearing assets,Stock
+IBA_H_2,,IBA,HH,,Scenario 2,,,Financial Assets: Interest bearing assets,Stock
+IBA_H_3,,IBA,HH,,Scenario 3,,,Financial Assets: Interest bearing assets,Stock
+IBA_H_4,,IBA,HH,,Scenario 4,,,Financial Assets: Interest bearing assets,Stock
+IBA_H_RV,,IBA,HH,,,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_H_TR,,IBA,HH,,,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_H_TR_0,,IBA,HH,,Baseline,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_H_TR_1,,IBA,HH,,Scenario 1,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_H_TR_2,,IBA,HH,,Scenario 2,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_H_TR_3,,IBA,HH,,Scenario 3,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_H_TR_4,,IBA,HH,,Scenario 4,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_NF,,IBA,NFC,,,,,Financial Assets: Interest bearing assets,Stock
+IBA_NF_RV,,IBA,NFC,,,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_NF_TR,,IBA,NFC,,,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBA_ROW,,IBA,ROW,,,,,Financial Assets: Interest bearing assets,Stock
+IBA_ROW_RV,,IBA,ROW,,,,Revaluations,Financial Assets: Interest bearing assets,Flow
+IBA_ROW_TR,,IBA,ROW,,,,Transactions,Financial Assets: Interest bearing assets,Flow
+IBL_F,,IBL,FC,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H,,IBL,FC,HH,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H_0,,IBL,FC,HH,Baseline,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H_1,,IBL,FC,HH,Scenario 1,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H_2,,IBL,FC,HH,Scenario 2,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H_3,,IBL,FC,HH,Scenario 3,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H_4,,IBL,FC,HH,Scenario 4,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_F_H_RV,,IBL,FC,HH,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_RV_0,,IBL,FC,HH,Baseline,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_RV_1,,IBL,FC,HH,Scenario 1,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_RV_2,,IBL,FC,HH,Scenario 2,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_RV_3,,IBL,FC,HH,Scenario 3,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_RV_4,,IBL,FC,HH,Scenario 4,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_TR,,IBL,FC,HH,,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_TR_0,,IBL,FC,HH,Baseline,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_TR_1,,IBL,FC,HH,Scenario 1,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_TR_2,,IBL,FC,HH,Scenario 2,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_TR_3,,IBL,FC,HH,Scenario 3,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_H_TR_4,,IBL,FC,HH,Scenario 4,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_RV,,IBL,FC,,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_F_TR,,IBL,FC,,,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_FI_H,Fixed,IBL,HH,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FI_H_0,Fixed,IBL,HH,,Baseline,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FI_H_1,Fixed,IBL,HH,,Scenario 1,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FI_H_2,Fixed,IBL,HH,,Scenario 2,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FI_H_3,Fixed,IBL,HH,,Scenario 3,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FI_H_4,Fixed,IBL,HH,,Scenario 4,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FL_H,Flexible,IBL,HH,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FL_H_0,Flexible,IBL,HH,,Baseline,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FL_H_1,Flexible,IBL,HH,,Scenario 1,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FL_H_2,Flexible,IBL,HH,,Scenario 2,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FL_H_3,Flexible,IBL,HH,,Scenario 3,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_FL_H_4,Flexible,IBL,HH,,Scenario 4,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_G,,IBL,GOV,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_G_RV,,IBL,GOV,,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_G_TR,,IBL,GOV,,,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H,,IBL,HH,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_H_0,,IBL,HH,,Baseline,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_H_1,,IBL,HH,,Scenario 1,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_H_2,,IBL,HH,,Scenario 2,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_H_3,,IBL,HH,,Scenario 3,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_H_4,,IBL,HH,,Scenario 4,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_H_RV,,IBL,HH,,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H_TR,,IBL,HH,,,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H_TR_0,,IBL,HH,,Baseline,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H_TR_1,,IBL,HH,,Scenario 1,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H_TR_2,,IBL,HH,,Scenario 2,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H_TR_3,,IBL,HH,,Scenario 3,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_H_TR_4,,IBL,HH,,Scenario 4,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_NF,,IBL,NFC,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_NF_RV,,IBL,NFC,,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_NF_TR,,IBL,NFC,,,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_ROW,,IBL,ROW,,,,,Financial Liabilities: Interest bearing liabilities,Stock
+IBL_ROW_RV,,IBL,ROW,,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_ROW_TR,,IBL,ROW,,,,Transactions,Financial Liabilities: Interest bearing liabilities,Flow
+IBL_ROW_RV1,,IBL_RV1,ROW,,,,Revaluations,Financial Liabilities: Interest bearing liabilities,Flow
+INFL,,INFL,,,,,,Inflation rate: Price inflation,Rate
+INFL_M,,INFL_M,,,,,,Inflation rate: Price inflation: Foreign,Rate
+INV_F,,INV,FC,,,,,Gross fixed capital formation,Flow
+INV_F_K,,INV,FC,,,Real prices,,Gross fixed capital formation,Flow
+INV_G,,INV,GOV,,,,,Gross fixed capital formation,Flow
+INV_G_K,,INV,GOV,,,Real prices,,Gross fixed capital formation,Flow
+INV_H,,INV,HH,,,,,Gross fixed capital formation,Flow
+INV_H_0,,INV,HH,,Baseline,,,Gross fixed capital formation,Flow
+INV_H_1,,INV,HH,,Scenario 1,,,Gross fixed capital formation,Flow
+INV_H_2,,INV,HH,,Scenario 2,,,Gross fixed capital formation,Flow
+INV_H_3,,INV,HH,,Scenario 3,,,Gross fixed capital formation,Flow
+INV_H_4,,INV,HH,,Scenario 4,,,Gross fixed capital formation,Flow
+INV_H_K,,INV,HH,,,Real prices,,Gross fixed capital formation,Flow
+INV_H_K_0,,INV,HH,,Baseline,Real prices,,Gross fixed capital formation,Flow
+INV_H_K_1,,INV,HH,,Scenario 1,Real prices,,Gross fixed capital formation,Flow
+INV_H_K_2,,INV,HH,,Scenario 2,Real prices,,Gross fixed capital formation,Flow
+INV_H_K_3,,INV,HH,,Scenario 3,Real prices,,Gross fixed capital formation,Flow
+INV_H_K_4,,INV,HH,,Scenario 4,Real prices,,Gross fixed capital formation,Flow
+INV_NF,,INV,NFC,,,,,Gross fixed capital formation,Flow
+INV_NF_0,,INV,NFC,,Baseline,,,Gross fixed capital formation,Flow
+INV_NF_1,,INV,NFC,,Scenario 1,,,Gross fixed capital formation,Flow
+INV_NF_2,,INV,NFC,,Scenario 2,,,Gross fixed capital formation,Flow
+INV_NF_3,,INV,NFC,,Scenario 3,,,Gross fixed capital formation,Flow
+INV_NF_4,,INV,NFC,,Scenario 4,,,Gross fixed capital formation,Flow
+INV_NF_K,,INV,NFC,,,Real prices,,Gross fixed capital formation,Flow
+INV_NF_K_0,,INV,NFC,,Baseline,Real prices,,Gross fixed capital formation,Flow
+INV_NF_K_1,,INV,NFC,,Scenario 1,Real prices,,Gross fixed capital formation,Flow
+INV_NF_K_2,,INV,NFC,,Scenario 2,Real prices,,Gross fixed capital formation,Flow
+INV_NF_K_3,,INV,NFC,,Scenario 3,Real prices,,Gross fixed capital formation,Flow
+INV_NF_K_4,,INV,NFC,,Scenario 4,Real prices,,Gross fixed capital formation,Flow
+K_F,,K,FC,,,,,Stock of Capital,Stock
+K_F_0,,K,FC,,Baseline,,,Stock of Capital,Stock
+K_F_1,,K,FC,,Scenario 1,,,Stock of Capital,Stock
+K_F_2,,K,FC,,Scenario 2,,,Stock of Capital,Stock
+K_F_3,,K,FC,,Scenario 3,,,Stock of Capital,Stock
+K_F_4,,K,FC,,Scenario 4,,,Stock of Capital,Stock
+K_G,,K,GOV,,,,,Stock of Capital,Stock
+K_G_0,,K,GOV,,Baseline,,,Stock of Capital,Stock
+K_G_1,,K,GOV,,Scenario 1,,,Stock of Capital,Stock
+K_G_2,,K,GOV,,Scenario 2,,,Stock of Capital,Stock
+K_G_3,,K,GOV,,Scenario 3,,,Stock of Capital,Stock
+K_G_4,,K,GOV,,Scenario 4,,,Stock of Capital,Stock
+K_H,,K,HH,,,,,Stock of Capital,Stock
+K_H_0,,K,HH,,Baseline,,,Stock of Capital,Stock
+K_H_1,,K,HH,,Scenario 1,,,Stock of Capital,Stock
+K_H_2,,K,HH,,Scenario 2,,,Stock of Capital,Stock
+K_H_3,,K,HH,,Scenario 3,,,Stock of Capital,Stock
+K_H_4,,K,HH,,Scenario 4,,,Stock of Capital,Stock
+K_H_K,,K,HH,,,Real prices,,Stock of Capital,Stock
+K_H_K_0,,K,HH,,Baseline,Real prices,,Stock of Capital,Stock
+K_H_K_1,,K,HH,,Scenario 1,Real prices,,Stock of Capital,Stock
+K_H_K_2,,K,HH,,Scenario 2,Real prices,,Stock of Capital,Stock
+K_H_K_3,,K,HH,,Scenario 3,Real prices,,Stock of Capital,Stock
+K_H_K_4,,K,HH,,Scenario 4,Real prices,,Stock of Capital,Stock
+K_NF,,K,NFC,,,,,Stock of Capital,Stock
+K_NF_0,,K,NFC,,Baseline,,,Stock of Capital,Stock
+K_NF_1,,K,NFC,,Scenario 1,,,Stock of Capital,Stock
+K_NF_2,,K,NFC,,Scenario 2,,,Stock of Capital,Stock
+K_NF_3,,K,NFC,,Scenario 3,,,Stock of Capital,Stock
+K_NF_4,,K,NFC,,Scenario 4,,,Stock of Capital,Stock
+K_NF_K,,K,NFC,,,Real prices,,Stock of Capital,Stock
+K_NF_K_0,,K,NFC,,Baseline,Real prices,,Stock of Capital,Stock
+K_NF_K_1,,K,NFC,,Scenario 1,Real prices,,Stock of Capital,Stock
+K_NF_K_2,,K,NFC,,Scenario 2,Real prices,,Stock of Capital,Stock
+K_NF_K_3,,K,NFC,,Scenario 3,Real prices,,Stock of Capital,Stock
+K_NF_K_4,,K,NFC,,Scenario 4,Real prices,,Stock of Capital,Stock
+K_H_CG,,K_CG,HH,,,,,Capital Gains,Flow
+KCG_F,,KCG,FC,,,,,Capital Gains,Flow
+KCG_G,,KCG,GOV,,,,,Capital Gains,Flow
+KCG_H,,KCG,HH,,,,,Capital Gains,Flow
+KCG_H_K,,KCG,HH,,,Real prices,,Capital Gains,Flow
+KCG_NF,,KCG,NFC,,,,,Capital Gains,Flow
+KCG_H_SUM,,KCG_SUM,HH,,,,,Capital Gains - Cummulative sum,Flow
+LEV,,LEV,,,,,,Leverage ratio: NFC: Funding liabilities to GDP,Ratio
+LEV1,,LEV1,,,,,,Leverage ratio: NFC: Funding liabilities,Ratio
+LF,,LF,,,,,,Labour force: Total number of employable persons,Stock
+M,,M,,,,,,Imports,Flow
+M_0,,M,,,Baseline,,,Imports,Flow
+M_1,,M,,,Scenario 1,,,Imports,Flow
+M_2,,M,,,Scenario 2,,,Imports,Flow
+M_3,,M,,,Scenario 3,,,Imports,Flow
+M_4,,M,,,Scenario 4,,,Imports,Flow
+M_K,,M,,,,Real prices,,Imports,Flow
+M_K_0,,M,,,Baseline,Real prices,,Imports,Flow
+M_K_1,,M,,,Scenario 1,Real prices,,Imports,Flow
+M_K_2,,M,,,Scenario 2,Real prices,,Imports,Flow
+M_K_3,,M,,,Scenario 3,Real prices,,Imports,Flow
+M_K_4,,M,,,Scenario 4,Real prices,,Imports,Flow
+N,,N,,,,,,Labour force: Denmark for workers in production,Stock
+N_0,,N,,,Baseline,,,Labour force: Denmark for workers in production,Stock
+N_1,,N,,,Scenario 1,,,Labour force: Denmark for workers in production,Stock
+N_2,,N,,,Scenario 2,,,Labour force: Denmark for workers in production,Stock
+N_3,,N,,,Scenario 3,,,Labour force: Denmark for workers in production,Stock
+N_4,,N,,,Scenario 4,,,Labour force: Denmark for workers in production,Stock
+NEQ_F,,NEQ,FC,,,,,Net financial stock: Equity,Stock
+NEQ_F_0,,NEQ,FC,,Baseline,,,Net financial stock: Equity,Stock
+NEQ_F_1,,NEQ,FC,,Scenario 1,,,Net financial stock: Equity,Stock
+NEQ_F_2,,NEQ,FC,,Scenario 2,,,Net financial stock: Equity,Stock
+NEQ_F_3,,NEQ,FC,,Scenario 3,,,Net financial stock: Equity,Stock
+NEQ_F_4,,NEQ,FC,,Scenario 4,,,Net financial stock: Equity,Stock
+NEQ_F_RV,,NEQ,FC,,,,Revaluations,Net financial stock: Equity,Flow
+NEQ_F_TR,,NEQ,FC,,,,Transactions,Net financial stock: Equity,Flow
+NEQ_F_TR_0,,NEQ,FC,,Baseline,,Transactions,Net financial stock: Equity,Flow
+NEQ_F_TR_1,,NEQ,FC,,Scenario 1,,Transactions,Net financial stock: Equity,Flow
+NEQ_F_TR_2,,NEQ,FC,,Scenario 2,,Transactions,Net financial stock: Equity,Flow
+NEQ_F_TR_3,,NEQ,FC,,Scenario 3,,Transactions,Net financial stock: Equity,Flow
+NEQ_F_TR_4,,NEQ,FC,,Scenario 4,,Transactions,Net financial stock: Equity,Flow
+NEQ_NF,,NEQ,NFC,,,,,Net financial stock: Equity,Stock
+NEQ_NF_0,,NEQ,NFC,,Baseline,,,Net financial stock: Equity,Stock
+NEQ_NF_1,,NEQ,NFC,,Scenario 1,,,Net financial stock: Equity,Stock
+NEQ_NF_2,,NEQ,NFC,,Scenario 2,,,Net financial stock: Equity,Stock
+NEQ_NF_3,,NEQ,NFC,,Scenario 3,,,Net financial stock: Equity,Stock
+NEQ_NF_4,,NEQ,NFC,,Scenario 4,,,Net financial stock: Equity,Stock
+NEQ_NF_RV,,NEQ,NFC,,,,Revaluations,Net financial stock: Equity,Flow
+NEQ_NF_RV_0,,NEQ,NFC,,Baseline,,Revaluations,Net financial stock: Equity,Flow
+NEQ_NF_RV_1,,NEQ,NFC,,Scenario 1,,Revaluations,Net financial stock: Equity,Flow
+NEQ_NF_RV_2,,NEQ,NFC,,Scenario 2,,Revaluations,Net financial stock: Equity,Flow
+NEQ_NF_RV_3,,NEQ,NFC,,Scenario 3,,Revaluations,Net financial stock: Equity,Flow
+NEQ_NF_RV_4,,NEQ,NFC,,Scenario 4,,Revaluations,Net financial stock: Equity,Flow
+NEQ_NF_TR,,NEQ,NFC,,,,Transactions,Net financial stock: Equity,Flow
+NEQ_ROW,,NEQ,ROW,,,,,Net financial stock: Equity,Stock
+NEQ_ROW_0,,NEQ,ROW,,Baseline,,,Net financial stock: Equity,Stock
+NEQ_ROW_1,,NEQ,ROW,,Scenario 1,,,Net financial stock: Equity,Stock
+NEQ_ROW_2,,NEQ,ROW,,Scenario 2,,,Net financial stock: Equity,Stock
+NEQ_ROW_3,,NEQ,ROW,,Scenario 3,,,Net financial stock: Equity,Stock
+NEQ_ROW_4,,NEQ,ROW,,Scenario 4,,,Net financial stock: Equity,Stock
+NEQ_ROW_RV,,NEQ,ROW,,,,Revaluations,Net financial stock: Equity,Flow
+NEQ_ROW_TR,,NEQ,ROW,,,,Transactions,Net financial stock: Equity,Flow
+NF,,NF,,,,,,Labour force: Employed persons: Danish waged,Stock
+NF_0,,NF,,,Baseline,,,Labour force: Employed persons: Danish waged,Stock
+NF_1,,NF,,,Scenario 1,,,Labour force: Employed persons: Danish waged,Stock
+NF_2,,NF,,,Scenario 2,,,Labour force: Employed persons: Danish waged,Stock
+NF_3,,NF,,,Scenario 3,,,Labour force: Employed persons: Danish waged,Stock
+NF_4,,NF,,,Scenario 4,,,Labour force: Employed persons: Danish waged,Stock
+NIB_F,,NIB,FC,,,,,Net financial stock: Interest bearing,Stock
+NIB_F_0,,NIB,FC,,Baseline,,,Net financial stock: Interest bearing,Stock
+NIB_F_1,,NIB,FC,,Scenario 1,,,Net financial stock: Interest bearing,Stock
+NIB_F_2,,NIB,FC,,Scenario 2,,,Net financial stock: Interest bearing,Stock
+NIB_F_3,,NIB,FC,,Scenario 3,,,Net financial stock: Interest bearing,Stock
+NIB_F_4,,NIB,FC,,Scenario 4,,,Net financial stock: Interest bearing,Stock
+NIB_F_RV,,NIB,FC,,,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_F_RV_0,,NIB,FC,,Baseline,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_F_RV_1,,NIB,FC,,Scenario 1,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_F_RV_2,,NIB,FC,,Scenario 2,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_F_RV_3,,NIB,FC,,Scenario 3,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_F_RV_4,,NIB,FC,,Scenario 4,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_F_TR,,NIB,FC,,,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_F_TR_0,,NIB,FC,,Baseline,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_F_TR_1,,NIB,FC,,Scenario 1,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_F_TR_2,,NIB,FC,,Scenario 2,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_F_TR_3,,NIB,FC,,Scenario 3,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_F_TR_4,,NIB,FC,,Scenario 4,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_G,,NIB,GOV,,,,,Net financial stock: Interest bearing,Stock
+NIB_G_0,,NIB,GOV,,Baseline,,,Net financial stock: Interest bearing,Stock
+NIB_G_1,,NIB,GOV,,Scenario 1,,,Net financial stock: Interest bearing,Stock
+NIB_G_2,,NIB,GOV,,Scenario 2,,,Net financial stock: Interest bearing,Stock
+NIB_G_3,,NIB,GOV,,Scenario 3,,,Net financial stock: Interest bearing,Stock
+NIB_G_4,,NIB,GOV,,Scenario 4,,,Net financial stock: Interest bearing,Stock
+NIB_G_RV,,NIB,GOV,,,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_G_TR,,NIB,GOV,,,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_G_TR_0,,NIB,GOV,,Baseline,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_G_TR_1,,NIB,GOV,,Scenario 1,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_G_TR_2,,NIB,GOV,,Scenario 2,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_G_TR_3,,NIB,GOV,,Scenario 3,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_G_TR_4,,NIB,GOV,,Scenario 4,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_NF,,NIB,NFC,,,,,Net financial stock: Interest bearing,Stock
+NIB_NF_0,,NIB,NFC,,Baseline,,,Net financial stock: Interest bearing,Stock
+NIB_NF_1,,NIB,NFC,,Scenario 1,,,Net financial stock: Interest bearing,Stock
+NIB_NF_2,,NIB,NFC,,Scenario 2,,,Net financial stock: Interest bearing,Stock
+NIB_NF_3,,NIB,NFC,,Scenario 3,,,Net financial stock: Interest bearing,Stock
+NIB_NF_4,,NIB,NFC,,Scenario 4,,,Net financial stock: Interest bearing,Stock
+NIB_NF_RV,,NIB,NFC,,,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_NF_TR,,NIB,NFC,,,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_NF_TR_0,,NIB,NFC,,Baseline,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_NF_TR_1,,NIB,NFC,,Scenario 1,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_NF_TR_2,,NIB,NFC,,Scenario 2,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_NF_TR_3,,NIB,NFC,,Scenario 3,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_NF_TR_4,,NIB,NFC,,Scenario 4,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_ROW,,NIB,ROW,,,,,Net financial stock: Interest bearing,Stock
+NIB_ROW_0,,NIB,ROW,,Baseline,,,Net financial stock: Interest bearing,Stock
+NIB_ROW_1,,NIB,ROW,,Scenario 1,,,Net financial stock: Interest bearing,Stock
+NIB_ROW_2,,NIB,ROW,,Scenario 2,,,Net financial stock: Interest bearing,Stock
+NIB_ROW_3,,NIB,ROW,,Scenario 3,,,Net financial stock: Interest bearing,Stock
+NIB_ROW_4,,NIB,ROW,,Scenario 4,,,Net financial stock: Interest bearing,Stock
+NIB_ROW_RV,,NIB,ROW,,,,Revaluations,Net financial stock: Interest bearing,Flow
+NIB_ROW_TR,,NIB,ROW,,,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_ROW_TR_0,,NIB,ROW,,Baseline,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_ROW_TR_1,,NIB,ROW,,Scenario 1,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_ROW_TR_2,,NIB,ROW,,Scenario 2,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_ROW_TR_3,,NIB,ROW,,Scenario 3,,Transactions,Net financial stock: Interest bearing,Flow
+NIB_ROW_TR_4,,NIB,ROW,,Scenario 4,,Transactions,Net financial stock: Interest bearing,Flow
+NL_F,,NL,FC,,,,,Sector Balance,Flow
+NL_F_0,,NL,FC,,Baseline,,,Sector Balance,Flow
+NL_F_1,,NL,FC,,Scenario 1,,,Sector Balance,Flow
+NL_F_2,,NL,FC,,Scenario 2,,,Sector Balance,Flow
+NL_F_3,,NL,FC,,Scenario 3,,,Sector Balance,Flow
+NL_F_4,,NL,FC,,Scenario 4,,,Sector Balance,Flow
+NL_G,,NL,GOV,,,,,Sector Balance,Flow
+NL_G_0,,NL,GOV,,Baseline,,,Sector Balance,Flow
+NL_G_1,,NL,GOV,,Scenario 1,,,Sector Balance,Flow
+NL_G_2,,NL,GOV,,Scenario 2,,,Sector Balance,Flow
+NL_G_3,,NL,GOV,,Scenario 3,,,Sector Balance,Flow
+NL_G_4,,NL,GOV,,Scenario 4,,,Sector Balance,Flow
+NL_H,,NL,HH,,,,,Sector Balance,Flow
+NL_H_0,,NL,HH,,Baseline,,,Sector Balance,Flow
+NL_H_1,,NL,HH,,Scenario 1,,,Sector Balance,Flow
+NL_H_2,,NL,HH,,Scenario 2,,,Sector Balance,Flow
+NL_H_3,,NL,HH,,Scenario 3,,,Sector Balance,Flow
+NL_H_4,,NL,HH,,Scenario 4,,,Sector Balance,Flow
+NL_NF,,NL,NFC,,,,,Sector Balance,Flow
+NL_NF_0,,NL,NFC,,Baseline,,,Sector Balance,Flow
+NL_NF_1,,NL,NFC,,Scenario 1,,,Sector Balance,Flow
+NL_NF_2,,NL,NFC,,Scenario 2,,,Sector Balance,Flow
+NL_NF_3,,NL,NFC,,Scenario 3,,,Sector Balance,Flow
+NL_NF_4,,NL,NFC,,Scenario 4,,,Sector Balance,Flow
+NL_ROW,,NL,ROW,,,,,Sector Balance,Flow
+NL_ROW_0,,NL,ROW,,Baseline,,,Sector Balance,Flow
+NL_ROW_1,,NL,ROW,,Scenario 1,,,Sector Balance,Flow
+NL_ROW_2,,NL,ROW,,Scenario 2,,,Sector Balance,Flow
+NL_ROW_3,,NL,ROW,,Scenario 3,,,Sector Balance,Flow
+NL_ROW_4,,NL,ROW,,Scenario 4,,,Sector Balance,Flow
+NL_CHECK_0,,NL_CHECK,,,Baseline,,,Consistency check: Net lending,Check
+NL_CHECK_1,,NL_CHECK,,,Scenario 1,,,Consistency check: Net lending,Check
+NL_CHECK_2,,NL_CHECK,,,Scenario 2,,,Consistency check: Net lending,Check
+NL_CHECK_3,,NL_CHECK,,,Scenario 3,,,Consistency check: Net lending,Check
+NL_CHECK_4,,NL_CHECK,,,Scenario 4,,,Consistency check: Net lending,Check
+NP_F,,NP,FC,,,,,Net purchases of non-financial assets (NP),Flow
+NP_G,,NP,GOV,,,,,Net purchases of non-financial assets (NP),Flow
+NP_H,,NP,HH,,,,,Net purchases of non-financial assets (NP),Flow
+NP_NF,,NP,NFC,,,,,Net purchases of non-financial assets (NP),Flow
+NP_NF_0,,NP,NFC,,Baseline,,,Net purchases of non-financial assets (NP),Flow
+NP_NF_1,,NP,NFC,,Scenario 1,,,Net purchases of non-financial assets (NP),Flow
+NP_NF_2,,NP,NFC,,Scenario 2,,,Net purchases of non-financial assets (NP),Flow
+NP_NF_3,,NP,NFC,,Scenario 3,,,Net purchases of non-financial assets (NP),Flow
+NP_NF_4,,NP,NFC,,Scenario 4,,,Net purchases of non-financial assets (NP),Flow
+NP_ROW,,NP,ROW,,,,,Net purchases of non-financial assets (NP),Flow
+NPEN_ROW,,NPEN,ROW,,,,,Net financial stock: Pension,Stock
+NPEN_ROW_0,,NPEN,ROW,,Baseline,,,Net financial stock: Pension,Stock
+NPEN_ROW_1,,NPEN,ROW,,Scenario 1,,,Net financial stock: Pension,Stock
+NPEN_ROW_2,,NPEN,ROW,,Scenario 2,,,Net financial stock: Pension,Stock
+NPEN_ROW_3,,NPEN,ROW,,Scenario 3,,,Net financial stock: Pension,Stock
+NPEN_ROW_4,,NPEN,ROW,,Scenario 4,,,Net financial stock: Pension,Stock
+NPEN_ROW_RV,,NPEN,ROW,,,,Revaluations,Net financial stock: Pension,Flow
+NPEN_ROW_TR,,NPEN,ROW,,,,Transactions,Net financial stock: Pension,Flow
+NPIR_F_0,,NPIR,FC,,Baseline,,,Net property income received: Total,Flow
+NPIR_F_1,,NPIR,FC,,Scenario 1,,,Net property income received: Total,Flow
+NPIR_F_2,,NPIR,FC,,Scenario 2,,,Net property income received: Total,Flow
+NPIR_F_3,,NPIR,FC,,Scenario 3,,,Net property income received: Total,Flow
+NPIR_F_4,,NPIR,FC,,Scenario 4,,,Net property income received: Total,Flow
+NPIR_G_0,,NPIR,GOV,,Baseline,,,Net property income received: Total,Flow
+NPIR_G_1,,NPIR,GOV,,Scenario 1,,,Net property income received: Total,Flow
+NPIR_G_2,,NPIR,GOV,,Scenario 2,,,Net property income received: Total,Flow
+NPIR_G_3,,NPIR,GOV,,Scenario 3,,,Net property income received: Total,Flow
+NPIR_G_4,,NPIR,GOV,,Scenario 4,,,Net property income received: Total,Flow
+NPIR_H_0,,NPIR,HH,,Baseline,,,Net property income received: Total,Flow
+NPIR_H_1,,NPIR,HH,,Scenario 1,,,Net property income received: Total,Flow
+NPIR_H_2,,NPIR,HH,,Scenario 2,,,Net property income received: Total,Flow
+NPIR_H_3,,NPIR,HH,,Scenario 3,,,Net property income received: Total,Flow
+NPIR_H_4,,NPIR,HH,,Scenario 4,,,Net property income received: Total,Flow
+NPIR_NF_0,,NPIR,NFC,,Baseline,,,Net property income received: Total,Flow
+NPIR_NF_1,,NPIR,NFC,,Scenario 1,,,Net property income received: Total,Flow
+NPIR_NF_2,,NPIR,NFC,,Scenario 2,,,Net property income received: Total,Flow
+NPIR_NF_3,,NPIR,NFC,,Scenario 3,,,Net property income received: Total,Flow
+NPIR_NF_4,,NPIR,NFC,,Scenario 4,,,Net property income received: Total,Flow
+NPIR_ROW_0,,NPIR,ROW,,Baseline,,,Net property income received: Total,Flow
+NPIR_ROW_1,,NPIR,ROW,,Scenario 1,,,Net property income received: Total,Flow
+NPIR_ROW_2,,NPIR,ROW,,Scenario 2,,,Net property income received: Total,Flow
+NPIR_ROW_3,,NPIR,ROW,,Scenario 3,,,Net property income received: Total,Flow
+NPIR_ROW_4,,NPIR,ROW,,Scenario 4,,,Net property income received: Total,Flow
+NPIR_NEQ_F_0,,NPIR_NEQ,FC,,Baseline,,,Net property income received: NEQ,Flow
+NPIR_NEQ_F_1,,NPIR_NEQ,FC,,Scenario 1,,,Net property income received: NEQ,Flow
+NPIR_NEQ_F_2,,NPIR_NEQ,FC,,Scenario 2,,,Net property income received: NEQ,Flow
+NPIR_NEQ_F_3,,NPIR_NEQ,FC,,Scenario 3,,,Net property income received: NEQ,Flow
+NPIR_NEQ_F_4,,NPIR_NEQ,FC,,Scenario 4,,,Net property income received: NEQ,Flow
+NPIR_NEQ_NF_0,,NPIR_NEQ,NFC,,Baseline,,,Net property income received: NEQ,Flow
+NPIR_NEQ_NF_1,,NPIR_NEQ,NFC,,Scenario 1,,,Net property income received: NEQ,Flow
+NPIR_NEQ_NF_2,,NPIR_NEQ,NFC,,Scenario 2,,,Net property income received: NEQ,Flow
+NPIR_NEQ_NF_3,,NPIR_NEQ,NFC,,Scenario 3,,,Net property income received: NEQ,Flow
+NPIR_NEQ_NF_4,,NPIR_NEQ,NFC,,Scenario 4,,,Net property income received: NEQ,Flow
+NPIR_NEQ_ROW_0,,NPIR_NEQ,ROW,,Baseline,,,Net property income received: NEQ,Flow
+NPIR_NEQ_ROW_1,,NPIR_NEQ,ROW,,Scenario 1,,,Net property income received: NEQ,Flow
+NPIR_NEQ_ROW_2,,NPIR_NEQ,ROW,,Scenario 2,,,Net property income received: NEQ,Flow
+NPIR_NEQ_ROW_3,,NPIR_NEQ,ROW,,Scenario 3,,,Net property income received: NEQ,Flow
+NPIR_NEQ_ROW_4,,NPIR_NEQ,ROW,,Scenario 4,,,Net property income received: NEQ,Flow
+NPIR_NIB_F_0,,NPIR_NIB,FC,,Baseline,,,Net property income received: NIB,Flow
+NPIR_NIB_F_1,,NPIR_NIB,FC,,Scenario 1,,,Net property income received: NIB,Flow
+NPIR_NIB_F_2,,NPIR_NIB,FC,,Scenario 2,,,Net property income received: NIB,Flow
+NPIR_NIB_F_3,,NPIR_NIB,FC,,Scenario 3,,,Net property income received: NIB,Flow
+NPIR_NIB_F_4,,NPIR_NIB,FC,,Scenario 4,,,Net property income received: NIB,Flow
+NPIR_NIB_G_0,,NPIR_NIB,GOV,,Baseline,,,Net property income received: NIB,Flow
+NPIR_NIB_G_1,,NPIR_NIB,GOV,,Scenario 1,,,Net property income received: NIB,Flow
+NPIR_NIB_G_2,,NPIR_NIB,GOV,,Scenario 2,,,Net property income received: NIB,Flow
+NPIR_NIB_G_3,,NPIR_NIB,GOV,,Scenario 3,,,Net property income received: NIB,Flow
+NPIR_NIB_G_4,,NPIR_NIB,GOV,,Scenario 4,,,Net property income received: NIB,Flow
+NPIR_NIB_NF_0,,NPIR_NIB,NFC,,Baseline,,,Net property income received: NIB,Flow
+NPIR_NIB_NF_1,,NPIR_NIB,NFC,,Scenario 1,,,Net property income received: NIB,Flow
+NPIR_NIB_NF_2,,NPIR_NIB,NFC,,Scenario 2,,,Net property income received: NIB,Flow
+NPIR_NIB_NF_3,,NPIR_NIB,NFC,,Scenario 3,,,Net property income received: NIB,Flow
+NPIR_NIB_NF_4,,NPIR_NIB,NFC,,Scenario 4,,,Net property income received: NIB,Flow
+NPIR_NIB_ROW_0,,NPIR_NIB,ROW,,Baseline,,,Net property income received: NIB,Flow
+NPIR_NIB_ROW_1,,NPIR_NIB,ROW,,Scenario 1,,,Net property income received: NIB,Flow
+NPIR_NIB_ROW_2,,NPIR_NIB,ROW,,Scenario 2,,,Net property income received: NIB,Flow
+NPIR_NIB_ROW_3,,NPIR_NIB,ROW,,Scenario 3,,,Net property income received: NIB,Flow
+NPIR_NIB_ROW_4,,NPIR_NIB,ROW,,Scenario 4,,,Net property income received: NIB,Flow
+NPIR_NPEN_ROW_0,,NPIR_NPEN,ROW,,Baseline,,,Net property income received: NPEN,Flow
+NPIR_NPEN_ROW_1,,NPIR_NPEN,ROW,,Scenario 1,,,Net property income received: NPEN,Flow
+NPIR_NPEN_ROW_2,,NPIR_NPEN,ROW,,Scenario 2,,,Net property income received: NPEN,Flow
+NPIR_NPEN_ROW_3,,NPIR_NPEN,ROW,,Scenario 3,,,Net property income received: NPEN,Flow
+NPIR_NPEN_ROW_4,,NPIR_NPEN,ROW,,Scenario 4,,,Net property income received: NPEN,Flow
+NU,,NU,,,,,,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NU_0,,NU,,,Baseline,,,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NU_1,,NU,,,Scenario 1,,,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NU_2,,NU,,,Scenario 2,,,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NU_3,,NU,,,Scenario 3,,,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NU_4,,NU,,,Scenario 4,,,Labour force: Employed persons: Danish nationals: Employed abroad,Stock
+NW_F_0,,NW,FC,,Baseline,,,Net Wealth,Stock
+NW_F_1,,NW,FC,,Scenario 1,,,Net Wealth,Stock
+NW_F_2,,NW,FC,,Scenario 2,,,Net Wealth,Stock
+NW_F_3,,NW,FC,,Scenario 3,,,Net Wealth,Stock
+NW_F_4,,NW,FC,,Scenario 4,,,Net Wealth,Stock
+NW_G_0,,NW,GOV,,Baseline,,,Net Wealth,Stock
+NW_G_1,,NW,GOV,,Scenario 1,,,Net Wealth,Stock
+NW_G_2,,NW,GOV,,Scenario 2,,,Net Wealth,Stock
+NW_G_3,,NW,GOV,,Scenario 3,,,Net Wealth,Stock
+NW_G_4,,NW,GOV,,Scenario 4,,,Net Wealth,Stock
+NW_H,,NW,HH,,,,,Net Wealth,Stock
+NW_H_0,,NW,HH,,Baseline,,,Net Wealth,Stock
+NW_H_1,,NW,HH,,Scenario 1,,,Net Wealth,Stock
+NW_H_2,,NW,HH,,Scenario 2,,,Net Wealth,Stock
+NW_H_3,,NW,HH,,Scenario 3,,,Net Wealth,Stock
+NW_H_4,,NW,HH,,Scenario 4,,,Net Wealth,Stock
+NW_H_K,,NW,HH,,,Real prices,,Net Wealth,Stock
+NW_H_K_0,,NW,HH,,Baseline,Real prices,,Net Wealth,Stock
+NW_H_K_1,,NW,HH,,Scenario 1,Real prices,,Net Wealth,Stock
+NW_H_K_2,,NW,HH,,Scenario 2,Real prices,,Net Wealth,Stock
+NW_H_K_3,,NW,HH,,Scenario 3,Real prices,,Net Wealth,Stock
+NW_H_K_4,,NW,HH,,Scenario 4,Real prices,,Net Wealth,Stock
+NW_NF_0,,NW,NFC,,Baseline,,,Net Wealth,Stock
+NW_NF_1,,NW,NFC,,Scenario 1,,,Net Wealth,Stock
+NW_NF_2,,NW,NFC,,Scenario 2,,,Net Wealth,Stock
+NW_NF_3,,NW,NFC,,Scenario 3,,,Net Wealth,Stock
+NW_NF_4,,NW,NFC,,Scenario 4,,,Net Wealth,Stock
+NW_ROW_0,,NW,ROW,,Baseline,,,Net Wealth,Stock
+NW_ROW_1,,NW,ROW,,Scenario 1,,,Net Wealth,Stock
+NW_ROW_2,,NW,ROW,,Scenario 2,,,Net Wealth,Stock
+NW_ROW_3,,NW,ROW,,Scenario 3,,,Net Wealth,Stock
+NW_ROW_4,,NW,ROW,,Scenario 4,,,Net Wealth,Stock
+NX,,NX,,,,,,Net Exports,Flow
+NX_0,,NX,,,Baseline,,,Net Exports,Flow
+NX_1,,NX,,,Scenario 1,,,Net Exports,Flow
+NX_2,,NX,,,Scenario 2,,,Net Exports,Flow
+NX_3,,NX,,,Scenario 3,,,Net Exports,Flow
+NX_4,,NX,,,Scenario 4,,,Net Exports,Flow
+OTR_F,,OTR,FC,,,,,Other current transfers,Flow
+OTR_G,,OTR,GOV,,,,,Other current transfers,Flow
+OTR_H,,OTR,HH,,,,,Other current transfers,Flow
+OTR_NF,,OTR,NFC,,,,,Other current transfers,Flow
+OTR_ROW,,OTR,ROW,,,,,Other current transfers,Flow
+P_CGK_H,,P_CGK,HH,,,,,Price index: Capital gains,Deflation index
+P_CGK_NF,,P_CGK,NFC,,,,,Price index: Capital gains,Deflation index
+P_NEQ,,P_NEQ,,,,,,Price index: Net Equity,Deflation index
+P_NIB,,P_NIB,,,,,,Price index: Net interest bearing assets,Deflation index
+P_PEN,,P_PEN,,,,,,Price index: Pensions,Deflation index
+PC,,PC,,,,,,Price deflator: Consumption,Deflation index
+PC_0,,PC,,,Baseline,,,Price deflator: Consumption,Deflation index
+PC_1,,PC,,,Scenario 1,,,Price deflator: Consumption,Deflation index
+PC_2,,PC,,,Scenario 2,,,Price deflator: Consumption,Deflation index
+PC_3,,PC,,,Scenario 3,,,Price deflator: Consumption,Deflation index
+PC_4,,PC,,,Scenario 4,,,Price deflator: Consumption,Deflation index
+PE,,PE,,,,,,Price deflator: Unknown,Deflation index
+PENA_F,,PENA,FC,,,,,Financial Assets: Pension assets,Stock
+PENA_F_RV,,PENA,FC,,,,Revaluations,Financial Assets: Pension assets,Flow
+PENA_F_TR,,PENA,FC,,,,Transactions,Financial Assets: Pension assets,Flow
+PENA_G,,PENA,GOV,,,,,Financial Assets: Pension assets,Stock
+PENA_H,,PENA,HH,,,,,Financial Assets: Pension assets,Stock
+PENA_H_0,,PENA,HH,,Baseline,,,Financial Assets: Pension assets,Stock
+PENA_H_1,,PENA,HH,,Scenario 1,,,Financial Assets: Pension assets,Stock
+PENA_H_2,,PENA,HH,,Scenario 2,,,Financial Assets: Pension assets,Stock
+PENA_H_3,,PENA,HH,,Scenario 3,,,Financial Assets: Pension assets,Stock
+PENA_H_4,,PENA,HH,,Scenario 4,,,Financial Assets: Pension assets,Stock
+PENA_H_RV,,PENA,HH,,,,Revaluations,Financial Assets: Pension assets,Flow
+PENA_H_TR,,PENA,HH,,,,Transactions,Financial Assets: Pension assets,Flow
+PENA_H_TR_0,,PENA,HH,,Baseline,,Transactions,Financial Assets: Pension assets,Flow
+PENA_H_TR_1,,PENA,HH,,Scenario 1,,Transactions,Financial Assets: Pension assets,Flow
+PENA_H_TR_2,,PENA,HH,,Scenario 2,,Transactions,Financial Assets: Pension assets,Flow
+PENA_H_TR_3,,PENA,HH,,Scenario 3,,Transactions,Financial Assets: Pension assets,Flow
+PENA_H_TR_4,,PENA,HH,,Scenario 4,,Transactions,Financial Assets: Pension assets,Flow
+PENA_NF,,PENA,NFC,,,,,Financial Assets: Pension assets,Stock
+PENA_ROW,,PENA,ROW,,,,,Financial Assets: Pension assets,Stock
+PENA_ROW_RV,,PENA,ROW,,,,Revaluations,Financial Assets: Pension assets,Flow
+PENA_ROW_TR,,PENA,ROW,,,,Transactions,Financial Assets: Pension assets,Flow
+PENL_F,,PENL,FC,,,,,Financial Liabilities: Pension liabilities,Stock
+PENL_F_0,,PENL,FC,,Baseline,,,Financial Liabilities: Pension liabilities,Stock
+PENL_F_1,,PENL,FC,,Scenario 1,,,Financial Liabilities: Pension liabilities,Stock
+PENL_F_2,,PENL,FC,,Scenario 2,,,Financial Liabilities: Pension liabilities,Stock
+PENL_F_3,,PENL,FC,,Scenario 3,,,Financial Liabilities: Pension liabilities,Stock
+PENL_F_4,,PENL,FC,,Scenario 4,,,Financial Liabilities: Pension liabilities,Stock
+PENL_F_RV,,PENL,FC,,,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_F_RV_0,,PENL,FC,,Baseline,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_F_RV_1,,PENL,FC,,Scenario 1,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_F_RV_2,,PENL,FC,,Scenario 2,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_F_RV_3,,PENL,FC,,Scenario 3,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_F_RV_4,,PENL,FC,,Scenario 4,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_F_TR,,PENL,FC,,,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PENL_F_TR_0,,PENL,FC,,Baseline,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PENL_F_TR_1,,PENL,FC,,Scenario 1,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PENL_F_TR_2,,PENL,FC,,Scenario 2,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PENL_F_TR_3,,PENL,FC,,Scenario 3,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PENL_F_TR_4,,PENL,FC,,Scenario 4,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PENL_ROW,,PENL,ROW,,,,,Financial Liabilities: Pension liabilities,Stock
+PENL_ROW_RV,,PENL,ROW,,,,Revaluations,Financial Liabilities: Pension liabilities,Flow
+PENL_ROW_TR,,PENL,ROW,,,,Transactions,Financial Liabilities: Pension liabilities,Flow
+PG,,PG,,,,,,Price deflator: Government consumption,Deflation index
+PH,,PH,,,,,,Price deflator: Houses,Deflation index
+PH_K,,PH,,,,Real prices,,Price deflator: Houses,Deflation index
+PH01,,PH01,,,,,,Price deflator: Houses (Alternative),Deflation index
+PHI1,,PHI1,,,,,,Social contributions to income,Flow
+PHI2,,PHI2,,,,,,Pension transactions to social contributions,Flow
+PI,,PI,,,,,,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PI_F,,PI,FC,,,,,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PI_G,,PI,GOV,,,,,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PI_H,,PI,HH,,,,,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PI_NF,,PI,NFC,,,,,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PI_ROW,,PI,ROW,,,,,"Price deflator: Investment (weighted average of deflators for housing(pk) and all other investment (pk)) . Proportion of dwellings in total investment is approx 0.22, and pi closely resembles the deflator for total investment reported by ameco.",Deflation index
+PIP_F,,PIP,FC,,,,,Property income paid,Flow
+PIP_G,,PIP,GOV,,,,,Property income paid,Flow
+PIP_H,,PIP,HH,,,,,Property income paid,Flow
+PIP_NF,,PIP,NFC,,,,,Property income paid,Flow
+PIP_ROW,,PIP,ROW,,,,,Property income paid,Flow
+PIP_IBL_F_0,,PIP_IBL,FC,,Baseline,,,Property income paid: IBL,Flow
+PIP_IBL_F_1,,PIP_IBL,FC,,Scenario 1,,,Property income paid: IBL,Flow
+PIP_IBL_F_2,,PIP_IBL,FC,,Scenario 2,,,Property income paid: IBL,Flow
+PIP_IBL_F_3,,PIP_IBL,FC,,Scenario 3,,,Property income paid: IBL,Flow
+PIP_IBL_F_4,,PIP_IBL,FC,,Scenario 4,,,Property income paid: IBL,Flow
+PIP_IBL_FI_H,Fixed,PIP_IBL,HH,,,,,Property income paid: IBL,Flow
+PIP_IBL_FI_H_0,Fixed,PIP_IBL,HH,,Baseline,,,Property income paid: IBL,Flow
+PIP_IBL_FI_H_1,Fixed,PIP_IBL,HH,,Scenario 1,,,Property income paid: IBL,Flow
+PIP_IBL_FI_H_2,Fixed,PIP_IBL,HH,,Scenario 2,,,Property income paid: IBL,Flow
+PIP_IBL_FI_H_3,Fixed,PIP_IBL,HH,,Scenario 3,,,Property income paid: IBL,Flow
+PIP_IBL_FI_H_4,Fixed,PIP_IBL,HH,,Scenario 4,,,Property income paid: IBL,Flow
+PIP_IBL_FL_H,Flexible,PIP_IBL,HH,,,,,Property income paid: IBL,Flow
+PIP_IBL_FL_H_0,Flexible,PIP_IBL,HH,,Baseline,,,Property income paid: IBL,Flow
+PIP_IBL_FL_H_1,Flexible,PIP_IBL,HH,,Scenario 1,,,Property income paid: IBL,Flow
+PIP_IBL_FL_H_2,Flexible,PIP_IBL,HH,,Scenario 2,,,Property income paid: IBL,Flow
+PIP_IBL_FL_H_3,Flexible,PIP_IBL,HH,,Scenario 3,,,Property income paid: IBL,Flow
+PIP_IBL_FL_H_4,Flexible,PIP_IBL,HH,,Scenario 4,,,Property income paid: IBL,Flow
+PIP_IBL_H_0,,PIP_IBL,HH,,Baseline,,,Property income paid: IBL,Flow
+PIP_IBL_H_1,,PIP_IBL,HH,,Scenario 1,,,Property income paid: IBL,Flow
+PIP_IBL_H_2,,PIP_IBL,HH,,Scenario 2,,,Property income paid: IBL,Flow
+PIP_IBL_H_3,,PIP_IBL,HH,,Scenario 3,,,Property income paid: IBL,Flow
+PIP_IBL_H_4,,PIP_IBL,HH,,Scenario 4,,,Property income paid: IBL,Flow
+PIP_PENL_F_0,,PIP_PENL,FC,,Baseline,,,Property income paid: PENL,Flow
+PIP_PENL_F_1,,PIP_PENL,FC,,Scenario 1,,,Property income paid: PENL,Flow
+PIP_PENL_F_2,,PIP_PENL,FC,,Scenario 2,,,Property income paid: PENL,Flow
+PIP_PENL_F_3,,PIP_PENL,FC,,Scenario 3,,,Property income paid: PENL,Flow
+PIP_PENL_F_4,,PIP_PENL,FC,,Scenario 4,,,Property income paid: PENL,Flow
+PIR_F,,PIR,FC,,,,,Property income received,Flow
+PIR_G,,PIR,GOV,,,,,Property income received,Flow
+PIR_H,,PIR,HH,,,,,Property income received,Flow
+PIR_NF,,PIR,NFC,,,,,Property income received,Flow
+PIR_ROW,,PIR,ROW,,,,,Property income received,Flow
+PIR_EQA_H_0,,PIR_EQA,HH,,Baseline,,,Property income received: EQA,Flow
+PIR_EQA_H_1,,PIR_EQA,HH,,Scenario 1,,,Property income received: EQA,Flow
+PIR_EQA_H_2,,PIR_EQA,HH,,Scenario 2,,,Property income received: EQA,Flow
+PIR_EQA_H_3,,PIR_EQA,HH,,Scenario 3,,,Property income received: EQA,Flow
+PIR_EQA_H_4,,PIR_EQA,HH,,Scenario 4,,,Property income received: EQA,Flow
+PIR_IBA_FI_F_H,Fixed,PIR_IBA,FC,HH,,,,Property income received: IBA,Flow
+PIR_IBA_FI_F_H_0,Fixed,PIR_IBA,FC,HH,Baseline,,,Property income received: IBA,Flow
+PIR_IBA_FI_F_H_1,Fixed,PIR_IBA,FC,HH,Scenario 1,,,Property income received: IBA,Flow
+PIR_IBA_FI_F_H_2,Fixed,PIR_IBA,FC,HH,Scenario 2,,,Property income received: IBA,Flow
+PIR_IBA_FI_F_H_3,Fixed,PIR_IBA,FC,HH,Scenario 3,,,Property income received: IBA,Flow
+PIR_IBA_FI_F_H_4,Fixed,PIR_IBA,FC,HH,Scenario 4,,,Property income received: IBA,Flow
+PIR_IBA_FL_F_H,Flexible,PIR_IBA,FC,HH,,,,Property income received: IBA,Flow
+PIR_IBA_FL_F_H_0,Flexible,PIR_IBA,FC,HH,Baseline,,,Property income received: IBA,Flow
+PIR_IBA_FL_F_H_1,Flexible,PIR_IBA,FC,HH,Scenario 1,,,Property income received: IBA,Flow
+PIR_IBA_FL_F_H_2,Flexible,PIR_IBA,FC,HH,Scenario 2,,,Property income received: IBA,Flow
+PIR_IBA_FL_F_H_3,Flexible,PIR_IBA,FC,HH,Scenario 3,,,Property income received: IBA,Flow
+PIR_IBA_FL_F_H_4,Flexible,PIR_IBA,FC,HH,Scenario 4,,,Property income received: IBA,Flow
+PIR_IBA_H_0,,PIR_IBA,HH,,Baseline,,,Property income received: IBA,Flow
+PIR_IBA_H_1,,PIR_IBA,HH,,Scenario 1,,,Property income received: IBA,Flow
+PIR_IBA_H_2,,PIR_IBA,HH,,Scenario 2,,,Property income received: IBA,Flow
+PIR_IBA_H_3,,PIR_IBA,HH,,Scenario 3,,,Property income received: IBA,Flow
+PIR_IBA_H_4,,PIR_IBA,HH,,Scenario 4,,,Property income received: IBA,Flow
+PIR_PENA_H_0,,PIR_PENA,HH,,Baseline,,,Property income received: PENA,Flow
+PIR_PENA_H_1,,PIR_PENA,HH,,Scenario 1,,,Property income received: PENA,Flow
+PIR_PENA_H_2,,PIR_PENA,HH,,Scenario 2,,,Property income received: PENA,Flow
+PIR_PENA_H_3,,PIR_PENA,HH,,Scenario 3,,,Property income received: PENA,Flow
+PIR_PENA_H_4,,PIR_PENA,HH,,Scenario 4,,,Property income received: PENA,Flow
+PK,,PK,,,,,,Price deflator: Investment (excluding dwellings),Deflation index
+PM,,PM,,,,,,Price deflator: Imports,Deflation index
+PNFC_K,,PNFC,,,,Real prices,,Price deflator: NFC K,Deflation index
+POP,,POP,,,,,,Population,Stock
+PP,,PP,,,,,,Unknown,Check
+PRIVATE,,PRIVATE,,,,,,Gross income,Flow
+PRIVATE_0,,PRIVATE,,,Baseline,,,Gross income,Flow
+PRIVATE_1,,PRIVATE,,,Scenario 1,,,Gross income,Flow
+PRIVATE_2,,PRIVATE,,,Scenario 2,,,Gross income,Flow
+PRIVATE_3,,PRIVATE,,,Scenario 3,,,Gross income,Flow
+PRIVATE_4,,PRIVATE,,,Scenario 4,,,Gross income,Flow
+PROD,,PROD,,,,,,Labour Force: Labour productivity,Stock
+PROFIT,,PROFIT,,,,,,Profit share (Residual of wage share),Ratio
+PX,,PX,,,,,,Price deflator: Exports,Deflation index
+PX_0,,PX,,,Baseline,,,Price deflator: Exports,Deflation index
+PX_1,,PX,,,Scenario 1,,,Price deflator: Exports,Deflation index
+PX_2,,PX,,,Scenario 2,,,Price deflator: Exports,Deflation index
+PX_3,,PX,,,Scenario 3,,,Price deflator: Exports,Deflation index
+PX_4,,PX,,,Scenario 4,,,Price deflator: Exports,Deflation index
+PY,,PY,,,,,,Price deflator: GDP,Deflation index
+PY_0,,PY,,,Baseline,,,Price deflator: GDP,Deflation index
+PY_1,,PY,,,Scenario 1,,,Price deflator: GDP,Deflation index
+PY_2,,PY,,,Scenario 2,,,Price deflator: GDP,Deflation index
+PY_3,,PY,,,Scenario 3,,,Price deflator: GDP,Deflation index
+PY_4,,PY,,,Scenario 4,,,Price deflator: GDP,Deflation index
+R_EQ_DK,,R_EQ,DK,,,,,Rate of return: Equities,Rate
+R_EQ_ROW,,R_EQ,ROW,,,,,Rate of return: Equities,Rate
+R_H_ERROR1,,R_ERROR1,HH,,,,,Property income error,Check
+R_H_ERROR1_0,,R_ERROR1,HH,,Baseline,,,Property income error,Check
+R_H_ERROR1_1,,R_ERROR1,HH,,Scenario 1,,,Property income error,Check
+R_H_ERROR1_2,,R_ERROR1,HH,,Scenario 2,,,Property income error,Check
+R_H_ERROR1_3,,R_ERROR1,HH,,Scenario 3,,,Property income error,Check
+R_H_ERROR1_4,,R_ERROR1,HH,,Scenario 4,,,Property income error,Check
+R_G_ERROR2,,R_ERROR2,GOV,,,,,Property income error,Check
+R_H_ERROR2,,R_ERROR2,HH,,,,,Property income error,Check
+R_H_ERROR2_0,,R_ERROR2,HH,,Baseline,,,Property income error,Check
+R_H_ERROR2_1,,R_ERROR2,HH,,Scenario 1,,,Property income error,Check
+R_H_ERROR2_2,,R_ERROR2,HH,,Scenario 2,,,Property income error,Check
+R_H_ERROR2_3,,R_ERROR2,HH,,Scenario 3,,,Property income error,Check
+R_H_ERROR2_4,,R_ERROR2,HH,,Scenario 4,,,Property income error,Check
+R_F_ERROR3,,R_ERROR3,FC,,,,,Property income error,Check
+R_H_ERROR3,,R_ERROR3,HH,,,,,Property income error,Check
+R_H_ERROR3_0,,R_ERROR3,HH,,Baseline,,,Property income error,Check
+R_H_ERROR3_1,,R_ERROR3,HH,,Scenario 1,,,Property income error,Check
+R_H_ERROR3_2,,R_ERROR3,HH,,Scenario 2,,,Property income error,Check
+R_H_ERROR3_3,,R_ERROR3,HH,,Scenario 3,,,Property income error,Check
+R_H_ERROR3_4,,R_ERROR3,HH,,Scenario 4,,,Property income error,Check
+R_IBA_F,,R_IBA,FC,,,,,Rate of interest: Interest bearing assets,Rate
+R_IBA_H,,R_IBA,HH,,,,,Rate of interest: Interest bearing assets,Rate
+R_IBA_H_0,,R_IBA,HH,,Baseline,,,Rate of interest: Interest bearing assets,Rate
+R_IBA_H_1,,R_IBA,HH,,Scenario 1,,,Rate of interest: Interest bearing assets,Rate
+R_IBA_H_3,,R_IBA,HH,,Scenario 3,,,Rate of interest: Interest bearing assets,Rate
+R_IBA_H_4,,R_IBA,HH,,Scenario 4,,,Rate of interest: Interest bearing assets,Rate
+R_IBL_F,,R_IBL,FC,,,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FI_H,Fixed,R_IBL,HH,,,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FI_H_0,Fixed,R_IBL,HH,,Baseline,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FI_H_1,Fixed,R_IBL,HH,,Scenario 1,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FI_H_3,Fixed,R_IBL,HH,,Scenario 3,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FI_H_4,Fixed,R_IBL,HH,,Scenario 4,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FL_H,Flexible,R_IBL,HH,,,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FL_H_0,Flexible,R_IBL,HH,,Baseline,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FL_H_1,Flexible,R_IBL,HH,,Scenario 1,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FL_H_3,Flexible,R_IBL,HH,,Scenario 3,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_FL_H_4,Flexible,R_IBL,HH,,Scenario 4,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_H,,R_IBL,HH,,,,,Rate of interest: Interest bearing liabilities,Rate
+R_IBL_H_SENS,,R_IBL_SENS,HH,,,,,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_IBL_H_SENS_0,,R_IBL_SENS,HH,,Baseline,,,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_IBL_H_SENS_1,,R_IBL_SENS,HH,,Scenario 1,,,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_IBL_H_SENS_2,,R_IBL_SENS,HH,,Scenario 2,,,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_IBL_H_SENS_3,,R_IBL_SENS,HH,,Scenario 3,,,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_IBL_H_SENS_4,,R_IBL_SENS,HH,,Scenario 4,,,Rate of interest: Interest bearing liabilities: Weighted mortgage interest rate,Rate
+R_N,,R_N,,,,,,Rate of return: Mean,Rate
+R_N_0,,R_N,,,Baseline,,,Rate of return: Mean,Rate
+R_N_1,,R_N,,,Scenario 1,,,Rate of return: Mean,Rate
+R_N_3,,R_N,,,Scenario 3,,,Rate of return: Mean,Rate
+R_N_4,,R_N,,,Scenario 4,,,Rate of return: Mean,Rate
+R_F_NET_ERROR1,,R_NET_ERROR1,FC,,,,,Property income error,Check
+R_G_NET_ERROR1,,R_NET_ERROR1,GOV,,,,,Property income error,Check
+R_NF_NET_ERROR1,,R_NET_ERROR1,NFC,,,,,Property income error,Check
+R_ROW_NET_ERROR1,,R_NET_ERROR1,ROW,,,,,Property income error,Check
+R_ROW_NET_ERROR101,,R_NET_ERROR101,ROW,,,,,Property income error,Check
+R_F_NET_ERROR2,,R_NET_ERROR2,FC,,,,,Property income error,Check
+R_NF_NET_ERROR2,,R_NET_ERROR2,NFC,,,,,Property income error,Check
+R_ROW_NET_ERROR2,,R_NET_ERROR2,ROW,,,,,Property income error,Check
+R_ROW_NET_ERROR201,,R_NET_ERROR201,ROW,,,,,Property income error,Check
+R_ROW_NET_ERROR3,,R_NET_ERROR3,ROW,,,,,Property income error,Check
+R_ROW_NET_ERROR301,,R_NET_ERROR301,ROW,,,,,Property income error,Check
+R_PEN,,R_PEN,,,,,,Rate of return: Pensions,Rate
+R_R_IBL_FI_H,Fixed,R_R_IBL,HH,,,,,Rate of interest: Interest bearing liabilities,Rate
+R_R_IBL_FL_H,Flexible,R_R_IBL,HH,,,,,Rate of interest: Interest bearing liabilities,Rate
+RHO,,RHO,,,,,,Equity ratio,Ratio
+RR_DK,,RR,DK,,,,,Rate of return,Rate
+RR_ROW,,RR,ROW,,,,,Rate of return,Rate
+S,,S,,,,,,Savings,Flow
+S_0,,S,,,Baseline,,,Savings,Flow
+S_1,,S,,,Scenario 1,,,Savings,Flow
+S_2,,S,,,Scenario 2,,,Savings,Flow
+S_3,,S,,,Scenario 3,,,Savings,Flow
+S_4,,S,,,Scenario 4,,,Savings,Flow
+S_F,,S,FC,,,,,Savings,Flow
+S_F_0,,S,FC,,Baseline,,,Savings,Flow
+S_F_1,,S,FC,,Scenario 1,,,Savings,Flow
+S_F_2,,S,FC,,Scenario 2,,,Savings,Flow
+S_F_3,,S,FC,,Scenario 3,,,Savings,Flow
+S_F_4,,S,FC,,Scenario 4,,,Savings,Flow
+S_G,,S,GOV,,,,,Savings,Flow
+S_G_0,,S,GOV,,Baseline,,,Savings,Flow
+S_G_1,,S,GOV,,Scenario 1,,,Savings,Flow
+S_G_2,,S,GOV,,Scenario 2,,,Savings,Flow
+S_G_3,,S,GOV,,Scenario 3,,,Savings,Flow
+S_G_4,,S,GOV,,Scenario 4,,,Savings,Flow
+S_H,,S,HH,,,,,Savings,Flow
+S_H_0,,S,HH,,Baseline,,,Savings,Flow
+S_H_1,,S,HH,,Scenario 1,,,Savings,Flow
+S_H_2,,S,HH,,Scenario 2,,,Savings,Flow
+S_H_3,,S,HH,,Scenario 3,,,Savings,Flow
+S_H_4,,S,HH,,Scenario 4,,,Savings,Flow
+S_K,,S,,,,Real prices,,Savings,Flow
+S_K_0,,S,,,Baseline,Real prices,,Savings,Flow
+S_K_1,,S,,,Scenario 1,Real prices,,Savings,Flow
+S_K_2,,S,,,Scenario 2,Real prices,,Savings,Flow
+S_K_3,,S,,,Scenario 3,Real prices,,Savings,Flow
+S_K_4,,S,,,Scenario 4,Real prices,,Savings,Flow
+S_NF,,S,NFC,,,,,Savings,Flow
+S_NF_0,,S,NFC,,Baseline,,,Savings,Flow
+S_NF_1,,S,NFC,,Scenario 1,,,Savings,Flow
+S_NF_2,,S,NFC,,Scenario 2,,,Savings,Flow
+S_NF_3,,S,NFC,,Scenario 3,,,Savings,Flow
+S_NF_4,,S,NFC,,Scenario 4,,,Savings,Flow
+S_ROW,,S,ROW,,,,,Savings,Flow
+S_ROW_0,,S,ROW,,Baseline,,,Savings,Flow
+S_ROW_1,,S,ROW,,Scenario 1,,,Savings,Flow
+S_ROW_2,,S,ROW,,Scenario 2,,,Savings,Flow
+S_ROW_3,,S,ROW,,Scenario 3,,,Savings,Flow
+S_ROW_4,,S,ROW,,Scenario 4,,,Savings,Flow
+SBE_F,,SBE,FC,,,,,Social benefit transfers,Flow
+SBE_G,,SBE,GOV,,,,,Social benefit transfers,Flow
+SBE_H,,SBE,HH,,,,,Social benefit transfers,Flow
+SBE_H_0,,SBE,HH,,Baseline,,,Social benefit transfers,Flow
+SBE_H_1,,SBE,HH,,Scenario 1,,,Social benefit transfers,Flow
+SBE_H_2,,SBE,HH,,Scenario 2,,,Social benefit transfers,Flow
+SBE_H_3,,SBE,HH,,Scenario 3,,,Social benefit transfers,Flow
+SBE_H_4,,SBE,HH,,Scenario 4,,,Social benefit transfers,Flow
+SBE_NF,,SBE,NFC,,,,,Social benefit transfers,Flow
+SBE_ROW,,SBE,ROW,,,,,Social benefit transfers,Flow
+SCO_F,,SCO,FC,,,,,Social benefit contributions,Flow
+SCO_G,,SCO,GOV,,,,,Social benefit contributions,Flow
+SCO_H,,SCO,HH,,,,,Social benefit contributions,Flow
+SCO_H_0,,SCO,HH,,Baseline,,,Social benefit contributions,Flow
+SCO_H_1,,SCO,HH,,Scenario 1,,,Social benefit contributions,Flow
+SCO_H_2,,SCO,HH,,Scenario 2,,,Social benefit contributions,Flow
+SCO_H_3,,SCO,HH,,Scenario 3,,,Social benefit contributions,Flow
+SCO_H_4,,SCO,HH,,Scenario 4,,,Social benefit contributions,Flow
+SCO_NF,,SCO,NFC,,,,,Social benefit contributions,Flow
+SCO_ROW,,SCO,ROW,,,,,Social benefit contributions,Flow
+STRA_F,,STRA,FC,,,,,Social transfers,Flow
+STRA_G,,STRA,GOV,,,,,Social transfers,Flow
+STRA_G_0,,STRA,GOV,,Baseline,,,Social transfers,Flow
+STRA_G_1,,STRA,GOV,,Scenario 1,,,Social transfers,Flow
+STRA_G_2,,STRA,GOV,,Scenario 2,,,Social transfers,Flow
+STRA_G_3,,STRA,GOV,,Scenario 3,,,Social transfers,Flow
+STRA_G_4,,STRA,GOV,,Scenario 4,,,Social transfers,Flow
+STRA_H,,STRA,HH,,,,,Social transfers,Flow
+STRA_H_0,,STRA,HH,,Baseline,,,Social transfers,Flow
+STRA_H_1,,STRA,HH,,Scenario 1,,,Social transfers,Flow
+STRA_H_2,,STRA,HH,,Scenario 2,,,Social transfers,Flow
+STRA_H_3,,STRA,HH,,Scenario 3,,,Social transfers,Flow
+STRA_H_4,,STRA,HH,,Scenario 4,,,Social transfers,Flow
+STRA_NF,,STRA,NFC,,,,,Social transfers,Flow
+STRA_ROW,,STRA,ROW,,,,,Social transfers,Flow
+T_F,,T,FC,,,,,Taxes on products,Flow
+T_G,,T,GOV,,,,,Taxes on products,Flow
+T_H,,T,HH,,,,,Taxes on products,Flow
+T_NF,,T,NFC,,,,,Taxes on products,Flow
+T_ROW,,T,ROW,,,,,Taxes on products,Flow
+TAX_F,,TAX,FC,,,,,Tax,Flow
+TAX_G,,TAX,GOV,,,,,Tax,Flow
+TAX_G_0,,TAX,GOV,,Baseline,,,Tax,Flow
+TAX_G_1,,TAX,GOV,,Scenario 1,,,Tax,Flow
+TAX_G_2,,TAX,GOV,,Scenario 2,,,Tax,Flow
+TAX_G_3,,TAX,GOV,,Scenario 3,,,Tax,Flow
+TAX_G_4,,TAX,GOV,,Scenario 4,,,Tax,Flow
+TAX_H,,TAX,HH,,,,,Tax,Flow
+TAX_H_0,,TAX,HH,,Baseline,,,Tax,Flow
+TAX_H_1,,TAX,HH,,Scenario 1,,,Tax,Flow
+TAX_H_2,,TAX,HH,,Scenario 2,,,Tax,Flow
+TAX_H_3,,TAX,HH,,Scenario 3,,,Tax,Flow
+TAX_H_4,,TAX,HH,,Scenario 4,,,Tax,Flow
+TAX_NF,,TAX,NFC,,,,,Tax,Flow
+TAX_NF_0,,TAX,NFC,,Baseline,,,Tax,Flow
+TAX_NF_1,,TAX,NFC,,Scenario 1,,,Tax,Flow
+TAX_NF_2,,TAX,NFC,,Scenario 2,,,Tax,Flow
+TAX_NF_3,,TAX,NFC,,Scenario 3,,,Tax,Flow
+TAX_NF_4,,TAX,NFC,,Scenario 4,,,Tax,Flow
+TAX_ROW,,TAX,ROW,,,,,Tax,Flow
+TEST,,TEST,,,,,,Test variable: Stock of Capital (Change in),Check
+TOBIN_Q,,TOBIN_Q,,,,,,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOBIN_Q_0,,TOBIN_Q,,,Baseline,,,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOBIN_Q_1,,TOBIN_Q,,,Scenario 1,,,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOBIN_Q_2,,TOBIN_Q,,,Scenario 2,,,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOBIN_Q_3,,TOBIN_Q,,,Scenario 3,,,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOBIN_Q_4,,TOBIN_Q,,,Scenario 4,,,Index: House price index: Tobin's Q = Ratio between the house price index and the construction cost of housing index,Index
+TOP,,TOP,,,,,,Ratio of foreign to domestic trade,Ratio
+UL_COST,,UL_COST,,,,,,Labour force: Unit labour cost,Rate
+UL_COST_0,,UL_COST,,,Baseline,,,Labour force: Unit labour cost,Rate
+UL_COST_1,,UL_COST,,,Scenario 1,,,Labour force: Unit labour cost,Rate
+UL_COST_2,,UL_COST,,,Scenario 2,,,Labour force: Unit labour cost,Rate
+UL_COST_3,,UL_COST,,,Scenario 3,,,Labour force: Unit labour cost,Rate
+UL_COST_4,,UL_COST,,,Scenario 4,,,Labour force: Unit labour cost,Rate
+ULC,,ULC,,,,,,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+ULC_0,,ULC,,,Baseline,,,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+ULC_1,,ULC,,,Scenario 1,,,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+ULC_2,,ULC,,,Scenario 2,,,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+ULC_3,,ULC,,,Scenario 3,,,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+ULC_4,,ULC,,,Scenario 4,,,Labour force: Unit labour cost: Price index: Index for the price deflator with reference to 2010 (all other price deflator indices are referenced to 2010),Rate
+UN,,UN,,,,,,Labour force: Unemployed persons,Stock
+UN_0,,UN,,,Baseline,,,Labour force: Unemployed persons,Stock
+UN_1,,UN,,,Scenario 1,,,Labour force: Unemployed persons,Stock
+UN_2,,UN,,,Scenario 2,,,Labour force: Unemployed persons,Stock
+UN_3,,UN,,,Scenario 3,,,Labour force: Unemployed persons,Stock
+UN_4,,UN,,,Scenario 4,,,Labour force: Unemployed persons,Stock
+UR,,UR,,,,,,Labour force: Unemployment rate,Ratio
+UR_0,,UR,,,Baseline,,,Labour force: Unemployment rate,Ratio
+UR_1,,UR,,,Scenario 1,,,Labour force: Unemployment rate,Ratio
+UR_2,,UR,,,Scenario 2,,,Labour force: Unemployment rate,Ratio
+UR_3,,UR,,,Scenario 3,,,Labour force: Unemployment rate,Ratio
+UR_4,,UR,,,Scenario 4,,,Labour force: Unemployment rate,Ratio
+W_H,,W,HH,,,,,Wages,Flow
+W_H_0,,W,HH,,Baseline,,,Wages,Flow
+W_H_1,,W,HH,,Scenario 1,,,Wages,Flow
+W_H_2,,W,HH,,Scenario 2,,,Wages,Flow
+W_H_3,,W,HH,,Scenario 3,,,Wages,Flow
+W_H_4,,W,HH,,Scenario 4,,,Wages,Flow
+W_NF,,W,NFC,,,,,Wages,Flow
+W_NF_0,,W,NFC,,Baseline,,,Wages,Flow
+W_NF_1,,W,NFC,,Scenario 1,,,Wages,Flow
+W_NF_2,,W,NFC,,Scenario 2,,,Wages,Flow
+W_NF_3,,W,NFC,,Scenario 3,,,Wages,Flow
+W_NF_4,,W,NFC,,Scenario 4,,,Wages,Flow
+W_ROW,,W,ROW,,,,,Wages,Flow
+WAGE,,WAGE,,,,,,Labour force: Wage rate,Rate
+WAGE_0,,WAGE,,,Baseline,,,Labour force: Wage rate,Rate
+WAGE_1,,WAGE,,,Scenario 1,,,Labour force: Wage rate,Rate
+WAGE_2,,WAGE,,,Scenario 2,,,Labour force: Wage rate,Rate
+WAGE_3,,WAGE,,,Scenario 3,,,Labour force: Wage rate,Rate
+WAGE_4,,WAGE,,,Scenario 4,,,Labour force: Wage rate,Rate
+WI,,WI,,,,,,Inflation rate: Wage inflation,Rate
+WS,,WS,,,,,,Wage share,Ratio
+WS_0,,WS,,,Baseline,,,Wage share,Ratio
+WS_1,,WS,,,Scenario 1,,,Wage share,Ratio
+WS_2,,WS,,,Scenario 2,,,Wage share,Ratio
+WS_3,,WS,,,Scenario 3,,,Wage share,Ratio
+WS_4,,WS,,,Scenario 4,,,Wage share,Ratio
+X,,X,,,,,,Exports,Flow
+X_0,,X,,,Baseline,,,Exports,Flow
+X_1,,X,,,Scenario 1,,,Exports,Flow
+X_2,,X,,,Scenario 2,,,Exports,Flow
+X_3,,X,,,Scenario 3,,,Exports,Flow
+X_4,,X,,,Scenario 4,,,Exports,Flow
+X_K,,X,,,,Real prices,,Exports,Flow
+X_K_0,,X,,,Baseline,Real prices,,Exports,Flow
+X_K_1,,X,,,Scenario 1,Real prices,,Exports,Flow
+X_K_2,,X,,,Scenario 2,Real prices,,Exports,Flow
+X_K_3,,X,,,Scenario 3,Real prices,,Exports,Flow
+X_K_4,,X,,,Scenario 4,Real prices,,Exports,Flow
+XR,,XR,,,,,,Exchange rate,Rate
+Y,,Y,,,,,,Total income,Flow
+Y_0,,Y,,,Baseline,,,Total income,Flow
+Y_1,,Y,,,Scenario 1,,,Total income,Flow
+Y_2,,Y,,,Scenario 2,,,Total income,Flow
+Y_3,,Y,,,Scenario 3,,,Total income,Flow
+Y_4,,Y,,,Scenario 4,,,Total income,Flow
+Y_F,,Y,FC,,,,,Total income,Flow
+Y_F_0,,Y,FC,,Baseline,,,Total income,Flow
+Y_F_1,,Y,FC,,Scenario 1,,,Total income,Flow
+Y_F_2,,Y,FC,,Scenario 2,,,Total income,Flow
+Y_F_3,,Y,FC,,Scenario 3,,,Total income,Flow
+Y_F_4,,Y,FC,,Scenario 4,,,Total income,Flow
+Y_H,,Y,HH,,,,,Total income,Flow
+Y_H_0,,Y,HH,,Baseline,,,Total income,Flow
+Y_H_1,,Y,HH,,Scenario 1,,,Total income,Flow
+Y_H_2,,Y,HH,,Scenario 2,,,Total income,Flow
+Y_H_3,,Y,HH,,Scenario 3,,,Total income,Flow
+Y_H_4,,Y,HH,,Scenario 4,,,Total income,Flow
+Y_H_K,,Y,HH,,,Real prices,,Total income,Flow
+Y_K,,Y,,,,Real prices,,Total income,Flow
+Y_K_0,,Y,,,Baseline,Real prices,,Total income,Flow
+Y_K_1,,Y,,,Scenario 1,Real prices,,Total income,Flow
+Y_K_2,,Y,,,Scenario 2,Real prices,,Total income,Flow
+Y_K_3,,Y,,,Scenario 3,Real prices,,Total income,Flow
+Y_K_4,,Y,,,Scenario 4,Real prices,,Total income,Flow
+Y_K_EU,,Y,EU,,,Real prices,,Total income,Flow
+Y_D_F,,Y_D,FC,,,,,Disposable Income,Flow
+Y_D_G,,Y_D,GOV,,,,,Disposable Income,Flow
+Y_D_H,,Y_D,HH,,,,,Disposable Income,Flow
+Y_D_H_0,,Y_D,HH,,Baseline,,,Disposable Income,Flow
+Y_D_H_1,,Y_D,HH,,Scenario 1,,,Disposable Income,Flow
+Y_D_H_2,,Y_D,HH,,Scenario 2,,,Disposable Income,Flow
+Y_D_H_3,,Y_D,HH,,Scenario 3,,,Disposable Income,Flow
+Y_D_H_4,,Y_D,HH,,Scenario 4,,,Disposable Income,Flow
+Y_D_H_K,,Y_D,HH,,,Real prices,,Disposable Income,Flow
+Y_D_H_K_0,,Y_D,HH,,Baseline,Real prices,,Disposable Income,Flow
+Y_D_H_K_1,,Y_D,HH,,Scenario 1,Real prices,,Disposable Income,Flow
+Y_D_H_K_2,,Y_D,HH,,Scenario 2,Real prices,,Disposable Income,Flow
+Y_D_H_K_3,,Y_D,HH,,Scenario 3,Real prices,,Disposable Income,Flow
+Y_D_H_K_4,,Y_D,HH,,Scenario 4,Real prices,,Disposable Income,Flow
+Y_D_K,,Y_D,,,,Real prices,,Disposable Income,Flow
+Y_D_NF,,Y_D,NFC,,,,,Disposable Income,Flow
+YEAR,,YEAR,,,,,,NA,
+ZZ,,ZZ,,,,,,Index: House price index,Index
+ZZ_I,,ZZ_I,,,,,,Index: House price: Imported from DST,Index
+ZZ_I_0,,ZZ_I,,,Baseline,,,Index: House price: Imported from DST,Index
+ZZ_I_2,,ZZ_I,,,Scenario 2,,,Index: House price: Imported from DST,Index
+ZZ_I_3,,ZZ_I,,,Scenario 3,,,Index: House price: Imported from DST,Index
+ZZ_I_4,,ZZ_I,,,Scenario 4,,,Index: House price: Imported from DST,Index
+ZZ_INDEX,,ZZ_INDEX,,,,,,Index: House price: Mark-up pricing on construction costs,Index
+ZZ1,,ZZ1,,,,,,Index: House price: Imported from DST,Index
+ZZ1_0,,ZZ1,,,Baseline,,,Index: House price: Imported from DST,Index
+ZZ1_1,,ZZ1,,,Scenario 1,,,Index: House price: Imported from DST,Index
+ZZ1_2,,ZZ1,,,Scenario 2,,,Index: House price: Imported from DST,Index
+ZZ1_3,,ZZ1,,,Scenario 3,,,Index: House price: Imported from DST,Index
+ZZ1_4,,ZZ1,,,Scenario 4,,,Index: House price: Imported from DST,Index
