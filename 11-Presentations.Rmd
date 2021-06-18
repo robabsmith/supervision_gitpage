@@ -1,0 +1,64 @@
+# Presentations
+
+Each semester students approach me asking what "I would prefer they present?". This really is not a question of preference, but there seems to be enough inconsistency in expectations to make it worth while asking the supervisor what to do.
+
+Some supervisors must have an expectation that something new is presented - or this would not arise as a question.
+
+## First and foremost: Check the learning and knowledge objectives for the project!
+
+The only thing you can be graded against are the formal descriptions in the study or project description. These are often quite broad, but these are the grounds that need to be covered **at a minimum** for the project to pass.
+
+These objectives can be met by either the written or the oral contibutions of the student. So if you have failed to complete part of the objectives in the written part - you might consider covering the ground in the presentation. Although this might not be the most effective strategy, since there is a good chance you will be asked questions that reflect those objectives in the question and answer part of your defence.
+
+## So what is the purpose of the presentation?
+
+The presentation is an opportunity to communicate the contribution that you have made. It is also an opportunity to set the stage for the defence that follows.
+
+Ideally you want to make an interesting and compelling presentation. Interesting in the sense that the content should be interesting to listen to, and compelling in the sense that you need to convince the people listening that you know what you are talking about.
+
+That may seem like subjective and useless information - but first impressions matter, and a strong presentation that is well delivered creates a firm foundation for a good strong defence.
+
+## Something old or something new?
+
+You each have 8-10 minutes to convince the examiner that you have done something interesting and or useful.
+
+This could be presenting the work you have already submitted in written form - bearing in mind that the examiners will have read the project. This can be beneficial if the written project does not capture the full extent of the work and findings of the research. Although, you should also be able to explain why it was never included in the written part in the first place. 
+
+An example of this could be a complex economic model, with perhaps 50 or 100 equations - where a full explanation of all intricacies would result in a very (impractically) long document that failed to capture the main point of your research.
+
+## It's about communicating value
+
+As mentioned above, it can help to think about the idea that you have 15 minutes to convince the examiners of the value of the work you have done.
+
+The remainder of the exam will be sufficient time to ask a good mixture of questions on the project, during which you will get a chance to "defend" the work that you submitted in written form.
+
+It’s not a sales pitch, but you do need to “sell your work” in some sense of the expression - sometimes the best way to do so is focussing on the work that you have already done, and sometimes that is to present something additional to the work done - but as I personally do not have a preference, and will not penalise anyone for doing one or the other.
+
+## What not to do
+
+Do not show up un-prepared - plan what you want to say, figure out how you are going to say it, and practice the presentation a couple of times before the defence. 
+
+The corollary of the point above is the only thing that I do not recommend, which is to spend all of your presentation time highlighting all of the flaws in your work - it is good to have perspective on the work, but if the perspective is all negative it can create a highly critical atmosphere.
+
+I.e. if you spend all of your presentation time making your work sound poor, it can keep the focus there for the remainder of the defence. If, on the other hand, the shortcomings are, for example, “challenges to be overcome in future projects” and oversimplifications in your model are “areas that you want to develop the model further”, then you are able to direct the focus towards progress and achievement, rather than inadequacies in your work.
+
+## What is of value in academia?
+
+This is a rather dangerous question to try to answer in a little blurb on the internet, but I will hazard a short suggestion. The only reason I am mentioning anything like this here is that after submitting your written assignment, you might realise that some part of the assignment was lacking in quality.
+
+There are a few things that good quality academic work often demonstrates, some of which can be highlighted indirectly in a presentation of your project:
+
+1. A careful consideration of the area of research and in doing so found a particular issue you would like to investigate or address.
+    - **Example:** "We approached the ____ area of economics since we were interested to find out ___"
+
+2. Consultation of academic literature on both the area in question and the specific problem.
+    - **Example:** "One of the first authors to investigate the issue, *'Name'*, raised ____ concerns, which still apply to research in the area today"
+
+3. Consultation of literature on previous attempts to investigate the problem and the methods that previous researchers have used.
+    - **Example:** "Several approaches have been taken to investigate the topic, *'name'* first used ___, and *'name'* was able to mitigate some of the problems faced by.... in ..."
+
+4. A clear understanding of the choice of method, the method itself and the limitations thereof.
+
+5. A careful and appropriate application of a method to the problem, taking care not to over-reach in the interpretation of results.
+    
+6. A clear line of reasoning from start to finish.
