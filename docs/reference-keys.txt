@@ -103,6 +103,7 @@ fig:fl-fi-sfc-plot-ibl-h
 fig:sben-all-dk
 fig:old-age-public-spend
 supervision-guide
+license
 introduction-to-supervision
 guidelines-for-supervision
 examinations
