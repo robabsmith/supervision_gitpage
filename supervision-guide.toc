@@ -1,4 +1,5 @@
 \contentsline {chapter}{\numberline {1}Supervision guide}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}License}{7}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Introduction to supervision}{9}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Guidelines for supervision}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Examinations}{11}{section.3.1}%
@@ -11,7 +12,7 @@
 \contentsline {chapter}{\numberline {5}Guide for report writing}{17}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Structuring your report}{17}{section.5.1}%
 \contentsline {section}{\numberline {5.2}General recommendations}{18}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Define your golden thread (rød tråd)*}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Define your golden thread (rød tråd)}{18}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Create signposts}{18}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Use precise and professional language}{19}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Make convincing claims}{20}{section.5.6}%
