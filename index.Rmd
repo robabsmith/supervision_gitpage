@@ -79,9 +79,25 @@ opts_chunk$set(fig.path = 'figures/',
 
 This is a simple GitBook to assist students to write projects in partial fulfilment of the requirements of a degree in economics at Aalborg University.
 
-The content is updated periodically, and can NOT be referred to as an official source. All regulations and study program guides take presidence over any content on this site.
+It is a collection of project based tools. The idea is that students should be able to browse the table of contents, and see if there is something that they need on the page. There is too much content for a complete read-through, so I would recommend *picking and choosing* based on your needs.
+
+The content is updated periodically, and can *NOT* be referred to as an official source. **All regulations and study program guides take precedence over any content on this site.**
 
 The content is also personalised to the extent that I provide some information about when I will personally be unavailable. Apart from that, it is my hope that at least some of the content will be useful to students of all level.
+
+## Other pages that might be of interest
+
+### My research page
+
+[Rob's recent research page](https://robabsmith.github.io/research_page/ ) - anyone that is looking for code to process an SFC model for a report, or just wants to get some ideas about how different data can be visualised can browse the site and borrow and steal whatever is useful.
+
+If you do use some of the code, and you're in academia, it would be pretty cool to get a reference (we are measured according to the relevance of our research) and every little bit helps.
+
+The best option for me would be if you refer to my PhD:
+
+  >Smith, R.A.B. (2020). Essays on macroeconomic interactions of sectoral balance sheets. Aalborg Universitetsforlag. Aalborg Universitet. Det Samfundsvidenskabelige Fakultet. Ph.D.-Serien
+
+[OR, you can get the bibtex reference here](https://vbn.aau.dk/en/publications/essays-on-macroeconomic-interactions-of-sectoral-balance-sheets)
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

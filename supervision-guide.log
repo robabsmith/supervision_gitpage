@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.6)  29 OCT 2021 14:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.6)  29 OCT 2021 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,7 +958,7 @@ STATEMENT
  []
 
 [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1404
+Underfull \hbox (badness 10000) in paragraph at lines 1414--1424
 
  []
 
@@ -1030,18 +1030,18 @@ Chapter 9.
 ] [42]
 Chapter 10.
 
-Package hyperref Warning: Suppressing link with empty target on input line 1973
+Package hyperref Warning: Suppressing link with empty target on input line 1993
 .
 
 [43
 
 ]
 
-Package hyperref Warning: Suppressing link with empty target on input line 1975
+Package hyperref Warning: Suppressing link with empty target on input line 1995
 .
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 1977
+Package hyperref Warning: Suppressing link with empty target on input line 1997
 .
 
 [44]
@@ -1058,45 +1058,45 @@ Chapter 12.
 Chapter 13.
 [57]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2466.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2486.
 
 LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 2466.
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 2486.
 
 
 
-Underfull \vbox (badness 10000) detected at line 2517
+Underfull \vbox (badness 10000) detected at line 2537
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [58] [59]
-Underfull \vbox (badness 10000) detected at line 2723
+Underfull \vbox (badness 10000) detected at line 2743
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2723
+Underfull \vbox (badness 10000) detected at line 2743
  []
 
 [60]
-Underfull \vbox (badness 10000) detected at line 2723
+Underfull \vbox (badness 10000) detected at line 2743
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2723
+Underfull \vbox (badness 10000) detected at line 2743
  []
 
 [61]
-Underfull \vbox (badness 10000) detected at line 2723
+Underfull \vbox (badness 10000) detected at line 2743
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2723
+Underfull \vbox (badness 10000) detected at line 2743
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 2730--2732
+Underfull \hbox (badness 10000) in paragraph at lines 2750--2752
 \TU/lmtt/m/n/10 caption = "Source: Statistics Denmark (Danmarks Statistik), own
 
  []
@@ -1114,16 +1114,16 @@ File: figures/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use figures/unnamed-chunk-4-1.pdf>
 [67]
 
-LaTeX Warning: Float too large for page by 681.84941pt on input line 3061.
+LaTeX Warning: Float too large for page by 681.84941pt on input line 3081.
 
 [68] [69]
 No file supervision-guide.bbl.
 [70] (./supervision-guide.aux) ) 
 Here is how much of TeX's memory you used:
- 19545 strings out of 476919
- 344579 string characters out of 5821841
- 901734 words of memory out of 5000000
- 39204 multiletter control sequences out of 15000+600000
+ 19548 strings out of 476919
+ 344642 string characters out of 5821841
+ 901857 words of memory out of 5000000
+ 39207 multiletter control sequences out of 15000+600000
  407555 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,869b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
