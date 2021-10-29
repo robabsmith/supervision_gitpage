@@ -25,7 +25,6 @@
     - http://www.macrohistory.net/data/ 
 
 
-
 ## Income and income inequality databases
 
 1. World Inequality Database
@@ -85,3 +84,19 @@ It is certainly a good idea to visit the [CALDISS website](https://www.caldiss.a
 
 9. European Social Survey data
     - https://www.europeansocialsurvey.org/
+
+## Danish data
+
+1. Danmarks Statistik
+    - 
+
+2. Danish Data Archive - The Danish Data Archive is a national service for social-, history- and health sciences.
+    - http://dda.dk/simple-search
+    
+3. Rigsarkivets surveydata
+    - https://www.sa.dk/da/forskning-rigsarkivet/benyt-surveydata/
+    
+4. Geographic shape files
+    - SDFE: https://sdfe.dk/hent-data
+    - Geodatastyrelsen: https://gst.dk
+    - DAGI: https://sdfe.dk/hent-data/danmarks-administrative-geografiske-inddeling
