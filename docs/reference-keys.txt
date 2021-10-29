@@ -1,6 +1,8 @@
 fig:dst-interestrates-plot
 tab:unnamed-chunk-5
 supervision-guide
+other-pages-that-might-be-of-interest
+my-research-page
 license
 introduction-to-supervision
 the-introductory-letter---meeting-procedure-and-formalities
