@@ -1,0 +1,46 @@
+# Digital tools
+
+There are a heap of tools available:
+
+## Tools that can help with brainstorming and project management
+
+1. [Trello](https://trello.com/en)
+2. [Padlet](https://padlet.com)
+3. [Notion](https://www.notion.so)
+4. [Prezi](https://prezi.com)
+5. [Wonder](https://www.wonder.me)
+6. [Mural](https://www.mural.co)
+
+## Tools that can help with content creation for questionnaires / interactive quizzes
+
+1. [Mentimeter](https://www.mentimeter.com)
+2. [Peergrade](Peergrade)
+3. MS Forms ([Integration of Forms with Teams and OneDrive](https://www.loom.com/share/ed2fd65abfd64189b2c81f8daff7ec79))
+4. [Fyrebox](https://www.fyrebox.com)
+5. [Coogle](https://coggle.it)
+6. [Kahoot](Kahoot)
+
+## Communication tools for collaboration
+
+1. OSX apple screen sharing (with control option)
+2. OSX Facetime
+3. [Slack](https://slack.com/intl/en-dk/)
+4. MS Teams
+5. Facebook messenger (A Facebook company)
+6. [Disqord](https://discord.com/brand-new)
+7. Skype / Skype for business
+8. WhatsApp (A Facebook company)
+
+## Additional learning tools for self-learning or training
+
+1. [DataCamp](https://www.datacamp.com)
+2. [Khan Academy](https://www.khanacademy.org)
+3. [Udemy](https://www.udemy.com)
+4. [Coursera](https://www.coursera.org)
+5. [Edx](https://www.edx.org)
+6. [Google Analytics Academy](https://analytics.google.com/analytics/academy/)
+7. [Microsoft Learn - For Power BI](https://docs.microsoft.com/en-gb/learn/powerplatform/power-bi?WT.mc_id=sitertzn_learntab_guidedlearning-card-powerbi)
+
+## Tools for facilitatiing classes
+
+1. [classroomscreen.com](www.classroomscreen.com)
